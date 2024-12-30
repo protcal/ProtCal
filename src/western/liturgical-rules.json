@@ -6,7 +6,10 @@
       },
       "Christmas": {
         "description": "Christmas is always the 25th day of December",
-        "method": "static"
+        "fixed_date": {
+            "month": 12,
+            "day": 25
+          }
       },
       "pentecost": {
         "description": "Pentecost is 50 days after Easter Sunday",
@@ -14,6 +17,7 @@
         "depends_on": "easter"
       },
       "lent_start": {
+        "alt_name": "Ash Wednesday",
         "description": "Lent begins on Ash Wednesday, 46 days before Easter",
         "offset_days": -46,
         "depends_on": "easter"
@@ -24,13 +28,10 @@
         "depends_on": "easter"
       },
       "holy_week_start": {
+        "alt_name": "Palm Sunday",
         "description": "Holy Week begins on Palm Sunday, 7 days before Easter",
         "offset_days": -7,
         "depends_on": "easter"
-      },
-      "palm_sunday": {
-        "description": "Palm Sunday is the same day as the beginning of Holy Week",
-        "depends_on": "holy_week_start"
       },
       "maudy_thursday": {
         "description": "Maudy Thursday is the thursday of Holy Week",
@@ -70,7 +71,9 @@
       },
       "last_sunday_after_pentecost": {
         "description": "Last Sunday before Advent begins",
-        "rule": "Sunday before Advent"
+        "rule": "Sunday before Advent",
+        "offset_days": -7,
+        "depends_on": "advent_start"
       },
       "all_saints": {
         "description": "All Saints' Day is always November 1",
@@ -78,6 +81,11 @@
           "month": 11,
           "day": 1
         }
+      },
+      "all_saints_sunday": {
+        "description": "All Saints' Sunday is the Sunday after All Saints' Day",
+        "offset_days": null,
+        "depends_on": "all_saints"
       },
       "thanksgiving": {
         "description": "Thanksgiving is the fourth Thursday in November",
@@ -89,8 +97,10 @@
       },
       "reformation-day": {
         "description": "Reformation day is always the last day of October",
-        "rule": "Last day of October",
-        "method": "static"
+        "fixed_date": {
+            "month": 10,
+            "day": 31
+          }
       }
     }
   }
