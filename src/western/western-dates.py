@@ -1,6 +1,16 @@
 import json
 from datetime import date, timedelta
 
+def get_sunday_of(holiday):
+    offset_days = (6 - holiday.weekday()) % 7
+    return calculate_offset(holiday, offset_days)
+
+def calculate_offset(base_date, offset_days):
+    return base_date + timedelta(days=offset_days)
+
+def get_fixed_date(year, month, day):
+    return date(year, month, day)
+
 def get_easter(year):
     a = year % 19
     b = year // 100
@@ -16,12 +26,6 @@ def get_easter(year):
     m = (a + 11 * h + 22 * l) // 451
     month = (h + l - 7 * m + 114) // 31
     day = ((h + l - 7 * m + 114) % 31) + 1
-    return date(year, month, day)
-
-def calculate_offset(base_date, offset_days):
-    return base_date + timedelta(days=offset_days)
-
-def get_fixed_date(year, month, day):
     return date(year, month, day)
 
 def get_advent_start(year):
@@ -46,15 +50,11 @@ def get_thanksgiving(year, canada=False):
     first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
     return first_thursday + timedelta(weeks=3)
 
-def get_sunday_of(holiday):
-    offset_days = (6 - holiday.weekday()) % 7
-    return calculate_offset(holiday, offset_days)
-
-
 with open('liturgical-rules.json', 'r') as f:
     rules = json.load(f)
 
 #debug
+#TODO: Turn all of these into functions like get_last_sunday_after_pentacost and get_easter and get_advent_start and get_holy_week_start
 year = 2024
 easter = get_easter(year)
 christmas = get_fixed_date(year, rules['christmas']['fixed_date']['month'], rules['christmas']['fixed_date']['day'])
@@ -69,7 +69,7 @@ advent_end = get_fixed_date(year, rules['advent_end']['fixed_date']['month'], ru
 transfiguration = calculate_offset(easter, rules['transfiguration']['offset_days'])
 trinity_sunday = calculate_offset(easter, rules['trinity_sunday']['offset_days'])
 last_sunday_after_pentecost = get_last_sunday_after_pentecost(advent_start)
-all_saints = get_fixed_date(year, 11, 1)
+all_saints = get_fixed_date(year, rules['all_saints']['fixed_date']['month'], rules['all_saints']['fixed_date']['day'])
 all_saints_sunday = get_sunday_of(all_saints)
 thanksgiving = get_thanksgiving(year)
 thanksgiving_ca = get_thanksgiving(year, True)
