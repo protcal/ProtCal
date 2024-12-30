@@ -1,0 +1,65 @@
+{
+    "calculation_rules": {
+      "easter": {
+        "description": "Easter Sunday calculation using the Computus formula",
+        "method": "computus"
+      },
+      "pentecost": {
+        "description": "Pentecost is 50 days after Easter Sunday",
+        "offset_days": 50,
+        "depends_on": "easter"
+      },
+      "lent_start": {
+        "description": "Lent begins on Ash Wednesday, 46 days before Easter",
+        "offset_days": -46,
+        "depends_on": "easter"
+      },
+      "lent_end": {
+        "description": "Lent ends on Holy Saturday, the day before Easter",
+        "offset_days": -1,
+        "depends_on": "easter"
+      },
+      "advent_start": {
+        "description": "Advent starts on the fourth Sunday before Christmas",
+        "rule": "Fourth Sunday before December 25"
+      },
+      "advent_end": {
+        "description": "Advent ends on Christmas Eve",
+        "fixed_date": {
+          "month": 12,
+          "day": 24
+        }
+      },
+      "transfiguration": {
+        "description": "The Sunday before Lent begins",
+        "offset_days": -49,
+        "depends_on": "easter"
+      },
+      "christmas": {
+        "description": "Christmas is always December 25",
+        "fixed_date": {
+          "month": 12,
+          "day": 25
+        }
+      },
+      "epiphany": {
+        "description": "Epiphany is always January 6",
+        "fixed_date": {
+          "month": 1,
+          "day": 6
+        }
+      },
+      "ascension": {
+        "description": "Ascension Day is 40 days after Easter Sunday",
+        "offset_days": 40,
+        "depends_on": "easter"
+      },
+      "all_saints": {
+        "description": "All Saints' Day is always November 1",
+        "fixed_date": {
+          "month": 11,
+          "day": 1
+        }
+      }
+    }
+  }
