@@ -1,107 +1,107 @@
 {
-    "calculation_rules": {
-      "easter": {
-        "description": "Easter Sunday calculation using the Computus formula",
-        "method": "computus"
-      },
-      "Christmas": {
-        "description": "Christmas is always the 25th day of December",
-        "fixed_date": {
-            "month": 12,
-            "day": 25
-          }
-      },
-      "pentecost": {
-        "description": "Pentecost is 50 days after Easter Sunday",
-        "offset_days": 50,
-        "depends_on": "easter"
-      },
-      "lent_start": {
-        "alt_name": "Ash Wednesday",
-        "description": "Lent begins on Ash Wednesday, 46 days before Easter",
-        "offset_days": -46,
-        "depends_on": "easter"
-      },
-      "lent_end": {
-        "description": "Lent ends on Holy Saturday, the day before Easter",
-        "offset_days": -1,
-        "depends_on": "easter"
-      },
-      "holy_week_start": {
-        "alt_name": "Palm Sunday",
-        "description": "Holy Week begins on Palm Sunday, 7 days before Easter",
-        "offset_days": -7,
-        "depends_on": "easter"
-      },
-      "maudy_thursday": {
-        "description": "Maudy Thursday is the thursday of Holy Week",
-        "offset_days": 4,
-        "depends_on": "holy_week_start"
-      },
-      "good_friday": {
-        "description": "Good Friday is the Friday of Holy Week",
-        "offset_days": 5,
-        "depends_on": "holy_week_start"
-      },
-      "advent_start": {
-        "description": "Advent starts on the fourth Sunday before Christmas",
-        "rule": "Fourth Sunday before December 25"
-      },
-      "advent_end": {
-        "description": "Advent ends on Christmas Eve",
-        "fixed_date": {
-          "month": 12,
-          "day": 24
+    "easter": {
+    "description": "Easter Sunday calculation using the Computus formula",
+    "method": "computus"
+    },
+    "christmas": {
+    "description": "Christmas is always the 25th day of December",
+    "fixed_date": {
+        "month": 12,
+        "day": 25
         }
-      },
-      "transfiguration": {
-        "description": "The Sunday before Lent begins",
-        "offset_days": -49,
-        "depends_on": "easter"
-      },
-      "trinity_sunday": {
-        "description": "Trinity Sunday is the Sunday after Pentecost",
-        "offset_days": 57,
-        "depends_on": "easter"
-      },
-      "first_sunday_after_pentecost": {
-        "description": "First Sunday after Pentecost",
-        "offset_days": 57,
-        "depends_on": "easter"
-      },
-      "last_sunday_after_pentecost": {
-        "description": "Last Sunday before Advent begins",
-        "rule": "Sunday before Advent",
-        "offset_days": -7,
-        "depends_on": "advent_start"
-      },
-      "all_saints": {
-        "description": "All Saints' Day is always November 1",
+    },
+    "pentecost": {
+    "description": "Pentecost is 50 days after Easter Sunday",
+    "offset_days": 50,
+    "depends_on": "easter"
+    },
+    "epiphany": {
+        "description": "Epiphany is always January 6th",
         "fixed_date": {
-          "month": 11,
-          "day": 1
-        }
-      },
-      "all_saints_sunday": {
-        "description": "All Saints' Sunday is the Sunday after All Saints' Day",
-        "offset_days": null,
-        "depends_on": "all_saints"
-      },
-      "thanksgiving": {
-        "description": "Thanksgiving is the fourth Thursday in November",
-        "rule": "Fourth Thursday in November"
-      },
-      "thanksgiving-CA": {
-        "description": "Thanksgiving is the second Monday in October",
-        "rule": "Second Monday in October"
-      },
-      "reformation-day": {
-        "description": "Reformation day is always the last day of October",
-        "fixed_date": {
-            "month": 10,
-            "day": 31
-          }
-      }
+            "month": 1,
+            "day": 6
+            }
+    },
+    "lent_start": {
+    "alt_name": "Ash Wednesday",
+    "description": "Lent begins on Ash Wednesday, 46 days before Easter",
+    "offset_days": -46,
+    "depends_on": "easter"
+    },
+    "lent_end": {
+    "description": "Lent ends on Holy Saturday, the day before Easter",
+    "offset_days": -1,
+    "depends_on": "easter"
+    },
+    "holy_week_start": {
+    "alt_name": "Palm Sunday",
+    "description": "Holy Week begins on Palm Sunday, 7 days before Easter",
+    "offset_days": -7,
+    "depends_on": "easter"
+    },
+    "maudy_thursday": {
+    "description": "Maudy Thursday is the thursday of Holy Week",
+    "offset_days": 4,
+    "depends_on": "holy_week_start"
+    },
+    "good_friday": {
+    "description": "Good Friday is the Friday of Holy Week",
+    "offset_days": 5,
+    "depends_on": "holy_week_start"
+    },
+    "advent_start": {
+    "description": "Advent starts on the fourth Sunday before Christmas",
+    "rule": "Fourth Sunday before December 25"
+    },
+    "advent_end": {
+    "description": "Advent ends on Christmas Eve",
+    "fixed_date": {
+        "month": 12,
+        "day": 24
     }
-  }
+    },
+    "transfiguration": {
+    "description": "The Sunday before Lent begins",
+    "offset_days": -49,
+    "depends_on": "easter"
+    },
+    "trinity_sunday": {
+    "description": "Trinity Sunday is the Sunday after Pentecost",
+    "offset_days": 57,
+    "depends_on": "easter"
+    },
+    "first_sunday_after_pentecost": {
+    "description": "First Sunday after Pentecost",
+    "offset_days": 57,
+    "depends_on": "easter"
+    },
+    "last_sunday_after_pentecost": {
+    "description": "Last Sunday before Advent begins",
+    "rule": "Sunday before Advent",
+    "offset_days": -7,
+    "depends_on": "advent_start"
+    },
+    "all_saints": {
+    "description": "All Saints' Day is always November 1",
+    "fixed_date": {
+        "month": 11,
+        "day": 1
+    }
+    },
+    "thanksgiving": {
+    "description": "Thanksgiving is the fourth Thursday in November",
+    "rule": "Fourth Thursday in November"
+    },
+    "thanksgiving-CA": {
+    "description": "Thanksgiving is the second Monday in October",
+    "rule": "Second Monday in October"
+    },
+    "reformation-day": {
+    "description": "Reformation day is always the last day of October",
+    "fixed_date": {
+        "month": 10,
+        "day": 31
+        }
+    }
+}
   
