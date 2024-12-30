@@ -18,20 +18,8 @@ def get_easter(year):
     day = ((h + l - 7 * m + 114) % 31) + 1
     return date(year, month, day)
 
-def get_christmas(year): #This is done for consistency
+def get_christmas(year):
     return date(year, 12, 25)
-
-def get_pentacost(year):
-    return calculate_offset(easter, rules['calculation_rules']['pentecost']['offset_days'])
-
-def get_lent_start(year):
-    return calculate_offset(easter, rules['calculation_rules']['lent_start']['offset_days'])
-
-def get_lent_end(year):
-    return calculate_offset(easter, rules['calculation_rules']['lent_end']['offset_days'])
-
-def get_transfiguration(year):
-    return calculate_offset(easter, rules['calculation_rules']['transfiguration']['offset_days'])
 
 def calculate_offset(base_date, offset_days):
     return base_date + timedelta(days=offset_days)
@@ -39,27 +27,59 @@ def calculate_offset(base_date, offset_days):
 def get_fixed_date(year, month, day):
     return date(year, month, day)
 
+def get_advent_start(year):
+    christmas = get_christmas(year)
+    fourth_sunday = christmas - timedelta(days=(christmas.weekday() + 22) % 7)
+    return fourth_sunday
+
+def get_holy_week_start(easter):
+    return calculate_offset(easter, -7)
+
+def get_last_sunday_after_pentecost(advent_start):
+    return advent_start - timedelta(days=7)
+
+def get_thanksgiving(year, canada=False):
+    if canada:
+        first_day = date(year, 10, 1)
+        first_monday = first_day + timedelta(days=(0 - first_day.weekday() + 7) % 7)
+        return first_monday + timedelta(weeks=1)
+    first_day = date(year, 11, 1)
+    first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
+    return first_thursday + timedelta(weeks=3)
+
+
+# Load the JSON rules
 with open('liturgical-rules.json', 'r') as f:
     rules = json.load(f)
 
-#debug
+# Example usage
 year = 2025
 easter = get_easter(year)
-christmas = date(year, 12, 25)
-pentecost = get_pentacost(year)
-lent_start = get_lent_start(year)
-lent_end = get_lent_end(year)
-#advent_start = calculate_offset(
-#advent_end = calculate_offset(
-
-transfiguration = get_transfiguration(year)
 christmas = get_christmas(year)
+pentecost = calculate_offset(easter, rules['calculation_rules']['pentecost']['offset_days'])
+lent_start = calculate_offset(easter, rules['calculation_rules']['lent_start']['offset_days'])
+lent_end = calculate_offset(easter, rules['calculation_rules']['lent_end']['offset_days'])
+holy_week_start = get_holy_week_start(easter)
+advent_start = get_advent_start(year)
+advent_end = get_fixed_date(year, 12, 24)
+transfiguration = calculate_offset(easter, rules['calculation_rules']['transfiguration']['offset_days'])
+trinity_sunday = calculate_offset(easter, rules['calculation_rules']['trinity_sunday']['offset_days'])
+last_sunday_after_pentecost = get_last_sunday_after_pentecost(advent_start)
+all_saints = get_fixed_date(year, 11, 1)
+thanksgiving = get_thanksgiving(year)
+thanksgiving_ca = get_thanksgiving(year, True)
 
 print(f"Easter: {easter}")
+print(f"Christmas: {christmas}")
 print(f"Pentecost: {pentecost}")
 print(f"Lent Start: {lent_start}")
 print(f"Lent End: {lent_end}")
-#print(f"Advent Start: {advent_start}")
-#print(f"Advent End: {advent_end}")
+print(f"Holy Week Start: {holy_week_start}")
+print(f"Advent Start: {advent_start}")
+print(f"Advent End: {advent_end}")
 print(f"Transfiguration: {transfiguration}")
-print(f"Christmas: {christmas}")
+print(f"Trinity Sunday: {trinity_sunday}")
+print(f"Last Sunday After Pentecost: {last_sunday_after_pentecost}")
+print(f"All Saints: {all_saints}")
+print(f"Thanksgiving: {thanksgiving}")
+print(f"Thanksgiving, CA: {thanksgiving_ca}")
