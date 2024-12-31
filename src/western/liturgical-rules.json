@@ -1,7 +1,6 @@
 {
     "easter": {
-    "description": "Easter Sunday calculation using the Computus formula",
-    "method": "computus"
+    "description": "Easter Sunday is calculated using the Computus formula"
     },
     "christmas": {
     "description": "Christmas is always the 25th day of December",
@@ -12,7 +11,7 @@
     },
     "pentecost": {
     "description": "Pentecost is 50 days after Easter Sunday",
-    "offset_days": 50,
+    "offset_days": 49,
     "depends_on": "easter"
     },
     "epiphany": {
@@ -23,7 +22,7 @@
             }
     },
     "lent_start": {
-    "alt_name": "Ash Wednesday",
+    "alt_name": "ash_wednesday",
     "description": "Lent begins on Ash Wednesday, 46 days before Easter",
     "offset_days": -46,
     "depends_on": "easter"
@@ -34,20 +33,20 @@
     "depends_on": "easter"
     },
     "holy_week_start": {
-    "alt_name": "Palm Sunday",
+    "alt_name": "palm_sunday",
     "description": "Holy Week begins on Palm Sunday, 7 days before Easter",
     "offset_days": -7,
     "depends_on": "easter"
     },
     "maudy_thursday": {
     "description": "Maudy Thursday is the thursday of Holy Week",
-    "offset_days": 4,
-    "depends_on": "holy_week_start"
+    "offset_days": -3,
+    "depends_on": "easter"
     },
     "good_friday": {
     "description": "Good Friday is the Friday of Holy Week",
-    "offset_days": 5,
-    "depends_on": "holy_week_start"
+    "offset_days": -2,
+    "depends_on": "easter"
     },
     "advent_start": {
     "description": "Advent starts on the fourth Sunday before Christmas",
@@ -66,13 +65,8 @@
     "depends_on": "easter"
     },
     "trinity_sunday": {
-    "description": "Trinity Sunday is the Sunday after Pentecost",
-    "offset_days": 57,
-    "depends_on": "easter"
-    },
-    "first_sunday_after_pentecost": {
+    "alt_name": "first_sunday_after_pentacost",
     "description": "First Sunday after Pentecost",
-    "offset_days": 57,
     "depends_on": "easter"
     },
     "last_sunday_after_pentecost": {
