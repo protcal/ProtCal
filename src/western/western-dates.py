@@ -1,7 +1,9 @@
 import json
 from datetime import date, timedelta
+from enum import Enum
 
 #utility
+
 def calculate_offset(base_date, offset_days):
     return base_date + timedelta(days=offset_days)
 
@@ -13,8 +15,26 @@ def get_sunday_of(holiday):
     return calculate_offset(holiday, offset_days)
 
 #liturgy
-#TODO: use the depends_on in the .json file to determine which holiday to use in calculating offset
-#TODO: fix thanksgiving
+
+class Holiday(Enum):
+    EASTER = "easter"
+    CHRISTMAS = "christmas"
+    PENTECOST = "pentecost"
+    EPIPHANY = "epiphany"
+    LENT_START = "lent_start"
+    LENT_END = "lent_end"
+    HOLY_WEEK_START = "holy_week_start"
+    MAUNDY_THURSDAY = "maundy_thursday"
+    GOOD_FRIDAY = "good_friday"
+    ADVENT_START = "advent_start"
+    ADVENT_END = "advent_end"
+    TRANSFIGURATION = "transfiguration"
+    TRINITY_SUNDAY = "trinity_sunday"
+    PENTECOST_END = "pentecost_end"
+    ALL_SAINTS = "all_saints"
+    THANKSGIVING = "thanksgiving"
+    THANKSGIVING_CA = "thanksgiving_ca"
+
 def get_easter(year):
     a = year % 19
     b = year // 100
@@ -38,25 +58,6 @@ def get_advent_start(year):
     advent_start = fourth_sunday_before_christmas - timedelta(weeks=3)
     return advent_start
 
-
-def get_holy_week_start(year):
-    return calculate_offset(get_easter(year), -7)
-
-def get_lent_start(year):
-    return calculate_offset(get_easter(year), rules['lent_start']['offset_days'])
-
-def get_lent_end(year):
-    return calculate_offset(get_easter(year), rules['lent_end']['offset_days'])
-
-def get_epiphany(year):
-    return get_fixed_date(year, rules['epiphany']['fixed_date']['month'], rules['epiphany']['fixed_date']['day'])
-
-def get_transfiguration(year):
-    return calculate_offset(get_easter(year), rules['transfiguration']['offset_days'])
-
-def get_pentecost(year):
-    return calculate_offset(get_easter(year), rules['pentecost']['offset_days'])
-
 def get_thanksgiving(year, canada=False):
     if canada:
         first_day = date(year, 10, 1)
@@ -66,69 +67,41 @@ def get_thanksgiving(year, canada=False):
     first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
     return first_thursday + timedelta(weeks=3)
 
-def get_all_saints(year):
-    return get_fixed_date(year, rules['all_saints']['fixed_date']['month'], rules['all_saints']['fixed_date']['day'])
+def get_holiday(year, holiday):
+    with open('liturgical-rules.json', 'r') as f:
+        rules = json.load(f)
+    holiday_data = rules.get(holiday.value)
 
-def get_trinity_sunday(year):
-    return calculate_offset(get_pentecost(year), rules['trinity_sunday']['offset_days'])
-
-def get_pentecost_end(year):
-    offset_days = rules['pentecost_end']['offset_days']
-    return calculate_offset(get_advent_start(year), offset_days)
-
-def get_advent_end(year):
-    return get_fixed_date(year, rules['advent_end']['fixed_date']['month'], rules['advent_end']['fixed_date']['day'])
-
-def get_christmas(year):
-    return get_fixed_date(year, rules['christmas']['fixed_date']['month'], rules['christmas']['fixed_date']['day'])
-
-def get_good_friday(year):
-    return calculate_offset(easter, rules['good_friday']['offset_days'])
-
-def get_maundy_thursday(year):
-    return calculate_offset(easter, rules['maundy_thursday']['offset_days'])
-
-with open('liturgical-rules.json', 'r') as f:
-    rules = json.load(f)
+    if not holiday_data:
+        raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
+    #dependent holidays
+    if "depends_on" in holiday_data:
+        base_holiday = Holiday[holiday_data["depends_on"].upper()]
+        base_date = get_holiday(year, base_holiday)
+        offset_days = holiday_data.get("offset_days", 0)
+        return calculate_offset(base_date, offset_days)
+    #fixed holidays
+    elif "fixed_date" in holiday_data:
+        month = holiday_data["fixed_date"]["month"]
+        day = holiday_data["fixed_date"]["day"]
+        return get_fixed_date(year, month, day)
+    #special holidays
+    elif holiday == Holiday.EASTER: return get_easter(year)
+    elif holiday == Holiday.ADVENT_START: return get_advent_start(year)
+    elif holiday == (Holiday.THANKSGIVING): return get_thanksgiving(year)
+    elif holiday == (Holiday.THANKSGIVING_CA): return get_thanksgiving(year, True)
+    raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
 
 #debug
-year = 2025
-easter = get_easter(year)
-christmas = get_christmas(year)
-pentecost = get_pentecost(year)
-epiphany = get_epiphany(year)
-epiphany_sunday = get_sunday_of(get_epiphany(year))
-lent_start = get_lent_start(year)
-lent_end = get_lent_end(year)
-holy_week_start = get_holy_week_start(year)
-advent_start = get_advent_start(year)
-advent_end = get_advent_end(year)
-transfiguration = get_transfiguration(year)
-trinity_sunday = get_trinity_sunday(year)
-pentecost_end = get_pentecost_end(year)
-all_saints = get_all_saints(year)
-all_saints_sunday = get_sunday_of(get_all_saints(year))
-thanksgiving = get_thanksgiving(year)
-thanksgiving_ca = get_thanksgiving(year, True)
-good_friday = get_good_friday(year)
-maundy_thursday = get_maundy_thursday(year)
 
-print(f"Epiphany: {epiphany}")
-print(f"Epiphany Sunday: {epiphany_sunday}")
-print(f"Lent Start: {lent_start}")
-print(f"Lent End: {lent_end}")
-print(f"Transfiguration: {transfiguration}")
-print(f"Holy Week Start: {holy_week_start}")
-print(f"Maundy Thursday: {maundy_thursday}")
-print(f"Good Friday: {good_friday}")
-print(f"Easter: {easter}")
-print(f"Pentecost: {pentecost}")
-print(f"Trinity Sunday: {trinity_sunday}")
-print(f"All Saints: {all_saints}")
-print(f"All Saints Sunday: {all_saints_sunday}")
-print(f"Thanksgiving: {thanksgiving}")
-print(f"Thanksgiving, CA: {thanksgiving_ca}")
-print(f"Last Sunday After Pentecost: {pentecost_end}")
-print(f"Advent Start: {advent_start}")
-print(f"Advent End: {advent_end}")
-print(f"Christmas: {christmas}")
+def debug_holidays(year):
+    print(f"Liturgical calendar for {year}:\n")
+    for holiday in Holiday:
+        try:
+            holiday_date = get_holiday(year, holiday)
+            print(f"{holiday.name.replace('_', ' ').title()}: {holiday_date.strftime('%A, %B %d, %Y')}")
+        except ValueError as e:
+            print(f"{holiday.name.replace('_', ' ').title()}: Error - {e}")
+
+year = int(input("Enter the year for which you want to debug holidays: "))
+debug_holidays(year)

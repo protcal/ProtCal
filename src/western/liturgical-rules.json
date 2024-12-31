@@ -81,8 +81,8 @@
     "name": "Trinity Sunday",
     "alt_name": "First Sunday after Pentecost",
     "description": "Trinity Sunday is the first Sunday after Easter",
-    "depends_on": "pentecost",
-    "offset_days": 7
+    "offset_days": 7,
+    "depends_on": "pentecost"
     },
     "pentecost_end": {
     "name": "Last Sunday after Pentecost",
@@ -102,7 +102,7 @@
     "description": "Thanksgiving is the fourth Thursday in November",
     "rule": "Fourth Thursday in November"
     },
-    "thanksgiving-CA": {
+    "thanksgiving_ca": {
     "description": "Thanksgiving is the second Monday in October",
     "rule": "Second Monday in October"
     },
