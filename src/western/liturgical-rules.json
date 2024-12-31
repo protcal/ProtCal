@@ -1,8 +1,10 @@
 {
     "easter": {
+    "name": "Easter",
     "description": "Easter Sunday is calculated using the Computus formula"
     },
     "christmas": {
+    "name": "Christmas",
     "description": "Christmas is always the 25th day of December",
     "fixed_date": {
         "month": 12,
@@ -10,7 +12,8 @@
         }
     },
     "pentecost": {
-    "description": "Pentecost is 50 days after Easter Sunday",
+    "name": "Pentecost",
+    "description": "Pentecost is 49 days after Easter Sunday, or 7 weeks",
     "offset_days": 49,
     "depends_on": "easter"
     },
@@ -22,37 +25,46 @@
             }
     },
     "lent_start": {
-    "alt_name": "ash_wednesday",
+    "name": "Start of Lent",
+    "alt_name": "Ash Wednesday",
     "description": "Lent begins on Ash Wednesday, 46 days before Easter",
     "offset_days": -46,
     "depends_on": "easter"
     },
     "lent_end": {
+    "name": "End of Lent",
+    "alt_name": "Holy Saturday",
     "description": "Lent ends on Holy Saturday, the day before Easter",
     "offset_days": -1,
     "depends_on": "easter"
     },
     "holy_week_start": {
-    "alt_name": "palm_sunday",
+    "name": "Beginning of Holy Week",
+    "alt_name": "Palm Sunday",
     "description": "Holy Week begins on Palm Sunday, 7 days before Easter",
     "offset_days": -7,
     "depends_on": "easter"
     },
-    "maudy_thursday": {
-    "description": "Maudy Thursday is the thursday of Holy Week",
+    "maundy_thursday": {
+    "name": "Maundy Thursday",
+    "description": "Maundy Thursday is the thursday of Holy Week",
     "offset_days": -3,
     "depends_on": "easter"
     },
     "good_friday": {
+    "name": "Good Friday",
     "description": "Good Friday is the Friday of Holy Week",
     "offset_days": -2,
     "depends_on": "easter"
     },
     "advent_start": {
+    "name": "Beginning of Advent",
     "description": "Advent starts on the fourth Sunday before Christmas",
     "rule": "Fourth Sunday before December 25"
     },
     "advent_end": {
+    "name": "End of Advent",
+    "alt_name": "Christmas Eve",
     "description": "Advent ends on Christmas Eve",
     "fixed_date": {
         "month": 12,
@@ -60,16 +72,20 @@
     }
     },
     "transfiguration": {
+    "name": "The Transfiguration of Our Lord",
     "description": "The Sunday before Lent begins",
     "offset_days": -49,
     "depends_on": "easter"
     },
     "trinity_sunday": {
-    "alt_name": "first_sunday_after_pentacost",
-    "description": "First Sunday after Pentecost",
-    "depends_on": "easter"
+    "name": "Trinity Sunday",
+    "alt_name": "First Sunday after Pentecost",
+    "description": "Trinity Sunday is the first Sunday after Easter",
+    "depends_on": "pentecost",
+    "offset_days": 7
     },
-    "last_sunday_after_pentecost": {
+    "pentecost_end": {
+    "name": "Last Sunday after Pentecost",
     "description": "Last Sunday before Advent begins",
     "rule": "Sunday before Advent",
     "offset_days": -7,

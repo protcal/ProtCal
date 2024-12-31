@@ -13,6 +13,8 @@ def get_sunday_of(holiday):
     return calculate_offset(holiday, offset_days)
 
 #liturgy
+#TODO: use the depends_on in the .json file to determine which holiday to use in calculating offset
+#TODO: fix thanksgiving
 def get_easter(year):
     a = year % 19
     b = year // 100
@@ -55,9 +57,6 @@ def get_transfiguration(year):
 def get_pentecost(year):
     return calculate_offset(get_easter(year), rules['pentecost']['offset_days'])
 
-def get_trinity_sunday(year):
-    return calculate_offset(get_easter(year), rules['pentecost']['offset_days'])
-
 def get_thanksgiving(year, canada=False):
     if canada:
         first_day = date(year, 10, 1)
@@ -70,9 +69,12 @@ def get_thanksgiving(year, canada=False):
 def get_all_saints(year):
     return get_fixed_date(year, rules['all_saints']['fixed_date']['month'], rules['all_saints']['fixed_date']['day'])
 
-def get_last_sunday_after_pentecost(advent_start):
-    offset_days = rules['last_sunday_after_pentecost']['offset_days']
-    return calculate_offset(advent_start, offset_days)
+def get_trinity_sunday(year):
+    return calculate_offset(get_pentecost(year), rules['trinity_sunday']['offset_days'])
+
+def get_pentecost_end(year):
+    offset_days = rules['pentecost_end']['offset_days']
+    return calculate_offset(get_advent_start(year), offset_days)
 
 def get_advent_end(year):
     return get_fixed_date(year, rules['advent_end']['fixed_date']['month'], rules['advent_end']['fixed_date']['day'])
@@ -83,8 +85,8 @@ def get_christmas(year):
 def get_good_friday(year):
     return calculate_offset(easter, rules['good_friday']['offset_days'])
 
-def get_maudy_thursday(year):
-    return calculate_offset(easter, rules['maudy_thursday']['offset_days'])
+def get_maundy_thursday(year):
+    return calculate_offset(easter, rules['maundy_thursday']['offset_days'])
 
 with open('liturgical-rules.json', 'r') as f:
     rules = json.load(f)
@@ -103,13 +105,13 @@ advent_start = get_advent_start(year)
 advent_end = get_advent_end(year)
 transfiguration = get_transfiguration(year)
 trinity_sunday = get_trinity_sunday(year)
-last_sunday_after_pentecost = get_last_sunday_after_pentecost(advent_start)
+pentecost_end = get_pentecost_end(year)
 all_saints = get_all_saints(year)
 all_saints_sunday = get_sunday_of(get_all_saints(year))
 thanksgiving = get_thanksgiving(year)
 thanksgiving_ca = get_thanksgiving(year, True)
 good_friday = get_good_friday(year)
-maudy_thursday = get_maudy_thursday(year)
+maundy_thursday = get_maundy_thursday(year)
 
 print(f"Epiphany: {epiphany}")
 print(f"Epiphany Sunday: {epiphany_sunday}")
@@ -117,16 +119,16 @@ print(f"Lent Start: {lent_start}")
 print(f"Lent End: {lent_end}")
 print(f"Transfiguration: {transfiguration}")
 print(f"Holy Week Start: {holy_week_start}")
-print(f"Maudy Thursday: {maudy_thursday}")
+print(f"Maundy Thursday: {maundy_thursday}")
 print(f"Good Friday: {good_friday}")
 print(f"Easter: {easter}")
 print(f"Pentecost: {pentecost}")
 print(f"Trinity Sunday: {trinity_sunday}")
-print(f"Last Sunday After Pentecost: {last_sunday_after_pentecost}")
 print(f"All Saints: {all_saints}")
 print(f"All Saints Sunday: {all_saints_sunday}")
 print(f"Thanksgiving: {thanksgiving}")
 print(f"Thanksgiving, CA: {thanksgiving_ca}")
+print(f"Last Sunday After Pentecost: {pentecost_end}")
 print(f"Advent Start: {advent_start}")
 print(f"Advent End: {advent_end}")
 print(f"Christmas: {christmas}")
