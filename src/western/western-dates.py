@@ -1,8 +1,7 @@
 import json
 from datetime import date, timedelta
-from enum import Enum
 
-#utility
+#Utility
 
 def calculate_offset(base_date, offset_days):
     return base_date + timedelta(days=offset_days)
@@ -11,29 +10,11 @@ def get_fixed_date(year, month, day):
     return date(year, month, day)
 
 def get_sunday_of(holiday):
+    # Useful for All Saints' Sunday and other holidays
     offset_days = (6 - holiday.weekday()) % 7
     return calculate_offset(holiday, offset_days)
 
-#liturgy
-
-class Holiday(Enum):
-    EASTER = "easter"
-    CHRISTMAS = "christmas"
-    PENTECOST = "pentecost"
-    EPIPHANY = "epiphany"
-    LENT_START = "lent_start"
-    LENT_END = "lent_end"
-    HOLY_WEEK_START = "holy_week_start"
-    MAUNDY_THURSDAY = "maundy_thursday"
-    GOOD_FRIDAY = "good_friday"
-    ADVENT_START = "advent_start"
-    ADVENT_END = "advent_end"
-    TRANSFIGURATION = "transfiguration"
-    TRINITY_SUNDAY = "trinity_sunday"
-    PENTECOST_END = "pentecost_end"
-    ALL_SAINTS = "all_saints"
-    THANKSGIVING = "thanksgiving"
-    THANKSGIVING_CA = "thanksgiving_ca"
+#Liturgy
 
 def get_easter(year):
     a = year % 19
@@ -70,38 +51,49 @@ def get_thanksgiving(year, canada=False):
 def get_holiday(year, holiday):
     with open('liturgical-rules.json', 'r') as f:
         rules = json.load(f)
-    holiday_data = rules.get(holiday.value)
+    holiday_data = rules.get(holiday)
 
     if not holiday_data:
         raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
-    #dependent holidays
+
+    #Dependent holidays
     if "depends_on" in holiday_data:
-        base_holiday = Holiday[holiday_data["depends_on"].upper()]
+        base_holiday = holiday_data["depends_on"]
         base_date = get_holiday(year, base_holiday)
         offset_days = holiday_data.get("offset_days", 0)
         return calculate_offset(base_date, offset_days)
-    #fixed holidays
+
+    #Fixed holidays
     elif "fixed_date" in holiday_data:
         month = holiday_data["fixed_date"]["month"]
         day = holiday_data["fixed_date"]["day"]
         return get_fixed_date(year, month, day)
-    #special holidays
-    elif holiday == Holiday.EASTER: return get_easter(year)
-    elif holiday == Holiday.ADVENT_START: return get_advent_start(year)
-    elif holiday == (Holiday.THANKSGIVING): return get_thanksgiving(year)
-    elif holiday == (Holiday.THANKSGIVING_CA): return get_thanksgiving(year, True)
+
+    #Special holidays
+    elif holiday == "easter":
+        return get_easter(year)
+    elif holiday == "advent_start":
+        return get_advent_start(year)
+    elif holiday == "thanksgiving":
+        return get_thanksgiving(year)
+    elif holiday == "thanksgiving_ca":
+        return get_thanksgiving(year, True)
+
     raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
 
-#debug
-
+#Debug function
 def debug_holidays(year):
-    print(f"Liturgical calendar for {year}:\n")
-    for holiday in Holiday:
+    print(f"Liturgical calendar for A.D. {year}:")
+    with open('liturgical-rules.json', 'r') as f:
+        rules = json.load(f)
+    for holiday in rules.keys():
         try:
             holiday_date = get_holiday(year, holiday)
-            print(f"{holiday.name.replace('_', ' ').title()}: {holiday_date.strftime('%A, %B %d, %Y')}")
+            print(f"{holiday.replace('_', ' ').title()}: {holiday_date.strftime('%A, %B %d, %Y')}")
         except ValueError as e:
-            print(f"{holiday.name.replace('_', ' ').title()}: Error - {e}")
+            print(f"{holiday.replace('_', ' ').title()}: Error - {e}")
 
+#IO Debug
 year = int(input("Enter the year for which you want to debug holidays: "))
+print()
 debug_holidays(year)
