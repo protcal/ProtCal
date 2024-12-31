@@ -1,7 +1,8 @@
 {
     "easter": {
     "name": "Easter",
-    "description": "Easter Sunday is calculated using the Computus formula"
+    "description": "Easter Sunday is calculated using the Computus formula",
+    "complex": true
     },
     "christmas": {
     "name": "Christmas",
@@ -60,7 +61,8 @@
     "advent_start": {
     "name": "Beginning of Advent",
     "description": "Advent starts on the fourth Sunday before Christmas",
-    "rule": "Fourth Sunday before December 25"
+    "rule": "Fourth Sunday before December 25",
+    "complex": true
     },
     "advent_end": {
     "name": "End of Advent",
@@ -85,13 +87,14 @@
     "depends_on": "pentecost"
     },
     "pentecost_end": {
-    "name": "Last Sunday after Pentecost",
-    "description": "Last Sunday before Advent begins",
+    "name": "End of Pentecost",
+    "description": "Saturday before the start of Advent",
     "rule": "Sunday before Advent",
-    "offset_days": -7,
+    "offset_days": -1,
     "depends_on": "advent_start"
     },
     "all_saints": {
+    "name": "All Saints' Day",
     "description": "All Saints' Day is always November 1",
     "fixed_date": {
         "month": 11,
@@ -101,12 +104,14 @@
     "thanksgiving": {
     "name": "Thanksgiving",
     "description": "Thanksgiving is the fourth Thursday in November",
-    "rule": "Fourth Thursday in November"
+    "rule": "Fourth Thursday in November",
+    "complex": true
     },
     "thanksgiving_ca": {
     "name": "Thanksgiving CA",
     "description": "Thanksgiving in Canada is the second Monday in October",
-    "rule": "Second Monday in October"
+    "rule": "Second Monday in October",
+    "complex": true
     },
     "reformation_day": {
     "name": "Reformation Day",
@@ -118,7 +123,7 @@
     },
     "purification_of_mary_and_presentation_of_our_lord": {
         "name": "The Purification of Mary and Presentation of Our Lord",
-        "description": "Celebrated on February 2nd, commemorating the presentation of Jesus in the temple.",
+        "description": "Celebrated on February 2nd, commemorating the presentation of Jesus in the temple",
         "fixed_date": {
             "month": 2,
             "day": 2
@@ -127,15 +132,16 @@
     "new_years_eve": {
         "name": "New Year's Eve",
         "alt_name": "Eve of the Circumcision and Name of Jesus",
-        "description": "Celebrated on December 31st, the eve of the Circumcision and Name of Jesus.",
+        "description": "Celebrated on December 31st, the eve of the Circumcision and Name of Jesus",
         "fixed_date": {
             "month": 12,
             "day": 31
         }
     },
-    "circumcision_and_name_of_jesus": {
-        "name": "Circumcision and Name of Jesus (New Year's Day)",
-        "description": "Celebrated on January 1st, marking the circumcision and naming of Jesus.",
+    "new_years": {
+        "name": "New Year's Day",
+        "alt_name": "Circumcision and Name of Jesus",
+        "description": "Celebrated on January 1st, marking the circumcision and naming of Jesus",
         "fixed_date": {
             "month": 1,
             "day": 1
@@ -143,15 +149,15 @@
     },
     "baptism_of_our_lord": {
         "name": "The Baptism of Our Lord",
-        "description": "Observed on the first Sunday after Epiphany, commemorating the baptism of Jesus.",
+        "description": "Observed on the first Sunday after Epiphany, commemorating the baptism of Jesus",
         "depends_on": "epiphany",
         "offset_days": 7
     },
     "ascension_of_our_lord": {
         "name": "The Ascension of Our Lord",
-        "description": "Celebrated 40 days after Easter, commemorating the ascension of Jesus into heaven.",
+        "description": "Celebrated 40 days after Easter, commemorating the ascension of Jesus into heaven",
         "depends_on": "easter",
-        "offset_days": 40
+        "offset_days": 39
     }
 }
   

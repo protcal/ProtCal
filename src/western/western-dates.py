@@ -69,15 +69,18 @@ def get_holiday(year, holiday):
         day = holiday_data["fixed_date"]["day"]
         return get_fixed_date(year, month, day)
 
-    #Special holidays
-    elif holiday == "easter":
-        return get_easter(year)
-    elif holiday == "advent_start":
-        return get_advent_start(year)
-    elif holiday == "thanksgiving":
-        return get_thanksgiving(year)
-    elif holiday == "thanksgiving_ca":
-        return get_thanksgiving(year, True)
+    #Complicated holidays
+    elif "complex" in holiday_data:
+        if holiday == "easter":
+            return get_easter(year)
+        elif holiday == "advent_start":
+            return get_advent_start(year)
+        elif holiday == "thanksgiving":
+            return get_thanksgiving(year)
+        elif holiday == "thanksgiving_ca":
+            return get_thanksgiving(year, True)
+    else:
+        raise ValueError(f"Complex holiday found without function for: {holiday}")
 
     raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
 
@@ -86,12 +89,17 @@ def debug_holidays(year):
     print(f"Liturgical calendar for A.D. {year}:")
     with open('liturgical-rules.json', 'r') as f:
         rules = json.load(f)
-    for holiday in rules.keys():
+    
+    for holiday_key, holiday_data in rules.items():
         try:
-            holiday_date = get_holiday(year, holiday)
-            print(f"{holiday.replace('_', ' ').title()}: {holiday_date.strftime('%A, %B %d, %Y')}")
+            holiday_date = get_holiday(year, holiday_key)
+            holiday_name = holiday_data.get("name", holiday_key.replace('_', ' ').title())
+            alt_name = holiday_data.get("alt_name")
+            if alt_name:
+                holiday_name += f" ({alt_name})"
+            print(f"{holiday_name}: {holiday_date.strftime('%A, %B %d, %Y')}")
         except ValueError as e:
-            print(f"{holiday.replace('_', ' ').title()}: Error - {e}")
+            print(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
 
 #IO Debug
 year = int(input("Enter the year for which you want to debug holidays: "))
