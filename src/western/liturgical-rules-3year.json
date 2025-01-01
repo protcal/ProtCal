@@ -26,15 +26,15 @@
             }
     },
     "lent_start": {
-    "name": "Start of Lent",
-    "alt_name": "Ash Wednesday",
+    "name": "Ash Wednesday",
+    "alt_name": "Start of Lent",
     "description": "Lent begins on Ash Wednesday, 46 days before Easter",
     "offset_days": -46,
     "depends_on": "easter"
     },
     "lent_end": {
-    "name": "End of Lent",
-    "alt_name": "Holy Saturday",
+    "name": "Holy Saturday",
+    "alt_name": "End of Lent",
     "description": "Lent ends on Holy Saturday, the day before Easter",
     "offset_days": -1,
     "depends_on": "easter"

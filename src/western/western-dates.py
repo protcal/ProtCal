@@ -48,9 +48,13 @@ def get_thanksgiving(year, canada=False):
     first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
     return first_thursday + timedelta(weeks=3)
 
-def get_holiday(year, holiday):
-    with open('liturgical-rules.json', 'r') as f:
-        rules = json.load(f)
+def get_holiday(year, holiday, oneyear = False):
+    if (oneyear):
+        with open('liturgical-rules-1year.json', 'r') as f:
+            rules = json.load(f)
+    else:
+        with open('liturgical-rules-3year.json', 'r') as f:
+            rules = json.load(f)
     holiday_data = rules.get(holiday)
 
     if not holiday_data:
@@ -85,14 +89,19 @@ def get_holiday(year, holiday):
     raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
 
 #Debug function
-def debug_holidays(year):
+def debug_holidays(year, oneyear = False):
     print(f"Liturgical calendar for A.D. {year}:")
-    with open('liturgical-rules.json', 'r') as f:
-        rules = json.load(f)
+
+    if (oneyear):
+        with open('liturgical-rules-1year.json', 'r') as f:
+            rules = json.load(f)
+    else:
+        with open('liturgical-rules-3year.json', 'r') as f:
+            rules = json.load(f)
     
     for holiday_key, holiday_data in rules.items():
         try:
-            holiday_date = get_holiday(year, holiday_key)
+            holiday_date = get_holiday(year, holiday_key, oneyear)
             holiday_name = holiday_data.get("name", holiday_key.replace('_', ' ').title())
             alt_name = holiday_data.get("alt_name")
             if alt_name:
@@ -104,4 +113,4 @@ def debug_holidays(year):
 #IO Debug
 year = int(input("Enter the year for which you want to debug holidays: "))
 print()
-debug_holidays(year)
+debug_holidays(year, True)
