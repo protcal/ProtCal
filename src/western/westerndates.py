@@ -2,7 +2,7 @@ import json
 from datetime import date, timedelta
 
 #Utility
-
+#TODO: Move these to another file
 def calculate_offset(base_date, offset_days):
     return base_date + timedelta(days=offset_days)
 
@@ -89,25 +89,26 @@ def get_holiday(year, holiday, oneyear = False):
 
     raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
 
-def get_seasons(year, oneyear=False):
+#TODO: be careful about christmastide, because it starts last year and ends the beginning of current year
+#TODO: so it may last the entire year from epiphany to christmas
+def get_season(year, season, oneyear=False):
     rules = get_rules("seasons", oneyear)
 
-    seasons = {}
-    season_rules = rules.get("seasons", {})
+    season_data = rules.get(season)
 
-    for season, data in season_rules.items():
-        start_holiday = data["start"]
-        end_holiday = data["end"]
+    if not season_data:
+        raise ValueError(f"Unrecognized or unsupported season rules for: {season}")
+    
+    start_day = get_holiday(year, season_data["start"], oneyear)
+    end_day = get_holiday(year, season_data["end"], oneyear)
 
-        start_date = get_holiday(year, start_holiday)
-        end_date = get_holiday(year, end_holiday)
+    if start_day > end_day: #if the start date is after the end date, then it is the prior year (christmastide)
+        start_day = start_day.replace(year=year - 1)
+    return start_day, end_day
 
-        seasons[season] = {"start": start_date, "end": end_date}
-
-    return seasons
 
 def display_holidays(year, oneyear = False):
-    print(f"Liturgical calendar for A.D. {year}:")
+    print(f"Liturgical holidays for A.D. {year}:")
 
     rules = get_rules("days", oneyear)
 
@@ -121,3 +122,19 @@ def display_holidays(year, oneyear = False):
             print(f"{holiday_name}: {holiday_date.strftime('%A, %B %d, %Y')}")
         except ValueError as e:
             print(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
+
+def display_seasons(year, oneyear=False):
+    print(f"Liturgical seasons for A.D. {year}:")
+
+    rules = get_rules("seasons", oneyear)
+
+    for season_key, season_data in rules.items():
+        try:
+            start_date, end_date = get_season(year, season_key, oneyear)
+            season_name = season_data.get("name", season_key.replace('_', ' ').title())
+            alt_name = season_data.get("alt_name")
+            if alt_name:
+                season_name += f" ({alt_name})"
+            print(f"{season_name}: {start_date.strftime('%A, %B %d, %Y')} - {end_date.strftime('%A, %B %d, %Y')}")
+        except ValueError as e:
+            print(f"{season_key.replace('_', ' ').title()}: Error - {e}")
