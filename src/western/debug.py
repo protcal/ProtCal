@@ -6,7 +6,9 @@ if __name__ == "__main__":
     oneyear = input("Use one-year lectionary rules? (yes/no): ").strip().lower() == "yes"
     csv = input("Would you like to output a CSV file? (yes/no): ").strip().lower() == "yes"
     print()
-    display_holidays(year, True)
+    display_holidays(year, oneyear)
+    print()
+    print(get_seasons(year))
     if(csv):
         calendar = generate_calendar(year, oneyear)
         output_file = f"liturgical_calendar_{year}.csv"

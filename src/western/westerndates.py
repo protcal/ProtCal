@@ -14,6 +14,12 @@ def get_sunday_of(holiday):
     offset_days = (6 - holiday.weekday()) % 7
     return calculate_offset(holiday, offset_days)
 
+def get_rules(type, oneyear = False):
+    rules_file = 'liturgical-rules-1year.json' if oneyear else 'liturgical-rules-3year.json'
+    with open(rules_file, 'r') as f:
+        rules= json.load(f)
+    return rules.get(type, {})
+
 #Liturgy
 
 def get_easter(year):
@@ -49,9 +55,7 @@ def get_thanksgiving(year, canada=False):
     return first_thursday + timedelta(weeks=3)
 
 def get_holiday(year, holiday, oneyear = False):
-    rules_file = 'liturgical-rules-1year.json' if oneyear else 'liturgical-rules-3year.json'
-    with open(rules_file, 'r') as f:
-        rules = json.load(f)
+    rules = get_rules("days", oneyear)
     holiday_data = rules.get(holiday)
 
     if not holiday_data:
@@ -85,13 +89,28 @@ def get_holiday(year, holiday, oneyear = False):
 
     raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
 
+def get_seasons(year, oneyear=False):
+    rules = get_rules("seasons", oneyear)
+
+    seasons = {}
+    season_rules = rules.get("seasons", {})
+
+    for season, data in season_rules.items():
+        start_holiday = data["start"]
+        end_holiday = data["end"]
+
+        start_date = get_holiday(year, start_holiday)
+        end_date = get_holiday(year, end_holiday)
+
+        seasons[season] = {"start": start_date, "end": end_date}
+
+    return seasons
+
 def display_holidays(year, oneyear = False):
     print(f"Liturgical calendar for A.D. {year}:")
-    
-    rules_file = 'liturgical-rules-1year.json' if oneyear else 'liturgical-rules-3year.json'
-    with open(rules_file, 'r') as f:
-        rules = json.load(f)
-    
+
+    rules = get_rules("days", oneyear)
+
     for holiday_key, holiday_data in rules.items():
         try:
             holiday_date = get_holiday(year, holiday_key, oneyear)
