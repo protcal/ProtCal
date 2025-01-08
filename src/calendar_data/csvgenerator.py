@@ -3,16 +3,16 @@ from datetime import date, timedelta
 from calendar_functions import get_holiday
 from utilities import get_rules
 
-def generate_calendar(year, oneyear=False):
+def generate_calendar(year, tradition, flags):
     start_date = date(year, 1, 1)
     end_date = date(year, 12, 31)
 
-    rules = get_rules("days", oneyear)
+    rules = get_rules("days", tradition, flags)
 
     holidays = {}
     for holiday_key in rules.keys():
         try:
-            holidays[holiday_key] = get_holiday(year, holiday_key, oneyear)
+            holidays[holiday_key] = get_holiday(year, holiday_key, tradition, flags)
         except ValueError as e:
             print(f"Error generating date for {holiday_key}: {e}")
 

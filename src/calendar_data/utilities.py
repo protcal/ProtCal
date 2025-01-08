@@ -1,17 +1,30 @@
 import json
+import os
 from datetime import date, timedelta
 
-def get_rules(type, oneyear = False):
+def get_rules(type, tradition = 'lutheran', flags=None, culture = 'western'):
     """
-    Gets the liturgical rules from a JSON file 
-    Type can either be "days" or "seasons"
-    TODO: Make it generic so you can ask for which file to get
-    instead of binary
+    Gets the liturgical rules from a JSON file.
+    Parameters:
+        type (str): The type of rules to fetch ("days" or "seasons")
+        tradition (str): The tradition directory to look in (e.g., "lutheran", "anglican")
+        flags (str, optional): An additional flag for file selection (e.g., "oneyear")
+    Returns:
+        dict: The requested liturgical rules.
     """
-    rules_file = 'western/liturgical-rules-1year.json' if oneyear else 'western/liturgical-rules-3year.json'
-    with open(rules_file, 'r') as f:
-        rules= json.load(f)
-    return rules.get(type, {})
+    file_name = f"rules-{flags}.json" if flags else "rules.json"
+    
+    file_path = os.path.join(culture, tradition, file_name)
+    
+    try:
+        with open(file_path, 'r') as f:
+            rules = json.load(f)
+        return rules.get(type, {})
+    except FileNotFoundError:
+        raise ValueError(f"Rules file not found: {file_path}")
+    except json.JSONDecodeError:
+        raise ValueError(f"Invalid JSON in rules file: {file_path}")
+
 
 def calculate_offset(base_date, offset_days):
     """

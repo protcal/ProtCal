@@ -42,12 +42,12 @@ def get_thanksgiving(year, canada=False):
     first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
     return first_thursday + timedelta(weeks=3)
 
-def get_holiday(year, holiday, oneyear = False):
+def get_holiday(year, holiday, tradition, flags):
     """
     Given the name of the holiday, determines the date it is on
     depending on the given year.
     """
-    rules = get_rules("days", oneyear)
+    rules = get_rules("days", tradition, flags)
     holiday_data = rules.get(holiday)
 
     if not holiday_data:
@@ -56,7 +56,7 @@ def get_holiday(year, holiday, oneyear = False):
     #Dependent holidays
     if "depends_on" in holiday_data:
         base_holiday = holiday_data["depends_on"]
-        base_date = get_holiday(year, base_holiday)
+        base_date = get_holiday(year, base_holiday, tradition, flags)
         offset_days = holiday_data.get("offset_days", 0)
         return calculate_offset(base_date, offset_days)
 
@@ -83,19 +83,19 @@ def get_holiday(year, holiday, oneyear = False):
 
 #TODO: be careful about christmastide, because it starts last year and ends the beginning of current year
 #TODO: so it may last the entire year from epiphany to christmas
-def get_season(year, season, oneyear=False):
+def get_season(year, season, tradition, flags):
     """
     Depending on the year, determines the liturgical seasons for that year
     """
-    rules = get_rules("seasons", oneyear)
+    rules = get_rules("seasons", tradition, flags)
 
     season_data = rules.get(season)
 
     if not season_data:
         raise ValueError(f"Unrecognized or unsupported season rules for: {season}")
     
-    start_day = get_holiday(year, season_data["start"], oneyear)
-    end_day = get_holiday(year, season_data["end"], oneyear)
+    start_day = get_holiday(year, season_data["start"], tradition, flags)
+    end_day = get_holiday(year, season_data["end"], tradition, flags)
 
     if start_day > end_day: #if the start date is after the end date, then it is the prior year (christmastide)
         end_day = end_day.replace(year=year + 1)
@@ -106,18 +106,18 @@ def get_season(year, season, oneyear=False):
     return start_day, end_day
 
 
-def display_holidays(year, oneyear = False):
+def display_holidays(year, tradition, flags):
     """
     Displays the holidays on a command prompt when run. This is
     useful for debugging purposes.
     """
-    print(f"Liturgical holidays for A.D. {year}:")
+    print(f"{tradition} liturgical holidays for A.D. {year}:")
 
-    rules = get_rules("days", oneyear)
+    rules = get_rules("days", tradition, flags)
 
     for holiday_key, holiday_data in rules.items():
         try:
-            holiday_date = get_holiday(year, holiday_key, oneyear)
+            holiday_date = get_holiday(year, holiday_key, tradition, flags)
             holiday_name = holiday_data.get("name", holiday_key.replace('_', ' ').title())
             alt_name = holiday_data.get("alt_name")
             if alt_name:
@@ -126,18 +126,18 @@ def display_holidays(year, oneyear = False):
         except ValueError as e:
             print(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
 
-def display_seasons(year, oneyear=False):
+def display_seasons(year, tradition, flags):
     """
     Displays the seasons on a command prompt when run. This is
     useful for debugging purposes.
     """
-    print(f"Liturgical seasons for A.D. {year}:")
+    print(f"{tradition} liturgical seasons for A.D. {year}:")
 
-    rules = get_rules("seasons", oneyear)
+    rules = get_rules("seasons", tradition, flags)
 
     for season_key, season_data in rules.items():
         try:
-            start_date, end_date = get_season(year, season_key, oneyear)
+            start_date, end_date = get_season(year, season_key, tradition, flags)
             season_name = season_data.get("name", season_key.replace('_', ' ').title())
             alt_name = season_data.get("alt_name")
             if alt_name:
