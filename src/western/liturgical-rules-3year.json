@@ -65,9 +65,9 @@
         "rule": "Fourth Sunday before December 25",
         "complex": true
         },
-        "advent_end": {
-        "name": "End of Advent",
-        "alt_name": "Christmas Eve",
+        "christmas_eve": {
+        "name": "Christmas Eve",
+        "alt_name": "End of Advent",
         "description": "Advent ends on Christmas Eve",
         "fixed_date": {
             "month": 12,
@@ -162,25 +162,12 @@
         }
     },
     "seasons": {
-        "advent": {
-            "name": "Advent",
-            "description": "The season of preparation leading up to Christmas",
-            "start": "advent_start",
-            "end": "advent_end",
-            "liturgical_color": "purple"
-        },
-        "christmastide": {
-            "name": "Christmastide",
-            "description": "The season celebrating the birth of Christ",
-            "start": "christmas",
-            "end": "epiphany",
-            "liturgical_color": "white"
-        },
         "epiphanytide": {
             "name": "Epiphanytide",
             "description": "The season following Epiphany",
             "start": "epiphany",
             "end": "lent_start",
+            "offset": "true",
             "liturgical_color": "green"
         },
         "lent": {
@@ -195,14 +182,39 @@
             "description": "The season celebrating the resurrection of Christ",
             "start": "easter",
             "end": "pentecost",
+            "offset": true,
             "liturgical_color": "white"
         },
         "pentecost": {
+            "name": "Pentecost",
+            "description": "The season celebrating the birth of the church",
+            "start": "pentecost",
+            "end": "trinity_sunday",
+            "offset": true,
+            "liturgical_color": "red"
+        },
+        "after_pentecost": {
             "name": "Season after Pentecost",
             "description": "The season after Pentecost",
             "start": "trinity_sunday",
             "end": "advent_start",
+            "offset": true,
             "liturgical_color": "green"
+        },
+        "advent": {
+            "name": "Advent",
+            "description": "The season of preparation leading up to Christmas",
+            "start": "advent_start",
+            "end": "christmas_eve",
+            "liturgical_color": "purple"
+        },
+        "christmastide": {
+            "name": "Christmastide",
+            "description": "The season celebrating the birth of Christ",
+            "start": "christmas",
+            "end": "epiphany",
+            "offset": true,
+            "liturgical_color": "white"
         }
     }
 }

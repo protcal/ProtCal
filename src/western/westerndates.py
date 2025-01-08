@@ -4,17 +4,41 @@ from datetime import date, timedelta
 #Utility
 #TODO: Move these to another file
 def calculate_offset(base_date, offset_days):
+    """
+    Helper function that calculates date offets.
+    """
     return base_date + timedelta(days=offset_days)
 
 def get_fixed_date(year, month, day):
+    """
+    Helper function to return the fixed date of a given holiday.
+    """
     return date(year, month, day)
 
-def get_sunday_of(holiday):
+def get_closest_sunday(holiday):
     # Useful for All Saints' Sunday and other holidays
     offset_days = (6 - holiday.weekday()) % 7
     return calculate_offset(holiday, offset_days)
 
+def get_closest_sunday(holiday):
+    """
+    Finds the closest Sunday to the given holiday. If the holiday is already a Sunday,
+    it returns the same date.
+    """
+    days_to_previous_sunday = -holiday.weekday() % 7
+    days_to_next_sunday = (6 - holiday.weekday()) % 7
+
+    if abs(days_to_previous_sunday) <= abs(days_to_next_sunday):
+        return calculate_offset(holiday, days_to_previous_sunday)
+    else:
+        return calculate_offset(holiday, days_to_next_sunday)
+
 def get_rules(type, oneyear = False):
+    """
+    Gets the liturgical rules from a JSON file 
+    TODO: Make it generic so you can ask for which file to get
+    instead of binary
+    """
     rules_file = 'liturgical-rules-1year.json' if oneyear else 'liturgical-rules-3year.json'
     with open(rules_file, 'r') as f:
         rules= json.load(f)
@@ -23,6 +47,9 @@ def get_rules(type, oneyear = False):
 #Liturgy
 
 def get_easter(year):
+    """
+    Preforms the computus paschalis formula to get Easter. 
+    """
     a = year % 19
     b = year // 100
     c = year % 100
@@ -40,12 +67,18 @@ def get_easter(year):
     return date(year, month, day)
 
 def get_advent_start(year):
+    """
+    Finds the start of Advent.
+    """
     christmas = get_fixed_date(year, 12, 25)
     fourth_sunday_before_christmas = christmas - timedelta(days=(christmas.weekday() + 22) % 7)
     advent_start = fourth_sunday_before_christmas - timedelta(weeks=3)
     return advent_start
 
 def get_thanksgiving(year, canada=False):
+    """
+    Returns the date of Thanksgiving depending on which North American country
+    """
     if canada:
         first_day = date(year, 10, 1)
         first_monday = first_day + timedelta(days=(0 - first_day.weekday() + 7) % 7)
@@ -55,6 +88,10 @@ def get_thanksgiving(year, canada=False):
     return first_thursday + timedelta(weeks=3)
 
 def get_holiday(year, holiday, oneyear = False):
+    """
+    Given the name of the holiday, determines the date it is on
+    depending on the given year.
+    """
     rules = get_rules("days", oneyear)
     holiday_data = rules.get(holiday)
 
@@ -92,6 +129,9 @@ def get_holiday(year, holiday, oneyear = False):
 #TODO: be careful about christmastide, because it starts last year and ends the beginning of current year
 #TODO: so it may last the entire year from epiphany to christmas
 def get_season(year, season, oneyear=False):
+    """
+    Depending on the year, determines the liturgical seasons for that year
+    """
     rules = get_rules("seasons", oneyear)
 
     season_data = rules.get(season)
@@ -103,11 +143,19 @@ def get_season(year, season, oneyear=False):
     end_day = get_holiday(year, season_data["end"], oneyear)
 
     if start_day > end_day: #if the start date is after the end date, then it is the prior year (christmastide)
-        start_day = start_day.replace(year=year - 1)
+        end_day = end_day.replace(year=year + 1)
+
+    if season_data.get("offset", False): #end of a season is the start of another season
+        end_day -= timedelta(days=1)
+
     return start_day, end_day
 
 
 def display_holidays(year, oneyear = False):
+    """
+    Displays the holidays on a command prompt when run. This is
+    useful for debugging purposes.
+    """
     print(f"Liturgical holidays for A.D. {year}:")
 
     rules = get_rules("days", oneyear)
@@ -124,6 +172,10 @@ def display_holidays(year, oneyear = False):
             print(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
 
 def display_seasons(year, oneyear=False):
+    """
+    Displays the seasons on a command prompt when run. This is
+    useful for debugging purposes.
+    """
     print(f"Liturgical seasons for A.D. {year}:")
 
     rules = get_rules("seasons", oneyear)
