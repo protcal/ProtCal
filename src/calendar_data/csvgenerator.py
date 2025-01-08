@@ -7,7 +7,7 @@ def generate_calendar(year, tradition, flags):
     start_date = date(year, 1, 1)
     end_date = date(year, 12, 31)
 
-    rules = get_rules("days", tradition, flags)
+    rules = get_rules("dates", tradition, flags)
 
     holidays = {}
     for holiday_key in rules.keys():

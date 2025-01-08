@@ -6,14 +6,13 @@ def get_rules(type, tradition = 'lutheran', flags=None, culture = 'western'):
     """
     Gets the liturgical rules from a JSON file.
     Parameters:
-        type (str): The type of rules to fetch ("days" or "seasons")
+        type (str): The type of rules to fetch (dates.json or seasons.json or saints.json?)
         tradition (str): The tradition directory to look in (e.g., "lutheran", "anglican")
-        flags (str, optional): An additional flag for file selection (e.g., "oneyear")
+        flags (str, optional): An additional flag for file selection (e.g., "oneyear" for dates_oneyear.json)
     Returns:
         dict: The requested liturgical rules.
     """
-    file_name = f"rules-{flags}.json" if flags else "rules.json"
-    
+    file_name = f"{type}_{flags}.json" if flags else f"{type}.json"
     file_path = os.path.join(culture, tradition, file_name)
     
     try:

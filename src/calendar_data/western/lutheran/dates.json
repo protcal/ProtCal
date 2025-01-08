@@ -1,5 +1,5 @@
 {
-    "days": {
+    "dates": {
         "easter": {
         "name": "Easter",
         "description": "Easter Sunday is calculated using the Computus formula",
@@ -159,62 +159,6 @@
             "description": "Celebrated 40 days after Easter, commemorating the ascension of Jesus into heaven",
             "depends_on": "easter",
             "offset_days": 39
-        }
-    },
-    "seasons": {
-        "epiphanytide": {
-            "name": "Epiphanytide",
-            "description": "The season following Epiphany",
-            "start": "epiphany",
-            "end": "lent_start",
-            "offset": "true",
-            "liturgical_color": "green"
-        },
-        "lent": {
-            "name": "Lent",
-            "description": "The season of penitence and reflection",
-            "start": "lent_start",
-            "end": "lent_end",
-            "liturgical_color": "purple"
-        },
-        "eastertide": {
-            "name": "Eastertide",
-            "description": "The season celebrating the resurrection of Christ",
-            "start": "easter",
-            "end": "pentecost",
-            "offset": true,
-            "liturgical_color": "white"
-        },
-        "pentecost": {
-            "name": "Pentecost",
-            "description": "The season celebrating the birth of the church",
-            "start": "pentecost",
-            "end": "trinity_sunday",
-            "offset": true,
-            "liturgical_color": "red"
-        },
-        "after_pentecost": {
-            "name": "Season after Pentecost",
-            "description": "The season after Pentecost",
-            "start": "trinity_sunday",
-            "end": "advent_start",
-            "offset": true,
-            "liturgical_color": "green"
-        },
-        "advent": {
-            "name": "Advent",
-            "description": "The season of preparation leading up to Christmas",
-            "start": "advent_start",
-            "end": "christmas_eve",
-            "liturgical_color": "purple"
-        },
-        "christmastide": {
-            "name": "Christmastide",
-            "description": "The season celebrating the birth of Christ",
-            "start": "christmas",
-            "end": "epiphany",
-            "offset": true,
-            "liturgical_color": "white"
         }
     }
 }

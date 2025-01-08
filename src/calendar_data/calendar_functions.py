@@ -47,7 +47,7 @@ def get_holiday(year, holiday, tradition, flags):
     Given the name of the holiday, determines the date it is on
     depending on the given year.
     """
-    rules = get_rules("days", tradition, flags)
+    rules = get_rules("dates", tradition, flags)
     holiday_data = rules.get(holiday)
 
     if not holiday_data:
@@ -81,8 +81,6 @@ def get_holiday(year, holiday, tradition, flags):
 
     raise ValueError(f"Unrecognized or unsupported holiday rule for: {holiday}")
 
-#TODO: be careful about christmastide, because it starts last year and ends the beginning of current year
-#TODO: so it may last the entire year from epiphany to christmas
 def get_season(year, season, tradition, flags):
     """
     Depending on the year, determines the liturgical seasons for that year
@@ -112,8 +110,7 @@ def display_holidays(year, tradition, flags):
     useful for debugging purposes.
     """
     print(f"{tradition} liturgical holidays for A.D. {year}:")
-
-    rules = get_rules("days", tradition, flags)
+    rules = get_rules("dates", tradition, flags)
 
     for holiday_key, holiday_data in rules.items():
         try:

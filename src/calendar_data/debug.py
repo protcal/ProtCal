@@ -8,9 +8,8 @@ if __name__ == "__main__":
         tradition = "lutheran"    
     flags = input("Insert any calendar flags here (ex: oneyear calendar): ").strip().lower()
     if not flags:
-        flags = False
-        csv = input("Would you like to output a CSV file? (yes/no): ").strip().lower() == "yes"
-    
+        flags = None
+    csv = input("Would you like to output a CSV file? (yes/no): ").strip().lower() == "no"
     print()
     display_holidays(year, tradition, flags)
     print()
