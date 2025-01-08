@@ -1,17 +1,5 @@
-import json
 from datetime import date, timedelta
-from utilities import calculate_offset, get_fixed_date, get_closest_sunday
-
-def get_rules(type, oneyear = False):
-    """
-    Gets the liturgical rules from a JSON file 
-    TODO: Make it generic so you can ask for which file to get
-    instead of binary
-    """
-    rules_file = 'western/liturgical-rules-1year.json' if oneyear else 'western/liturgical-rules-3year.json'
-    with open(rules_file, 'r') as f:
-        rules= json.load(f)
-    return rules.get(type, {})
+from utilities import get_rules, calculate_offset, get_fixed_date, get_closest_sunday
 
 def get_easter(year):
     """

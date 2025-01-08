@@ -1,4 +1,17 @@
+import json
 from datetime import date, timedelta
+
+def get_rules(type, oneyear = False):
+    """
+    Gets the liturgical rules from a JSON file 
+    Type can either be "days" or "seasons"
+    TODO: Make it generic so you can ask for which file to get
+    instead of binary
+    """
+    rules_file = 'western/liturgical-rules-1year.json' if oneyear else 'western/liturgical-rules-3year.json'
+    with open(rules_file, 'r') as f:
+        rules= json.load(f)
+    return rules.get(type, {})
 
 def calculate_offset(base_date, offset_days):
     """

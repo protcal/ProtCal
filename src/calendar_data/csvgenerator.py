@@ -1,15 +1,13 @@
 import csv
-import json
 from datetime import date, timedelta
 from calendar_functions import get_holiday
+from utilities import get_rules
 
 def generate_calendar(year, oneyear=False):
     start_date = date(year, 1, 1)
     end_date = date(year, 12, 31)
 
-    rules_file = 'liturgical-rules-1year.json' if oneyear else 'liturgical-rules-3year.json'
-    with open(rules_file, 'r') as f:
-        rules = json.load(f)
+    rules = get_rules("days", oneyear)
 
     holidays = {}
     for holiday_key in rules.keys():
