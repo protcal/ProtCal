@@ -1,7 +1,7 @@
 import csv
 import json
 from datetime import date, timedelta
-from westerndates import get_holiday
+from calendar_functions import get_holiday
 
 def generate_calendar(year, oneyear=False):
     start_date = date(year, 1, 1)
