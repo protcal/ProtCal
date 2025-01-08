@@ -16,13 +16,8 @@
 ---
 
 
-- **Installation**
-IN PROGRESS
-- **Usage**
-IN PROGRESS
-- **Contributing**
-IN PROGRESS
-- **License**
-Everything in this repository is licensed under GPL 3.0
-- **Contact**
-protestantcalendar@gmail.com
+- **Installation**: IN PROGRESS
+- **Usage**: IN PROGRESS
+- **Contributing**: IN PROGRESS
+- **License**: Everything in this repository is licensed under GPL 3.0
+- **Contact**: protestantcalendar@gmail.com
