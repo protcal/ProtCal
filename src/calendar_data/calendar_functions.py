@@ -1,5 +1,5 @@
 from datetime import date, timedelta
-from utilities import get_rules, calculate_offset, get_fixed_date, get_closest_sunday
+from utilities import get_rules, calculate_offset, get_closest_sunday
 
 def get_easter(year):
     """
@@ -25,7 +25,7 @@ def get_advent_start(year):
     """
     Finds the start of Advent.
     """
-    christmas = get_fixed_date(year, 12, 25)
+    christmas = date(year, 12, 25)
     fourth_sunday_before_christmas = christmas - timedelta(days=(christmas.weekday() + 22) % 7)
     advent_start = fourth_sunday_before_christmas - timedelta(weeks=3)
     return advent_start
@@ -64,7 +64,7 @@ def get_holiday(year, holiday, tradition, flags):
     elif "fixed_date" in holiday_data:
         month = holiday_data["fixed_date"]["month"]
         day = holiday_data["fixed_date"]["day"]
-        return get_fixed_date(year, month, day)
+        return date(year, month, day)
 
     #Complicated holidays
     elif "complex" in holiday_data:
@@ -103,6 +103,18 @@ def get_season(year, season, tradition, flags):
 
     return start_day, end_day
 
+def get_saint(year, saint, tradition, flags):
+    """
+    Gets the name and date for a saint 
+    """
+    rules = get_rules("saints", tradition, flags)
+    saint_data = rules.get(saint)
+    return saint_data["name"], date(year, saint_data["month"], saint_data["day"])
+
+#debug tools. TODO: Refactor this into debug.py once .csv is fully working, but leave it here for now
+
+#TODO: Add flags to the input of each of these functions so it shows in the cmd title
+#TODO: Refactor all of these into just one big monolithic function
 
 def display_holidays(year, tradition, flags):
     """
@@ -142,3 +154,22 @@ def display_seasons(year, tradition, flags):
             print(f"{season_name}: {start_date.strftime('%A, %B %d, %Y')} - {end_date.strftime('%A, %B %d, %Y')}")
         except ValueError as e:
             print(f"{season_key.replace('_', ' ').title()}: Error - {e}")
+
+def display_saints(year, tradition, flags):
+    """
+    Displays the saints on a command prompt when run. This is
+    useful for debugging purposes.
+    """
+    print(f"{tradition} saints for A.D. {year}:")
+
+    rules = get_rules("saints", tradition, flags)
+
+    for saint_key, saint_data in rules.items():
+        try:
+            name, date = get_saint(year, saint_key, tradition, flags)
+            alt_name = saint_data.get("alt_name") #never used with saints as of now
+            if alt_name:
+                name += f" ({alt_name})"
+            print(f"{name}: {date.strftime('%A, %B %d, %Y')}")
+        except ValueError as e:
+            print(f"{saint_key.replace('_', ' ').title()}: Error - {e}")

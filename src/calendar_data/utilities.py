@@ -31,12 +31,6 @@ def calculate_offset(base_date, offset_days):
     """
     return base_date + timedelta(days=offset_days)
 
-def get_fixed_date(year, month, day):
-    """
-    Helper function to return the fixed date of a given holiday.
-    """
-    return date(year, month, day)
-
 def get_closest_sunday(holiday):
     """
     Finds the closest Sunday to the given holiday. If the holiday is already a Sunday,

@@ -31,8 +31,8 @@
             "offset": true,
             "liturgical_color": "red"
         },
-        "after_pentecost": {
-            "name": "Season after Pentecost",
+        "trinitytide": {
+            "name": "Trinitytide",
             "description": "The season after Pentecost",
             "start": "trinity_sunday",
             "end": "advent_start",
@@ -56,4 +56,3 @@
         }
     }
 }
-  

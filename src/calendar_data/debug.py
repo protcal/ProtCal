@@ -14,6 +14,8 @@ if __name__ == "__main__":
     display_holidays(year, tradition, flags)
     print()
     display_seasons(year, tradition, flags)
+    print()
+    display_saints(year, tradition, flags)
     
     if csv:
         calendar = generate_calendar(year, tradition, flags)
