@@ -13,7 +13,6 @@
     "start": The holiday on which the season begins 
     "end": The holiday on which the season ends
     "offset": Optional. If the ending holiday of the season is considered a part of the season or not
-    "cross-year": Optional. If the season starts in the previous year or not
     "liturgical_color": Optional, highly recommended. Colour of the season
 
 ## Dates

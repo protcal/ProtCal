@@ -52,7 +52,6 @@
             "start": "christmas",
             "end": "epiphany",
             "offset": true,
-            "cross-year": true,
             "liturgical_color": "white"
         }
     }
