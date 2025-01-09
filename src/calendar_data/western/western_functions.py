@@ -5,7 +5,7 @@ from ..utilities import calculate_offset, get_fixed_date
 
 def get_easter(year):
     """
-    Preforms the computus paschalis formula to get Easter. 
+    Performs the computus paschalis formula to get Easter. 
     """
     a = year % 19
     b = year // 100
@@ -27,7 +27,7 @@ def get_advent_start(year):
     """
     Finds the start of Advent.
     """
-    christmas = get_fixed_date(year, 12, 25)
+    christmas = date(year, 12, 25)
     fourth_sunday_before_christmas = christmas - timedelta(days=(christmas.weekday() + 22) % 7)
     advent_start = fourth_sunday_before_christmas - timedelta(weeks=3)
     return advent_start

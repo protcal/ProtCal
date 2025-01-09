@@ -5,7 +5,8 @@ from utilities import get_rules, calculate_offset, get_closest_sunday
 
 def get_easter(year):
     """
-    Preforms the computus paschalis formula to get Easter. 
+    Performs the computus paschalis formula to get Easter. 
+    Returns the date of Easter
     """
     a = year % 19
     b = year // 100
@@ -26,14 +27,16 @@ def get_easter(year):
 def get_advent_start(year):
     """
     Finds the start of Advent.
+    Returns the date of the start of advent.
     """
     christmas = date(year, 12, 25)
     fourth_sunday_before_christmas = christmas - timedelta(days=(christmas.weekday() + 22) % 7)
     advent_start = fourth_sunday_before_christmas - timedelta(weeks=3)
     return advent_start
 
-def get_thanksgiving(year, canada=False):
+def get_thanksgiving(year, canada = False):
     """
+    Finds the day of thanksgiving in Canada and the USA
     Returns the date of Thanksgiving depending on which North American country
     """
     if canada:
@@ -50,6 +53,7 @@ def get_holiday(year, holiday, tradition, flags):
     """
     Given the name of the holiday, determines the date it is on
     depending on the given year.
+    Returns the date of the holiday
     """
     rules = get_rules("dates", tradition, flags)
     holiday_data = rules.get(holiday)
@@ -88,30 +92,39 @@ def get_holiday(year, holiday, tradition, flags):
 def get_season(year, season, tradition, flags):
     """
     Depending on the year, determines the liturgical seasons for that year
+    Returns a list unlike any other getter due to cross-year holy days
+    Depending on if it is cross-year, it will return one element in the list or (normally) two.
     """
     rules = get_rules("seasons", tradition, flags)
-
     season_data = rules.get(season)
 
     if not season_data:
         raise ValueError(f"Unrecognized or unsupported season rules for: {season}")
-    
+
     start_day = get_holiday(year, season_data["start"], tradition, flags)
     end_day = get_holiday(year, season_data["end"], tradition, flags)
 
-    #TODO: The CSV does not detect christmastide for Jan 1 to Jan 5 of a given year. The problem is here.
-    if start_day > end_day: #if the start date is after the end date, then it is the prior year (christmastide)
-        end_day = end_day.replace(year=year + 1)
-
     if season_data.get("offset", False): #end of a season is the start of another season
         end_day -= timedelta(days=1)
+    
+    #handle cross-year holy days. Good luck figuring this out. I did this on lots of caffeine.
+    if start_day > end_day:
+        if season_data["cross-year"]: #kinda dumb since all start_day > end_day have cross-year, but maybe not always
+            prior_year_end_day = end_day.replace(year=year)
+            prior_year_start_day = start_day.replace(year=year - 1)
+        end_day = end_day.replace(year=year + 1)
+        return [
+            (prior_year_start_day, prior_year_end_day),
+            (start_day, end_day)
+        ]
 
-    return start_day, end_day
+    return [(start_day, end_day)]
 
 def get_saint(year, saint, tradition, flags):
     """
     Gets the name and date for a saint 
+    Returns only the date of a saint (for now)
     """
     rules = get_rules("saints", tradition, flags)
     saint_data = rules.get(saint)
-    return saint_data["name"], date(year, saint_data["month"], saint_data["day"])
+    return date(year, saint_data["month"], saint_data["day"])

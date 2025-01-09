@@ -33,19 +33,28 @@ def display_seasons(year, tradition, flags):
     useful for debugging purposes.
     """
     print(f"{tradition} liturgical seasons for A.D. {year}:")
-
     rules = get_rules("seasons", tradition, flags)
+
+    all_seasons = [] #the reason a list is used here unlike any other display function is to print it sorted
 
     for season_key, season_data in rules.items():
         try:
-            start_date, end_date = get_season(year, season_key, tradition, flags)
-            season_name = season_data.get("name", season_key.replace('_', ' ').title())
-            alt_name = season_data.get("alt_name")
-            if alt_name:
-                season_name += f" ({alt_name})"
-            print(f"{season_name}: {start_date.strftime('%A, %B %d, %Y')} - {end_date.strftime('%A, %B %d, %Y')}")
+            season_ranges = get_season(year, season_key, tradition, flags)
+            for start_date, end_date in season_ranges:
+                season_name = season_data.get("name", season_key.replace('_', ' ').title())
+                alt_name = season_data.get("alt_name")
+                if alt_name:
+                    season_name += f" ({alt_name})"
+                all_seasons.append((start_date, end_date, season_name))
         except ValueError as e:
             print(f"{season_key.replace('_', ' ').title()}: Error - {e}")
+
+    #sort
+    all_seasons.sort(key=lambda x: x[0])
+
+    for start_date, end_date, season_name in all_seasons:
+        print(f"{season_name}: {start_date.strftime('%A, %B %d, %Y')} - {end_date.strftime('%A, %B %d, %Y')}")
+
 
 def display_saints(year, tradition, flags):
     """
@@ -58,11 +67,12 @@ def display_saints(year, tradition, flags):
 
     for saint_key, saint_data in rules.items():
         try:
-            name, date = get_saint(year, saint_key, tradition, flags)
+            saint_date = get_saint(year, saint_key, tradition, flags)
+            saint_name = rules.get("name", saint_key.replace('_', ' ').title())
             alt_name = saint_data.get("alt_name") #never used with saints as of now
             if alt_name:
                 name += f" ({alt_name})"
-            print(f"{name}: {date.strftime('%A, %B %d, %Y')}")
+            print(f"{saint_name}: {saint_date.strftime('%A, %B %d, %Y')}")
         except ValueError as e:
             print(f"{saint_key.replace('_', ' ').title()}: Error - {e}")
 
