@@ -9,7 +9,7 @@
             "liturgical_color": "green"
         },
         "lent": {
-            "name": "Lent",
+            "name": "Lententide",
             "description": "The season of penitence and reflection",
             "start": "lent_start",
             "end": "lent_end",
@@ -40,7 +40,7 @@
             "liturgical_color": "green"
         },
         "advent": {
-            "name": "Advent",
+            "name": "Adventide",
             "description": "The season of preparation leading up to Christmas",
             "start": "advent_start",
             "end": "christmas_eve",

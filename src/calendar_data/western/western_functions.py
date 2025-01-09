@@ -1,3 +1,5 @@
+#TODO: this file is not in usage now because we have no eastern calendar.
+#TODO: All these functions are already in calendar_functions.py, so it doesnt matter for now
 from datetime import date, timedelta
 from ..utilities import calculate_offset, get_fixed_date
 

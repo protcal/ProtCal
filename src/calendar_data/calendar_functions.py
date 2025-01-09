@@ -1,6 +1,8 @@
 from datetime import date, timedelta
 from utilities import get_rules, calculate_offset, get_closest_sunday
 
+#specific holiday functions for complex holiday calculations
+
 def get_easter(year):
     """
     Preforms the computus paschalis formula to get Easter. 
@@ -41,6 +43,8 @@ def get_thanksgiving(year, canada=False):
     first_day = date(year, 11, 1)
     first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
     return first_thursday + timedelta(weeks=3)
+
+#these getter functions find the data of a specific holiday, season or saint in the JSON files
 
 def get_holiday(year, holiday, tradition, flags):
     """
@@ -111,66 +115,3 @@ def get_saint(year, saint, tradition, flags):
     rules = get_rules("saints", tradition, flags)
     saint_data = rules.get(saint)
     return saint_data["name"], date(year, saint_data["month"], saint_data["day"])
-
-#debug tools. TODO: Refactor this into debug.py once .csv is fully working, but leave it here for now
-
-#TODO: Add flags to the input of each of these functions so it shows in the cmd title
-#TODO: Refactor all of these into just one big monolithic function -> this would be quite hard
-
-def display_holidays(year, tradition, flags):
-    """
-    Displays the holidays on a command prompt when run. This is
-    useful for debugging purposes.
-    """
-    print(f"{tradition} liturgical holidays for A.D. {year}:")
-    rules = get_rules("dates", tradition, flags)
-
-    for holiday_key, holiday_data in rules.items():
-        try:
-            holiday_date = get_holiday(year, holiday_key, tradition, flags)
-            holiday_name = holiday_data.get("name", holiday_key.replace('_', ' ').title())
-            alt_name = holiday_data.get("alt_name")
-            if alt_name:
-                holiday_name += f" ({alt_name})"
-            print(f"{holiday_name}: {holiday_date.strftime('%A, %B %d, %Y')}")
-        except ValueError as e:
-            print(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
-
-def display_seasons(year, tradition, flags):
-    """
-    Displays the seasons on a command prompt when run. This is
-    useful for debugging purposes.
-    """
-    print(f"{tradition} liturgical seasons for A.D. {year}:")
-
-    rules = get_rules("seasons", tradition, flags)
-
-    for season_key, season_data in rules.items():
-        try:
-            start_date, end_date = get_season(year, season_key, tradition, flags)
-            season_name = season_data.get("name", season_key.replace('_', ' ').title())
-            alt_name = season_data.get("alt_name")
-            if alt_name:
-                season_name += f" ({alt_name})"
-            print(f"{season_name}: {start_date.strftime('%A, %B %d, %Y')} - {end_date.strftime('%A, %B %d, %Y')}")
-        except ValueError as e:
-            print(f"{season_key.replace('_', ' ').title()}: Error - {e}")
-
-def display_saints(year, tradition, flags):
-    """
-    Displays the saints on a command prompt when run. This is
-    useful for debugging purposes.
-    """
-    print(f"{tradition} saints for A.D. {year}:")
-
-    rules = get_rules("saints", tradition, flags)
-
-    for saint_key, saint_data in rules.items():
-        try:
-            name, date = get_saint(year, saint_key, tradition, flags)
-            alt_name = saint_data.get("alt_name") #never used with saints as of now
-            if alt_name:
-                name += f" ({alt_name})"
-            print(f"{name}: {date.strftime('%A, %B %d, %Y')}")
-        except ValueError as e:
-            print(f"{saint_key.replace('_', ' ').title()}: Error - {e}")
