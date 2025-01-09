@@ -92,8 +92,8 @@ def get_holiday(year, holiday, tradition, flags):
 def get_season(year, season, tradition, flags):
     """
     Depending on the year, determines the liturgical seasons for that year
-    Returns a list unlike any other getter due to cross-year holy days
-    Depending on if it is cross-year, it will return one element in the list or (normally) two.
+    Returns a list of tuples unlike any other getter due to cross-year holy days
+    Depending on if it is cross-year, it will return one element in the list or two.
     """
     rules = get_rules("seasons", tradition, flags)
     season_data = rules.get(season)
@@ -109,9 +109,8 @@ def get_season(year, season, tradition, flags):
     
     #handle cross-year holy days. Good luck figuring this out. I did this on lots of caffeine.
     if start_day > end_day:
-        if season_data["cross-year"]: #kinda dumb since all start_day > end_day have cross-year, but maybe not always
-            prior_year_end_day = end_day.replace(year=year)
-            prior_year_start_day = start_day.replace(year=year - 1)
+        prior_year_end_day = end_day.replace(year=year)
+        prior_year_start_day = start_day.replace(year=year - 1)
         end_day = end_day.replace(year=year + 1)
         return [
             (prior_year_start_day, prior_year_end_day),

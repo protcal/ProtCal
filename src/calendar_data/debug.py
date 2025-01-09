@@ -86,7 +86,7 @@ if __name__ == "__main__":
     flags = input("Insert any calendar flags here (ex: oneyear calendar): ").strip().lower()
     if not flags:
         flags = None
-    #csv = input("Would you like to output a CSV file? (yes/no): ").strip().lower() == "yes"
+    csv = input("Would you like to output a CSV file? (yes/no): ").strip().lower() == "yes"
     print()
     display_holidays(year, tradition, flags)
     print()
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     print()
     display_saints(year, tradition, flags)
     
-    #if csv:
-    #    output_file = f"liturgical_calendar_{year}.csv"
-    #    calendar = generate_calendar_csv(year, tradition, flags, output_file)
-    #    print(f"\nLiturgical calendar for {year} has been written to {output_file}.")
+    if csv:
+        output_file = f"liturgical_calendar_{year}.csv"
+        calendar = generate_calendar_csv(year, tradition, flags, output_file)
+        print(f"\nLiturgical calendar for {year} has been written to {output_file}.")
