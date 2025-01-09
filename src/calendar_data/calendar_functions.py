@@ -95,6 +95,7 @@ def get_season(year, season, tradition, flags):
     start_day = get_holiday(year, season_data["start"], tradition, flags)
     end_day = get_holiday(year, season_data["end"], tradition, flags)
 
+    #TODO: The CSV does not detect christmastide for Jan 1 to Jan 5 of a given year. The problem is here.
     if start_day > end_day: #if the start date is after the end date, then it is the prior year (christmastide)
         end_day = end_day.replace(year=year + 1)
 
@@ -114,7 +115,7 @@ def get_saint(year, saint, tradition, flags):
 #debug tools. TODO: Refactor this into debug.py once .csv is fully working, but leave it here for now
 
 #TODO: Add flags to the input of each of these functions so it shows in the cmd title
-#TODO: Refactor all of these into just one big monolithic function
+#TODO: Refactor all of these into just one big monolithic function -> this would be quite hard
 
 def display_holidays(year, tradition, flags):
     """
