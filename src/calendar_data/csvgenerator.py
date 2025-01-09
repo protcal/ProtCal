@@ -36,7 +36,7 @@ def generate_calendar_csv(year, tradition, flags, output_file):
 
 def place_holidays(calendar, year, tradition, flags):
     """
-    Adds holidays to the calendar.
+    Adds holidays to the calendar
     """
     rules = get_rules("dates", tradition, flags)
 
@@ -57,40 +57,41 @@ def place_holidays(calendar, year, tradition, flags):
 
 def place_seasons(calendar, year, tradition, flags):
     """
-    Adds seasons to the calendar.
+    Adds seasons to the calendar
     """
     rules = get_rules("seasons", tradition, flags)
 
     for season_key, season_data in rules.items():
         try:
-            start_date, end_date = get_season(year, season_key, tradition, flags)
+            season_ranges = get_season(year, season_key, tradition, flags)
             season_name = season_data.get("name", season_key.replace('_', ' ').title())
             alt_name = season_data.get("alt_name")
             if alt_name:
                 season_name += f" ({alt_name})"
 
-            for entry in calendar:
-                if start_date <= entry["date"] <= end_date:
-                    entry["season"] = season_name
+            for start_date, end_date in season_ranges:
+                for entry in calendar:
+                    if start_date <= entry["date"] <= end_date:
+                        entry["season"] = season_name
         except ValueError as e:
             print(f"{season_key.replace('_', ' ').title()}: Error - {e}")
 
 def place_saints(calendar, year, tradition, flags):
     """
-    Adds saints to the calendar.
+    Adds saints to the calendar
     """
     rules = get_rules("saints", tradition, flags)
 
     for saint_key, saint_data in rules.items():
         try:
-            name, saint_date = get_saint(year, saint_key, tradition, flags)
+            saint_date = get_saint(year, saint_key, tradition, flags)
+            saint_name = saint_data.get("name")
             alt_name = saint_data.get("alt_name")
             if alt_name:
-                name += f" ({alt_name})"
-
+                saint_name += f" ({alt_name})"
             for entry in calendar:
                 if entry["date"] == saint_date:
-                    entry["saint"] = name
+                    entry["saint"] = saint_name
                     break
         except ValueError as e:
             print(f"{saint_key.replace('_', ' ').title()}: Error - {e}")

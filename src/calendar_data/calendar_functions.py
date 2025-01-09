@@ -107,7 +107,9 @@ def get_season(year, season, tradition, flags):
     if season_data.get("offset", False): #end of a season is the start of another season
         end_day -= timedelta(days=1)
     
-    #handle cross-year holy days. Good luck figuring this out. I did this on lots of caffeine.
+    #If the start day is greater than the end day, then the holy day began last year.
+    #Therefore, we send a list consisting of a tuple that is the last year, and a tuple that is
+    #this years.
     if start_day > end_day:
         prior_year_end_day = end_day.replace(year=year)
         prior_year_start_day = start_day.replace(year=year - 1)
