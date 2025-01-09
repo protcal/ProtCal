@@ -1,7 +1,7 @@
-# ProtCal
-
 ## DISCLAIMER
 Everything in this repository is currently a work in progress. We plan to develop functional **calendar generation** for any set of parameters, but until that is done, this will remain a work in progress and one should expect bugs in development.
+
+# ProtCal
 
 **ProtCal** is an open-source liturgical calendar generator focused on **minimalism** and **flexibility**. It allows users to generate complete liturgical calendars for any Christian tradition for any given year through the utilization of JSON files.
 
