@@ -126,6 +126,6 @@ def get_saint(year, saint, tradition, flags):
     Gets the name and date for a saint 
     Returns only the date of a saint (for now)
     """
-    rules = get_rules("saints", tradition, flags)
+    rules = get_rules("saints", tradition, None) #saints should not have flags yet
     saint_data = rules.get(saint)
     return date(year, saint_data["month"], saint_data["day"])

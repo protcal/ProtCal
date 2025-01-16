@@ -1,5 +1,8 @@
 ## DISCLAIMER
-Everything in this repository is currently a work in progress. We plan to develop functional **calendar generation** for any set of parameters, but until that is done, this will remain a work in progress and one should expect bugs in development.
+Everything in this repository is currently a work in progress. We plan to develop functional **calendar generation** for any set of parameters, but until that is done, this will remain a work in progress and one should expect bugs while this product is in active development.
+
+---
+
 
 # ProtCal
 
