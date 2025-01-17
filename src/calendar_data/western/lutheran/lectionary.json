@@ -1,0 +1,3662 @@
+[
+  {
+    "MONTH": 1,
+    "DAY": 1,
+    "MP PSALM": "1, 2",
+    "MP LESSON 1": "Gen 1",
+    "MP LESSON 2": "John 1:1-28",
+    "EP PSALM": "3, 4",
+    "EP LESSON 1": "Gal 1",
+    "EP LESSON 2": "Luke 2:8-21"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 2,
+    "MP PSALM": "5, 6",
+    "MP LESSON 1": "Gen 2",
+    "MP LESSON 2": "John 1:29-end",
+    "EP PSALM": 7,
+    "EP LESSON 1": "Jer 1",
+    "EP LESSON 2": "Gal 2"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 3,
+    "MP PSALM": 9,
+    "MP LESSON 1": "Gen 3",
+    "MP LESSON 2": "John 2",
+    "EP PSALM": 10,
+    "EP LESSON 1": "Jer 2 † 1-22",
+    "EP LESSON 2": "Gal 3"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 4,
+    "MP PSALM": "8, 11",
+    "MP LESSON 1": "Gen 4",
+    "MP LESSON 2": "John 3:1-21",
+    "EP PSALM": "15, 16",
+    "EP LESSON 1": "Jer 3",
+    "EP LESSON 2": "Gal 4"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 5,
+    "MP PSALM": "12, 13, 14",
+    "MP LESSON 1": "Gen 5",
+    "MP LESSON 2": "John 3:22-end",
+    "EP PSALM": 17,
+    "EP LESSON 1": "Jer 4",
+    "EP LESSON 2": "Gal 5"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 6,
+    "MP PSALM": "96, 97",
+    "MP LESSON 1": "Gen 6",
+    "MP LESSON 2": "Matt 2:1-12",
+    "EP PSALM": "67, 72",
+    "EP LESSON 1": "Jer 5",
+    "EP LESSON 2": "John 2:1-12"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 7,
+    "MP PSALM": "18:1-20",
+    "MP LESSON 1": "Gen 7",
+    "MP LESSON 2": "John 4:1-26",
+    "EP PSALM": "18:21-50",
+    "EP LESSON 1": "Jer 6",
+    "EP LESSON 2": "Gal 6"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 8,
+    "MP PSALM": 19,
+    "MP LESSON 1": "Gen 8",
+    "MP LESSON 2": "John 4:27-end",
+    "EP PSALM": "20, 21",
+    "EP LESSON 1": "Jer 7 † 1-28,34",
+    "EP LESSON 2": "1 Thess 1"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 9,
+    "MP PSALM": 22,
+    "MP LESSON 1": "Gen 9",
+    "MP LESSON 2": "John 5:1-24",
+    "EP PSALM": "23, 24",
+    "EP LESSON 1": "Jer 8",
+    "EP LESSON 2": "1 Thess 2:1-16"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 10,
+    "MP PSALM": 25,
+    "MP LESSON 1": "Gen 10 † 1-9,15-22,30-32",
+    "MP LESSON 2": "John 5:25-end",
+    "EP PSALM": 27,
+    "EP LESSON 1": "Jer 9",
+    "EP LESSON 2": "1 Thess 2:17—3 end"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 11,
+    "MP PSALM": "26, 28",
+    "MP LESSON 1": "Gen 11 † 1-9,27-32",
+    "MP LESSON 2": "John 6:1-21",
+    "EP PSALM": 31,
+    "EP LESSON 1": "Jer 10",
+    "EP LESSON 2": "1 Thess 4:1-12"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 12,
+    "MP PSALM": "29, 30",
+    "MP LESSON 1": "Gen 12",
+    "MP LESSON 2": "John 6:22-40",
+    "EP PSALM": 33,
+    "EP LESSON 1": "Jer 11",
+    "EP LESSON 2": "1 Thess 4:13—5:11"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 13,
+    "MP PSALM": 34,
+    "MP LESSON 1": "Gen 13",
+    "MP LESSON 2": "John 6:41-end",
+    "EP PSALM": 35,
+    "EP LESSON 1": "Jer 12",
+    "EP LESSON 2": "1 Thess 5:12-end"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 14,
+    "MP PSALM": "32, 36",
+    "MP LESSON 1": "Gen 14",
+    "MP LESSON 2": "John 7:1-24",
+    "EP PSALM": 38,
+    "EP LESSON 1": "Jer 13",
+    "EP LESSON 2": "2 Thess 1"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 15,
+    "MP PSALM": "37:1-18",
+    "MP LESSON 1": "Gen 15",
+    "MP LESSON 2": "John 7:25-52",
+    "EP PSALM": "37:19-42",
+    "EP LESSON 1": "Jer 14",
+    "EP LESSON 2": "2 Thess 2"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 16,
+    "MP PSALM": 40,
+    "MP LESSON 1": "Gen 16",
+    "MP LESSON 2": "John 7:53—8:30",
+    "EP PSALM": "39, 41",
+    "EP LESSON 1": "Jer 15",
+    "EP LESSON 2": "2 Thess 3"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 17,
+    "MP PSALM": "42, 43",
+    "MP LESSON 1": "Gen 17",
+    "MP LESSON 2": "John 8:31-end",
+    "EP PSALM": 44,
+    "EP LESSON 1": "Jer 16",
+    "EP LESSON 2": "1 Cor 1:1-25"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 18,
+    "MP PSALM": 45,
+    "MP LESSON 1": "Gen 18",
+    "MP LESSON 2": "Matt 16:13-20",
+    "EP PSALM": 46,
+    "EP LESSON 1": "Jer 17",
+    "EP LESSON 2": "1 Cor 1:26—2 end"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 19,
+    "MP PSALM": "47, 48",
+    "MP LESSON 1": "Gen 19 † 1-29",
+    "MP LESSON 2": "John 9",
+    "EP PSALM": 49,
+    "EP LESSON 1": "Jer 18",
+    "EP LESSON 2": "1 Cor 3"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 20,
+    "MP PSALM": 50,
+    "MP LESSON 1": "Gen 20",
+    "MP LESSON 2": "John 10:1-21",
+    "EP PSALM": 51,
+    "EP LESSON 1": "Jer 19",
+    "EP LESSON 2": "1 Cor 4:1-17"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 21,
+    "MP PSALM": "52, 53, 54",
+    "MP LESSON 1": "Gen 21 † 1-21",
+    "MP LESSON 2": "John 10:22-end",
+    "EP PSALM": 55,
+    "EP LESSON 1": "Jer 20",
+    "EP LESSON 2": "1 Cor 4:18—5 end"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 22,
+    "MP PSALM": "56, 57",
+    "MP LESSON 1": "Gen 22",
+    "MP LESSON 2": "John 11:1-44",
+    "EP PSALM": "58, 60",
+    "EP LESSON 1": "Jer 21",
+    "EP LESSON 2": "1 Cor 6"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 23,
+    "MP PSALM": 59,
+    "MP LESSON 1": "Gen 23",
+    "MP LESSON 2": "John 11:45-end",
+    "EP PSALM": "63, 64",
+    "EP LESSON 1": "Jer 22",
+    "EP LESSON 2": "1 Cor 7"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 24,
+    "MP PSALM": "61, 62",
+    "MP LESSON 1": "Gen 24 † 1-28,53-58",
+    "MP LESSON 2": "John 12:1-19",
+    "EP PSALM": "65, 67",
+    "EP LESSON 1": "Jer 23 † 1-9,16-18,21-40",
+    "EP LESSON 2": "1 Cor 8"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 25,
+    "MP PSALM": "68:1-18",
+    "MP LESSON 1": "Acts 9:1-22",
+    "MP LESSON 2": "John 12:20-end",
+    "EP PSALM": "68:19-36",
+    "EP LESSON 1": "Jer 24",
+    "EP LESSON 2": "1 Cor 9"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 26,
+    "MP PSALM": "69:1-18",
+    "MP LESSON 1": "Gen 25 † 7-11,19-34",
+    "MP LESSON 2": "John 13",
+    "EP PSALM": "69:19-38",
+    "EP LESSON 1": "Jer 25 † 1-19,26-31",
+    "EP LESSON 2": "1 Cor 10"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 27,
+    "MP PSALM": 66,
+    "MP LESSON 1": "Gen 26 † 1-25",
+    "MP LESSON 2": "John 14:1-14",
+    "EP PSALM": "70, 72",
+    "EP LESSON 1": "Jer 26",
+    "EP LESSON 2": "1 Cor 11"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 28,
+    "MP PSALM": 71,
+    "MP LESSON 1": "Gen 27 † 1-13,18-36,39-40",
+    "MP LESSON 2": "John 14:15-end",
+    "EP PSALM": 73,
+    "EP LESSON 1": "Jer 27",
+    "EP LESSON 2": "1 Cor 12"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 29,
+    "MP PSALM": 74,
+    "MP LESSON 1": "Gen 28",
+    "MP LESSON 2": "John 15:1-17",
+    "EP PSALM": 77,
+    "EP LESSON 1": "Jer 28",
+    "EP LESSON 2": "1 Cor 13"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 30,
+    "MP PSALM": "75, 76",
+    "MP LESSON 1": "Gen 29 † 1-28",
+    "MP LESSON 2": "John 15:18-end",
+    "EP PSALM": "79, 82",
+    "EP LESSON 1": "Jer 29 † 1-14,24-32",
+    "EP LESSON 2": "1 Cor 14:1-19"
+  },
+  {
+    "MONTH": 1,
+    "DAY": 31,
+    "MP PSALM": "78:1-18",
+    "MP LESSON 1": "Gen 30 † 1-2,22-43",
+    "MP LESSON 2": "John 16:1-15",
+    "EP PSALM": "78:19-40",
+    "EP LESSON 1": "Jer 30",
+    "EP LESSON 2": "1 Cor 14:20-end"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 1,
+    "MP PSALM": "78:41-73",
+    "MP LESSON 1": "Gen 31 † 1-3,17-45",
+    "MP LESSON 2": "John 16:16-end",
+    "EP PSALM": 80,
+    "EP LESSON 1": "Jer 31 † 1-17,27-37",
+    "EP LESSON 2": "1 Cor 15:1-34"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 2,
+    "MP PSALM": "24, 81",
+    "MP LESSON 1": "Gen 32 † 1-13,21-32",
+    "MP LESSON 2": "Luke 2:22-40",
+    "EP PSALM": 84,
+    "EP LESSON 1": "Jer 32 † 1-15,36-44",
+    "EP LESSON 2": "1 Cor 15:35-end"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 3,
+    "MP PSALM": 83,
+    "MP LESSON 1": "Gen 33",
+    "MP LESSON 2": "John 17",
+    "EP PSALM": 85,
+    "EP LESSON 1": "Jer 33",
+    "EP LESSON 2": "1 Cor 16"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 4,
+    "MP PSALM": "86, 87",
+    "MP LESSON 1": "Gen 34",
+    "MP LESSON 2": "John 18:1-27",
+    "EP PSALM": 88,
+    "EP LESSON 1": "Jer 34",
+    "EP LESSON 2": "2 Cor 1:1—2:11"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 5,
+    "MP PSALM": "89:1-18",
+    "MP LESSON 1": "Gen 35",
+    "MP LESSON 2": "John 18:28-end",
+    "EP PSALM": "89:19-52",
+    "EP LESSON 1": "Jer 35",
+    "EP LESSON 2": "2 Cor 2:12—3 end"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 6,
+    "MP PSALM": 90,
+    "MP LESSON 1": "Gen 36 † 1-8",
+    "MP LESSON 2": "John 19:1-37",
+    "EP PSALM": 91,
+    "EP LESSON 1": "Jer 36 † 1-10,19-32",
+    "EP LESSON 2": "2 Cor 4"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 7,
+    "MP PSALM": "92, 93",
+    "MP LESSON 1": "Gen 37 † 3-8,12-36",
+    "MP LESSON 2": "John 19:38-end",
+    "EP PSALM": 94,
+    "EP LESSON 1": "Jer 37",
+    "EP LESSON 2": "2 Cor 5"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 8,
+    "MP PSALM": "95, 96",
+    "MP LESSON 1": "Gen 38 † 1-26",
+    "MP LESSON 2": "John 20",
+    "EP PSALM": "97, 98",
+    "EP LESSON 1": "Jer 38",
+    "EP LESSON 2": "2 Cor 6"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 9,
+    "MP PSALM": "99, 100, 101",
+    "MP LESSON 1": "Gen 39",
+    "MP LESSON 2": "John 21",
+    "EP PSALM": 102,
+    "EP LESSON 1": "Jer 39",
+    "EP LESSON 2": "2 Cor 7"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 10,
+    "MP PSALM": 103,
+    "MP LESSON 1": "Gen 40",
+    "MP LESSON 2": "Matt 1:1-17",
+    "EP PSALM": 104,
+    "EP LESSON 1": "Jer 40",
+    "EP LESSON 2": "2 Cor 8"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 11,
+    "MP PSALM": "105:1-22",
+    "MP LESSON 1": "Gen 41 † 1-15,25-40",
+    "MP LESSON 2": "Matt 1:18-end",
+    "EP PSALM": "105:23-45",
+    "EP LESSON 1": "Jer 41",
+    "EP LESSON 2": "2 Cor 9"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 12,
+    "MP PSALM": "106:1-18",
+    "MP LESSON 1": "Gen 42 † 1-28",
+    "MP LESSON 2": "Matt 2",
+    "EP PSALM": "106:19-48",
+    "EP LESSON 1": "Jer 42",
+    "EP LESSON 2": "2 Cor 10"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 13,
+    "MP PSALM": "107:1-22",
+    "MP LESSON 1": "Gen 43 † 1-10,15-34",
+    "MP LESSON 2": "Matt 3",
+    "EP PSALM": "107:23-43",
+    "EP LESSON 1": "Jer 43",
+    "EP LESSON 2": "2 Cor 11"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 14,
+    "MP PSALM": "108, 110",
+    "MP LESSON 1": "Gen 44 † 1-20,30-34",
+    "MP LESSON 2": "Matt 4",
+    "EP PSALM": 109,
+    "EP LESSON 1": "Jer 44 † 1-19,24-30",
+    "EP LESSON 2": "2 Cor 12:1-13"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 15,
+    "MP PSALM": "111, 112",
+    "MP LESSON 1": "Gen 45",
+    "MP LESSON 2": "Matt 5:1-20",
+    "EP PSALM": "113, 114",
+    "EP LESSON 1": "Jer 45",
+    "EP LESSON 2": "2 Cor 12:14—13 end"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 16,
+    "MP PSALM": 115,
+    "MP LESSON 1": "Gen 46 † 1-7,28-34",
+    "MP LESSON 2": "Matt 5:21-48",
+    "EP PSALM": "116, 117",
+    "EP LESSON 1": "Jer 46",
+    "EP LESSON 2": "Rom 1"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 17,
+    "MP PSALM": "119:1-24",
+    "MP LESSON 1": "Gen 47 † 1-15,23-31",
+    "MP LESSON 2": "Matt 6:1-18",
+    "EP PSALM": "119:25-48",
+    "EP LESSON 1": "Jer 47",
+    "EP LESSON 2": "Rom 2"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 18,
+    "MP PSALM": "119:49-72",
+    "MP LESSON 1": "Gen 48",
+    "MP LESSON 2": "Matt 6:19-end",
+    "EP PSALM": "119:73-88",
+    "EP LESSON 1": "Jer 48 † 1-20,40-47",
+    "EP LESSON 2": "Rom 3"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 19,
+    "MP PSALM": "119:89-104",
+    "MP LESSON 1": "Gen 49",
+    "MP LESSON 2": "Matt 7",
+    "EP PSALM": "119:105-128",
+    "EP LESSON 1": "Jer 49 † 1-13,23-39",
+    "EP LESSON 2": "Rom 4"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 20,
+    "MP PSALM": "119:129-152",
+    "MP LESSON 1": "Gen 50",
+    "MP LESSON 2": "Matt 8:1-17",
+    "EP PSALM": "119:153-176",
+    "EP LESSON 1": "Jer 50 † 1-20,33-40",
+    "EP LESSON 2": "Rom 5"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 21,
+    "MP PSALM": 118,
+    "MP LESSON 1": "Exod 1",
+    "MP LESSON 2": "Matt 8:18-end",
+    "EP PSALM": "120, 121",
+    "EP LESSON 1": "Jer 51 † 6-10,45-64",
+    "EP LESSON 2": "Rom 6"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 22,
+    "MP PSALM": "122, 123",
+    "MP LESSON 1": "Exod 2",
+    "MP LESSON 2": "Matt 9:1-17",
+    "EP PSALM": "124, 125, 126",
+    "EP LESSON 1": "Jer 52 † 1-27,31-34",
+    "EP LESSON 2": "Rom 7"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 23,
+    "MP PSALM": "127, 128",
+    "MP LESSON 1": "Exod 3",
+    "MP LESSON 2": "Matt 9:18-34",
+    "EP PSALM": "129, 130, 131",
+    "EP LESSON 1": "Baruch 4 † 5-13,21-37",
+    "EP LESSON 2": "Rom 8:1-17"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 24,
+    "MP PSALM": "132, 133",
+    "MP LESSON 1": "Acts 1:15-26",
+    "MP LESSON 2": "Matt 9:35—10:23",
+    "EP PSALM": "134, 135",
+    "EP LESSON 1": "Baruch 5",
+    "EP LESSON 2": "Rom 8:18-end"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 25,
+    "MP PSALM": 136,
+    "MP LESSON 1": "Exod 4",
+    "MP LESSON 2": "Matt 10:24-end",
+    "EP PSALM": "137, 138",
+    "EP LESSON 1": "Lam 1 † 1-12,17-22",
+    "EP LESSON 2": "Rom 9"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 26,
+    "MP PSALM": 139,
+    "MP LESSON 1": "Exod 5",
+    "MP LESSON 2": "Matt 11",
+    "EP PSALM": "141, 142",
+    "EP LESSON 1": "Lam 2 † 1-18",
+    "EP LESSON 2": "Rom 10"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 27,
+    "MP PSALM": 140,
+    "MP LESSON 1": "Exod 6 † 1-13",
+    "MP LESSON 2": "Matt 12:1-21",
+    "EP PSALM": 143,
+    "EP LESSON 1": "Lam 3 † 1-9,19-33,52-66",
+    "EP LESSON 2": "Rom 11"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 28,
+    "MP PSALM": 144,
+    "MP LESSON 1": "Exod 7",
+    "MP LESSON 2": "Matt 12:22-end",
+    "EP PSALM": 145,
+    "EP LESSON 1": "Lam 4",
+    "EP LESSON 2": "Rom 12"
+  },
+  {
+    "MONTH": 2,
+    "DAY": 29,
+    "MP PSALM": 90,
+    "MP LESSON 1": "2 Kings 2",
+    "MP LESSON 2": "Luke 24:44-53",
+    "EP PSALM": 104,
+    "EP LESSON 1": "Joel 2 † 1-2,12-32",
+    "EP LESSON 2": "2 Pet 3"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 1,
+    "MP PSALM": 146,
+    "MP LESSON 1": "Exod 8",
+    "MP LESSON 2": "Matt 13:1-23",
+    "EP PSALM": 147,
+    "EP LESSON 1": "Lam 5",
+    "EP LESSON 2": "Rom 13"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 2,
+    "MP PSALM": 148,
+    "MP LESSON 1": "Exod 9 † 1-29,33-34",
+    "MP LESSON 2": "Matt 13:24-43",
+    "EP PSALM": "149, 150",
+    "EP LESSON 1": "Prov 1",
+    "EP LESSON 2": "Rom 14"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 3,
+    "MP PSALM": "1, 2",
+    "MP LESSON 1": "Exod 10",
+    "MP LESSON 2": "Matt 13:44-end",
+    "EP PSALM": "3, 4",
+    "EP LESSON 1": "Prov 2",
+    "EP LESSON 2": "Rom 15"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 4,
+    "MP PSALM": "5, 6",
+    "MP LESSON 1": "Exod 11",
+    "MP LESSON 2": "Matt 14",
+    "EP PSALM": 7,
+    "EP LESSON 1": "Prov 3 † 1-27",
+    "EP LESSON 2": "Rom 16"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 5,
+    "MP PSALM": 9,
+    "MP LESSON 1": "Exod 12 † 1-20,28-36",
+    "MP LESSON 2": "Matt 15:1-28",
+    "EP PSALM": 10,
+    "EP LESSON 1": "Prov 4",
+    "EP LESSON 2": "Phil 1:1-11"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 6,
+    "MP PSALM": "8, 11",
+    "MP LESSON 1": "Exod 13",
+    "MP LESSON 2": "Matt 15:29—16:12",
+    "EP PSALM": "15, 16",
+    "EP LESSON 1": "Prov 5",
+    "EP LESSON 2": "Phil 1:12-end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 7,
+    "MP PSALM": "12, 13, 14",
+    "MP LESSON 1": "Exod 14 † 5-31",
+    "MP LESSON 2": "Matt 16:13-end",
+    "EP PSALM": 17,
+    "EP LESSON 1": "Prov 6 † 1-11,20-35",
+    "EP LESSON 2": "Phil 2:1-11"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 8,
+    "MP PSALM": "18:1-20",
+    "MP LESSON 1": "Exod 15",
+    "MP LESSON 2": "Matt 17:1-23",
+    "EP PSALM": "18:21-50",
+    "EP LESSON 1": "Prov 7",
+    "EP LESSON 2": "Phil 2:12-end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 9,
+    "MP PSALM": 19,
+    "MP LESSON 1": "Exod 16 † 1-7,11-33",
+    "MP LESSON 2": "Matt 17:24—18:14",
+    "EP PSALM": "20, 21",
+    "EP LESSON 1": "Prov 8",
+    "EP LESSON 2": "Phil 3"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 10,
+    "MP PSALM": 22,
+    "MP LESSON 1": "Exod 17",
+    "MP LESSON 2": "Matt 18:15-end",
+    "EP PSALM": "23, 24",
+    "EP LESSON 1": "Prov 9",
+    "EP LESSON 2": "Phil 4"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 11,
+    "MP PSALM": 25,
+    "MP LESSON 1": "Exod 18",
+    "MP LESSON 2": "Matt 19:1-15",
+    "EP PSALM": 27,
+    "EP LESSON 1": "Prov 10",
+    "EP LESSON 2": "Col 1:1-20"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 12,
+    "MP PSALM": "26, 28",
+    "MP LESSON 1": "Exod 19",
+    "MP LESSON 2": "Matt 19:16—20:16",
+    "EP PSALM": 31,
+    "EP LESSON 1": "Prov 11",
+    "EP LESSON 2": "Col 1:21—2:7"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 13,
+    "MP PSALM": "29, 30",
+    "MP LESSON 1": "Exod 20",
+    "MP LESSON 2": "Matt 20:17-end",
+    "EP PSALM": 33,
+    "EP LESSON 1": "Prov 12",
+    "EP LESSON 2": "Col 2:8-19"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 14,
+    "MP PSALM": 34,
+    "MP LESSON 1": "Exod 21 † 1-19,22-29",
+    "MP LESSON 2": "Matt 21:1-22",
+    "EP PSALM": 35,
+    "EP LESSON 1": "Prov 13",
+    "EP LESSON 2": "Col 2:20—3:11"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 15,
+    "MP PSALM": "32, 36",
+    "MP LESSON 1": "Exod 22",
+    "MP LESSON 2": "Matt 21:23-end",
+    "EP PSALM": 38,
+    "EP LESSON 1": "Prov 14",
+    "EP LESSON 2": "Col 3:12-end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 16,
+    "MP PSALM": "37:1-18",
+    "MP LESSON 1": "Exod 23 † 1-13,18-30",
+    "MP LESSON 2": "Matt 22:1-33",
+    "EP PSALM": "37:19-42",
+    "EP LESSON 1": "Prov 15",
+    "EP LESSON 2": "Col 4"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 17,
+    "MP PSALM": 40,
+    "MP LESSON 1": "Exod 24",
+    "MP LESSON 2": "Matt 22:34—23:12",
+    "EP PSALM": "39, 41",
+    "EP LESSON 1": "Prov 16",
+    "EP LESSON 2": "Philemon"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 18,
+    "MP PSALM": "42, 43",
+    "MP LESSON 1": "Exod 25 † 1-23,31-40",
+    "MP LESSON 2": "Matt 23:13-end",
+    "EP PSALM": 44,
+    "EP LESSON 1": "Prov 17",
+    "EP LESSON 2": "Eph 1:1-14"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 19,
+    "MP PSALM": 45,
+    "MP LESSON 1": "Exod 26 † 1-10,15-16,29-37",
+    "MP LESSON 2": "Matt 24:1-28",
+    "EP PSALM": 46,
+    "EP LESSON 1": "Eph 1:15-end",
+    "EP LESSON 2": "Matt 1:18-26"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 20,
+    "MP PSALM": "47, 48",
+    "MP LESSON 1": "Exod 27",
+    "MP LESSON 2": "Matt 24:29-end",
+    "EP PSALM": 49,
+    "EP LESSON 1": "Prov 18",
+    "EP LESSON 2": "Eph 2:1-10"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 21,
+    "MP PSALM": 50,
+    "MP LESSON 1": "Exod 28 † 1-6,15-21, 29-43",
+    "MP LESSON 2": "Matt 25:1-30",
+    "EP PSALM": 51,
+    "EP LESSON 1": "Prov 19",
+    "EP LESSON 2": "Eph 2:11-end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 22,
+    "MP PSALM": "52, 53, 54",
+    "MP LESSON 1": "Exod 29 † 1-18,35-46",
+    "MP LESSON 2": "Matt 25:31-end",
+    "EP PSALM": 55,
+    "EP LESSON 1": "Prov 20",
+    "EP LESSON 2": "Eph 3"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 23,
+    "MP PSALM": "56, 57",
+    "MP LESSON 1": "Exod 30 † 1-3,7-33",
+    "MP LESSON 2": "Matt 26:1-30",
+    "EP PSALM": "58, 60",
+    "EP LESSON 1": "Prov 21",
+    "EP LESSON 2": "Eph 4:1-16"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 24,
+    "MP PSALM": 59,
+    "MP LESSON 1": "Exod 31",
+    "MP LESSON 2": "Matt 26:31-56",
+    "EP PSALM": "63, 64",
+    "EP LESSON 1": "Prov 22",
+    "EP LESSON 2": "Eph 4:17-end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 25,
+    "MP PSALM": "113, 138",
+    "MP LESSON 1": "Exod 32 † 1-29",
+    "MP LESSON 2": "Luke 1:26-38",
+    "EP PSALM": "131, 132",
+    "EP LESSON 1": "Prov 23",
+    "EP LESSON 2": "Eph 5:1-17"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 26,
+    "MP PSALM": "61, 62",
+    "MP LESSON 1": "Exod 33",
+    "MP LESSON 2": "Matt 26:57-end",
+    "EP PSALM": "65, 67",
+    "EP LESSON 1": "Prov 24 † 1-14, 23-34",
+    "EP LESSON 2": "Eph 5:18-end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 27,
+    "MP PSALM": "68:1-18",
+    "MP LESSON 1": "Exod 34 † 1-17,27-35",
+    "MP LESSON 2": "Matt 27:1-26",
+    "EP PSALM": "68:19-36",
+    "EP LESSON 1": "Prov 25",
+    "EP LESSON 2": "Eph 6:1-9"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 28,
+    "MP PSALM": "69:1-18",
+    "MP LESSON 1": "Exod 35 † 1-10,20-35",
+    "MP LESSON 2": "Matt 27:27-56",
+    "EP PSALM": "69:19-38",
+    "EP LESSON 1": "Prov 26",
+    "EP LESSON 2": "Eph 6:10-end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 29,
+    "MP PSALM": 66,
+    "MP LESSON 1": "Exod 36 † 1-10,18-20, 31-38",
+    "MP LESSON 2": "Matt 27:57—28 end",
+    "EP PSALM": "70, 72",
+    "EP LESSON 1": "Prov 27",
+    "EP LESSON 2": "1 Tim 1:1-17"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 30,
+    "MP PSALM": 71,
+    "MP LESSON 1": "Exod 37 † 1-11,16-29",
+    "MP LESSON 2": "Mark 1:1-13",
+    "EP PSALM": 73,
+    "EP LESSON 1": "Prov 28",
+    "EP LESSON 2": "1 Tim 1:18—2 end"
+  },
+  {
+    "MONTH": 3,
+    "DAY": 31,
+    "MP PSALM": 74,
+    "MP LESSON 1": "Exod 38 † 1-23",
+    "MP LESSON 2": "Mark 1:14-31",
+    "EP PSALM": 77,
+    "EP LESSON 1": "Prov 29",
+    "EP LESSON 2": "1 Tim 3"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 1,
+    "MP PSALM": "75, 76",
+    "MP LESSON 1": "Exod 39 † 1-14,27-43",
+    "MP LESSON 2": "Mark 1:32-end",
+    "EP PSALM": "79, 82",
+    "EP LESSON 1": "Prov 30 † 1-9,15-33",
+    "EP LESSON 2": "1 Tim 4"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 2,
+    "MP PSALM": "78:1-18",
+    "MP LESSON 1": "Exod 40 † 1,16-38",
+    "MP LESSON 2": "Mark 2:1-22",
+    "EP PSALM": "78:19-40",
+    "EP LESSON 1": "Prov 31",
+    "EP LESSON 2": "1 Tim 5"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 3,
+    "MP PSALM": "78:41-73",
+    "MP LESSON 1": "Lev 1",
+    "MP LESSON 2": "Mark 2:23—3:12",
+    "EP PSALM": 80,
+    "EP LESSON 1": "Job 1",
+    "EP LESSON 2": "1 Tim 6"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 4,
+    "MP PSALM": 81,
+    "MP LESSON 1": "Lev 8 † 1-24,30-36",
+    "MP LESSON 2": "Mark 3:13-end",
+    "EP PSALM": 83,
+    "EP LESSON 1": "Job 2",
+    "EP LESSON 2": "Titus 1"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 5,
+    "MP PSALM": 84,
+    "MP LESSON 1": "Lev 10",
+    "MP LESSON 2": "Mark 4:1-34",
+    "EP PSALM": 85,
+    "EP LESSON 1": "Job 3",
+    "EP LESSON 2": "Titus 2"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 6,
+    "MP PSALM": "86, 87",
+    "MP LESSON 1": "Lev 16 † 1-22,29-34",
+    "MP LESSON 2": "Mark 4:35—5:20",
+    "EP PSALM": 88,
+    "EP LESSON 1": "Job 4",
+    "EP LESSON 2": "Titus 3"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 7,
+    "MP PSALM": "89:1-18",
+    "MP LESSON 1": "Lev 17",
+    "MP LESSON 2": "Mark 5:21-end",
+    "EP PSALM": "89:19-52",
+    "EP LESSON 1": "Job 5",
+    "EP LESSON 2": "2 Tim 1"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 8,
+    "MP PSALM": 90,
+    "MP LESSON 1": "Lev 18",
+    "MP LESSON 2": "Mark 6:1-29",
+    "EP PSALM": 91,
+    "EP LESSON 1": "Job 6",
+    "EP LESSON 2": "2 Tim 2"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 9,
+    "MP PSALM": "92, 93",
+    "MP LESSON 1": "Lev 19 † 1-2,9-37",
+    "MP LESSON 2": "Mark 6:30-end",
+    "EP PSALM": 94,
+    "EP LESSON 1": "Job 7",
+    "EP LESSON 2": "2 Tim 3"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 10,
+    "MP PSALM": "95, 96",
+    "MP LESSON 1": "Lev 20",
+    "MP LESSON 2": "Mark 7:1-23",
+    "EP PSALM": "97, 98",
+    "EP LESSON 1": "Job 8",
+    "EP LESSON 2": "2 Tim 4"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 11,
+    "MP PSALM": "99, 100, 101",
+    "MP LESSON 1": "Lev 23 † 9-32,39-43",
+    "MP LESSON 2": "Mark 7:24—8:10",
+    "EP PSALM": 102,
+    "EP LESSON 1": "Job 9",
+    "EP LESSON 2": "Heb 1"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 12,
+    "MP PSALM": 103,
+    "MP LESSON 1": "Lev 26 † 3-20,38-46",
+    "MP LESSON 2": "Mark 8:11-end",
+    "EP PSALM": 104,
+    "EP LESSON 1": "Job 10",
+    "EP LESSON 2": "Heb 2"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 13,
+    "MP PSALM": "105:1-22",
+    "MP LESSON 1": "Num 6",
+    "MP LESSON 2": "Mark 9:1-29",
+    "EP PSALM": "105:23-45",
+    "EP LESSON 1": "Job 11",
+    "EP LESSON 2": "Heb 3"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 14,
+    "MP PSALM": "106:1-18",
+    "MP LESSON 1": "Num 8 † 5-26",
+    "MP LESSON 2": "Mark 9:30-end",
+    "EP PSALM": "106:19-48",
+    "EP LESSON 1": "Job 12",
+    "EP LESSON 2": "Heb 4:1-13"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 15,
+    "MP PSALM": "107:1-22",
+    "MP LESSON 1": "Num 11 † 4-6,10-33",
+    "MP LESSON 2": "Mark 10:1-31",
+    "EP PSALM": "107:23-43",
+    "EP LESSON 1": "Job 13",
+    "EP LESSON 2": "Heb 4:14—5:10"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 16,
+    "MP PSALM": "108, 110",
+    "MP LESSON 1": "Num 12",
+    "MP LESSON 2": "Mark 10:32-end",
+    "EP PSALM": 109,
+    "EP LESSON 1": "Job 14",
+    "EP LESSON 2": "Heb 5:11—6 end"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 17,
+    "MP PSALM": "111, 112",
+    "MP LESSON 1": "Num 13 † 1-3,17-33",
+    "MP LESSON 2": "Mark 11:1-26",
+    "EP PSALM": "113, 114",
+    "EP LESSON 1": "Job 15",
+    "EP LESSON 2": "Heb 7"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 18,
+    "MP PSALM": 115,
+    "MP LESSON 1": "Num 14 † 1-31",
+    "MP LESSON 2": "Mark 11:27—12:12",
+    "EP PSALM": "116, 117",
+    "EP LESSON 1": "Job 16",
+    "EP LESSON 2": "Heb 8"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 19,
+    "MP PSALM": "119:1-24",
+    "MP LESSON 1": "Num 15 † 22-41",
+    "MP LESSON 2": "Mark 12:13-34",
+    "EP PSALM": "119:25-48",
+    "EP LESSON 1": "Job 17",
+    "EP LESSON 2": "Heb 9:1-14"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 20,
+    "MP PSALM": "119:49-72",
+    "MP LESSON 1": "Num 16 † 1-11,20-38",
+    "MP LESSON 2": "Mark 12:35—13:13",
+    "EP PSALM": "119:73-88",
+    "EP LESSON 1": "Job 18",
+    "EP LESSON 2": "Heb 9:15-end"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 21,
+    "MP PSALM": "119:89-104",
+    "MP LESSON 1": "Num 17",
+    "MP LESSON 2": "Mark 13:14-end",
+    "EP PSALM": "119:105-128",
+    "EP LESSON 1": "Job 19",
+    "EP LESSON 2": "Heb 10:1-18"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 22,
+    "MP PSALM": "119:129-152",
+    "MP LESSON 1": "Num 18 † 1-24",
+    "MP LESSON 2": "Mark 14:1-25",
+    "EP PSALM": "119:153-176",
+    "EP LESSON 1": "Job 20",
+    "EP LESSON 2": "Heb 10:19-end"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 23,
+    "MP PSALM": 118,
+    "MP LESSON 1": "Num 20",
+    "MP LESSON 2": "Mark 14:26-52",
+    "EP PSALM": "120, 121",
+    "EP LESSON 1": "Job 21",
+    "EP LESSON 2": "Heb 11"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 24,
+    "MP PSALM": "122, 123",
+    "MP LESSON 1": "Num 21 † 4-9,21-35",
+    "MP LESSON 2": "Mark 14:53-end",
+    "EP PSALM": "124, 125, 126",
+    "EP LESSON 1": "Job 22",
+    "EP LESSON 2": "Heb 12:1-17"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 25,
+    "MP PSALM": "127, 128",
+    "MP LESSON 1": "Acts 12:11-25",
+    "MP LESSON 2": "Mark 15",
+    "EP PSALM": "129, 130, 131",
+    "EP LESSON 1": "Job 23",
+    "EP LESSON 2": "Heb 12:18-end"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 26,
+    "MP PSALM": "132, 133",
+    "MP LESSON 1": "Num 22 † 1-35",
+    "MP LESSON 2": "Mark 16",
+    "EP PSALM": "134, 135",
+    "EP LESSON 1": "Job 24",
+    "EP LESSON 2": "Heb 13"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 27,
+    "MP PSALM": 136,
+    "MP LESSON 1": "Num 23 † 1-26",
+    "MP LESSON 2": "Luke 1:1-23",
+    "EP PSALM": "137, 138",
+    "EP LESSON 1": "Job 25 & 26",
+    "EP LESSON 2": "Jas 1"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 28,
+    "MP PSALM": 139,
+    "MP LESSON 1": "Num 24",
+    "MP LESSON 2": "Luke 1:24-56",
+    "EP PSALM": "141, 142",
+    "EP LESSON 1": "Job 27",
+    "EP LESSON 2": "Jas 2:1-13"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 29,
+    "MP PSALM": 140,
+    "MP LESSON 1": "Num 25",
+    "MP LESSON 2": "Luke 1:57-end",
+    "EP PSALM": 143,
+    "EP LESSON 1": "Job 28",
+    "EP LESSON 2": "Jas 2:14-end"
+  },
+  {
+    "MONTH": 4,
+    "DAY": 30,
+    "MP PSALM": 144,
+    "MP LESSON 1": "Deut 1 † 1-21,26-33",
+    "MP LESSON 2": "Luke 2:1-21",
+    "EP PSALM": 145,
+    "EP LESSON 1": "Job 29",
+    "EP LESSON 2": "Jas 3"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 1,
+    "MP PSALM": 146,
+    "MP LESSON 1": "Deut 2 † 1-9,14-19,24-37",
+    "MP LESSON 2": "Luke 2:22-end",
+    "EP PSALM": 147,
+    "EP LESSON 1": "Jas 4",
+    "EP LESSON 2": "John 1:43-end"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 2,
+    "MP PSALM": 148,
+    "MP LESSON 1": "Deut 3",
+    "MP LESSON 2": "Luke 3:1-22",
+    "EP PSALM": "149, 150",
+    "EP LESSON 1": "Job 30",
+    "EP LESSON 2": "Jas 5"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 3,
+    "MP PSALM": "1, 2",
+    "MP LESSON 1": "Deut 4 † 1-18,24-40",
+    "MP LESSON 2": "Luke 3:23-end",
+    "EP PSALM": "3, 4",
+    "EP LESSON 1": "Job 31 † 1-23,35-40",
+    "EP LESSON 2": "1 Pet 1:1-21"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 4,
+    "MP PSALM": "5, 6",
+    "MP LESSON 1": "Deut 5",
+    "MP LESSON 2": "Luke 4:1-30",
+    "EP PSALM": 7,
+    "EP LESSON 1": "Job 32",
+    "EP LESSON 2": "1 Pet 1:22—2:10"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 5,
+    "MP PSALM": 9,
+    "MP LESSON 1": "Deut 6",
+    "MP LESSON 2": "Luke 4:31-end",
+    "EP PSALM": 10,
+    "EP LESSON 1": "Job 33",
+    "EP LESSON 2": "1 Pet 2:11—3:7"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 6,
+    "MP PSALM": "8, 11",
+    "MP LESSON 1": "Deut 7",
+    "MP LESSON 2": "Luke 5:1-16",
+    "EP PSALM": "15, 16",
+    "EP LESSON 1": "Job 34 † 1-15,21-28,31-37",
+    "EP LESSON 2": "1 Pet 3:8—4:6"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 7,
+    "MP PSALM": "12, 13, 14",
+    "MP LESSON 1": "Deut 8",
+    "MP LESSON 2": "Luke 5:17-end",
+    "EP PSALM": 17,
+    "EP LESSON 1": "Job 35",
+    "EP LESSON 2": "1 Pet 4:7-end"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 8,
+    "MP PSALM": "18:1-20",
+    "MP LESSON 1": "Deut 9",
+    "MP LESSON 2": "Luke 6:1-19",
+    "EP PSALM": "18:21-50",
+    "EP LESSON 1": "Job 36",
+    "EP LESSON 2": "1 Pet 5"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 9,
+    "MP PSALM": 19,
+    "MP LESSON 1": "Deut 10",
+    "MP LESSON 2": "Luke 6:20-38",
+    "EP PSALM": "20, 21",
+    "EP LESSON 1": "Job 37",
+    "EP LESSON 2": "2 Pet 1"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 10,
+    "MP PSALM": 22,
+    "MP LESSON 1": "Deut 11",
+    "MP LESSON 2": "Luke 6:39—7:10",
+    "EP PSALM": "23, 24",
+    "EP LESSON 1": "Job 38 † 1-27,31-33",
+    "EP LESSON 2": "2 Pet 2"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 11,
+    "MP PSALM": 25,
+    "MP LESSON 1": "Deut 12",
+    "MP LESSON 2": "Luke 7:11-35",
+    "EP PSALM": 27,
+    "EP LESSON 1": "Job 39",
+    "EP LESSON 2": "2 Pet 3"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 12,
+    "MP PSALM": "26, 28",
+    "MP LESSON 1": "Deut 13",
+    "MP LESSON 2": "Luke 7:36-end",
+    "EP PSALM": 31,
+    "EP LESSON 1": "Job 40",
+    "EP LESSON 2": "Jude"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 13,
+    "MP PSALM": "29, 30",
+    "MP LESSON 1": "Deut 14",
+    "MP LESSON 2": "Luke 8:1-21",
+    "EP PSALM": 33,
+    "EP LESSON 1": "Job 41",
+    "EP LESSON 2": "1 John 1:1—2:6"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 14,
+    "MP PSALM": 34,
+    "MP LESSON 1": "Deut 15",
+    "MP LESSON 2": "Luke 8:22-end",
+    "EP PSALM": 35,
+    "EP LESSON 1": "Job 42",
+    "EP LESSON 2": "1 John 2:7-end"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 15,
+    "MP PSALM": "32, 36",
+    "MP LESSON 1": "Deut 16",
+    "MP LESSON 2": "Luke 9:1-17",
+    "EP PSALM": 38,
+    "EP LESSON 1": "Eccl 1",
+    "EP LESSON 2": "1 John 3:1-10"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 16,
+    "MP PSALM": "37:1-18",
+    "MP LESSON 1": "Deut 17",
+    "MP LESSON 2": "Luke 9:18-50",
+    "EP PSALM": "37:19-42",
+    "EP LESSON 1": "Eccl 2",
+    "EP LESSON 2": "1 John 3:11—4:6"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 17,
+    "MP PSALM": 40,
+    "MP LESSON 1": "Deut 18",
+    "MP LESSON 2": "Luke 9:51-end",
+    "EP PSALM": "39, 41",
+    "EP LESSON 1": "Eccl 3",
+    "EP LESSON 2": "1 John 4:7-end"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 18,
+    "MP PSALM": "42, 43",
+    "MP LESSON 1": "Deut 19",
+    "MP LESSON 2": "Luke 10:1-24",
+    "EP PSALM": 44,
+    "EP LESSON 1": "Eccl 4",
+    "EP LESSON 2": "1 John 5"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 19,
+    "MP PSALM": 45,
+    "MP LESSON 1": "Deut 20",
+    "MP LESSON 2": "Luke 10:25-end",
+    "EP PSALM": 46,
+    "EP LESSON 1": "Eccl 5",
+    "EP LESSON 2": "2 John"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 20,
+    "MP PSALM": "47, 48",
+    "MP LESSON 1": "Deut 21",
+    "MP LESSON 2": "Luke 11:1-28",
+    "EP PSALM": 49,
+    "EP LESSON 1": "Eccl 6",
+    "EP LESSON 2": "3 John"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 21,
+    "MP PSALM": 50,
+    "MP LESSON 1": "Deut 22",
+    "MP LESSON 2": "Luke 11:29-end",
+    "EP PSALM": 51,
+    "EP LESSON 1": "Eccl 7",
+    "EP LESSON 2": "Acts 1:1-14"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 22,
+    "MP PSALM": "52, 53, 54",
+    "MP LESSON 1": "Deut 23",
+    "MP LESSON 2": "Luke 12:1-34",
+    "EP PSALM": 55,
+    "EP LESSON 1": "Eccl 8",
+    "EP LESSON 2": "Acts 1:15-end"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 23,
+    "MP PSALM": "56, 57",
+    "MP LESSON 1": "Deut 24",
+    "MP LESSON 2": "Luke 12:35-53",
+    "EP PSALM": "58, 60",
+    "EP LESSON 1": "Eccl 9",
+    "EP LESSON 2": "Acts 2:1-21"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 24,
+    "MP PSALM": 59,
+    "MP LESSON 1": "Deut 25",
+    "MP LESSON 2": "Luke 12:54—13:9",
+    "EP PSALM": "63, 64",
+    "EP LESSON 1": "Eccl 10",
+    "EP LESSON 2": "Acts 2:22-end"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 25,
+    "MP PSALM": "61, 62",
+    "MP LESSON 1": "Deut 26",
+    "MP LESSON 2": "Luke 13:10-end",
+    "EP PSALM": "65, 67",
+    "EP LESSON 1": "Eccl 11",
+    "EP LESSON 2": "Acts 3:1—4:4"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 26,
+    "MP PSALM": "68:1-18",
+    "MP LESSON 1": "Deut 27",
+    "MP LESSON 2": "Luke 14:1-24",
+    "EP PSALM": "68:19-36",
+    "EP LESSON 1": "Eccl 12",
+    "EP LESSON 2": "Acts 4:5-31"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 27,
+    "MP PSALM": "69:1-18",
+    "MP LESSON 1": "Deut 28 † 1-25,64-68",
+    "MP LESSON 2": "Luke 14:25—15:10",
+    "EP PSALM": "69:19-38",
+    "EP LESSON 1": "Ezek 1",
+    "EP LESSON 2": "Acts 4:32—5:11"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 28,
+    "MP PSALM": 66,
+    "MP LESSON 1": "Deut 29",
+    "MP LESSON 2": "Luke 15:11-end",
+    "EP PSALM": "70, 72",
+    "EP LESSON 1": "Ezek 2",
+    "EP LESSON 2": "Acts 5:12-end"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 29,
+    "MP PSALM": 71,
+    "MP LESSON 1": "Deut 30",
+    "MP LESSON 2": "Luke 16",
+    "EP PSALM": 73,
+    "EP LESSON 1": "Ezek 3",
+    "EP LESSON 2": "Acts 6:1—7:16"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 30,
+    "MP PSALM": 74,
+    "MP LESSON 1": "Deut 31",
+    "MP LESSON 2": "Luke 17:1-19",
+    "EP PSALM": 77,
+    "EP LESSON 1": "Ezek 4",
+    "EP LESSON 2": "Acts 7:17-34"
+  },
+  {
+    "MONTH": 5,
+    "DAY": 31,
+    "MP PSALM": "75, 76",
+    "MP LESSON 1": "Deut 32 † 1-10,15-22,39-52",
+    "MP LESSON 2": "Luke 1:39-56",
+    "EP PSALM": "79, 82",
+    "EP LESSON 1": "Ezek 5",
+    "EP LESSON 2": "Acts 7:35—8:3"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 1,
+    "MP PSALM": "78:1-18",
+    "MP LESSON 1": "Deut 33",
+    "MP LESSON 2": "Luke 17:20-end",
+    "EP PSALM": "78:19-40",
+    "EP LESSON 1": "Ezek 6",
+    "EP LESSON 2": "Acts 8:4-25"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 2,
+    "MP PSALM": "78:41-73",
+    "MP LESSON 1": "Deut 34",
+    "MP LESSON 2": "Luke 18:1-30",
+    "EP PSALM": 80,
+    "EP LESSON 1": "Ezek 7",
+    "EP LESSON 2": "Acts 8:26-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 3,
+    "MP PSALM": 81,
+    "MP LESSON 1": "Josh 1",
+    "MP LESSON 2": "Luke 18:31—19:10",
+    "EP PSALM": 83,
+    "EP LESSON 1": "Ezek 8",
+    "EP LESSON 2": "Acts 9:1-31"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 4,
+    "MP PSALM": 84,
+    "MP LESSON 1": "Josh 2",
+    "MP LESSON 2": "Luke 19:11-28",
+    "EP PSALM": 85,
+    "EP LESSON 1": "Ezek 9",
+    "EP LESSON 2": "Acts 9:32-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 5,
+    "MP PSALM": "86, 87",
+    "MP LESSON 1": "Josh 3",
+    "MP LESSON 2": "Luke 19:29-end",
+    "EP PSALM": 88,
+    "EP LESSON 1": "Ezek 10",
+    "EP LESSON 2": "Acts 10:1-23"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 6,
+    "MP PSALM": "89:1-18",
+    "MP LESSON 1": "Josh 4",
+    "MP LESSON 2": "Luke 20:1-26",
+    "EP PSALM": "89:19-52",
+    "EP LESSON 1": "Ezek 11",
+    "EP LESSON 2": "Acts 10:24-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 7,
+    "MP PSALM": 90,
+    "MP LESSON 1": "Josh 5",
+    "MP LESSON 2": "Luke 20:27—21:4",
+    "EP PSALM": 91,
+    "EP LESSON 1": "Ezek 12",
+    "EP LESSON 2": "Acts 11:1-18"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 8,
+    "MP PSALM": "92, 93",
+    "MP LESSON 1": "Josh 6",
+    "MP LESSON 2": "Luke 21:5-end",
+    "EP PSALM": 94,
+    "EP LESSON 1": "Ezek 13",
+    "EP LESSON 2": "Acts 11:19-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 9,
+    "MP PSALM": "95, 96",
+    "MP LESSON 1": "Josh 7",
+    "MP LESSON 2": "Luke 22:1-38",
+    "EP PSALM": "97, 98",
+    "EP LESSON 1": "Ezek 14",
+    "EP LESSON 2": "Acts 12:1-24"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 10,
+    "MP PSALM": "99, 100, 101",
+    "MP LESSON 1": "Josh 8 † 1-22,30-35",
+    "MP LESSON 2": "Luke 22:39-53",
+    "EP PSALM": 102,
+    "EP LESSON 1": "Ezek 15",
+    "EP LESSON 2": "Acts 12:25—13:12"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 11,
+    "MP PSALM": 103,
+    "MP LESSON 1": "Acts 4:32-37",
+    "MP LESSON 2": "Luke 22:54-end",
+    "EP PSALM": 104,
+    "EP LESSON 1": "Ezek 16 † 1-15,33-47, 59-63",
+    "EP LESSON 2": "Acts 13:13-43"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 12,
+    "MP PSALM": "105:1-22",
+    "MP LESSON 1": "Josh 9",
+    "MP LESSON 2": "Luke 23:1-25",
+    "EP PSALM": "105:23-45",
+    "EP LESSON 1": "Ezek 17",
+    "EP LESSON 2": "Acts 13:44—14:7"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 13,
+    "MP PSALM": "106:1-18",
+    "MP LESSON 1": "Josh 10 † 1-27,40-43",
+    "MP LESSON 2": "Luke:23:26-49",
+    "EP PSALM": "106:19-48",
+    "EP LESSON 1": "Ezek 18",
+    "EP LESSON 2": "Acts 14:8-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 14,
+    "MP PSALM": "107:1-22",
+    "MP LESSON 1": "Josh 14 † 5-15",
+    "MP LESSON 2": "Luke 23:50—24:12",
+    "EP PSALM": "107:23-43",
+    "EP LESSON 1": "Ezek 33 † 1-23,30-33",
+    "EP LESSON 2": "Acts 15:1-21"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 15,
+    "MP PSALM": "108, 110",
+    "MP LESSON 1": "Josh 22 † 7-31",
+    "MP LESSON 2": "Luke 24:13-end",
+    "EP PSALM": 109,
+    "EP LESSON 1": "Ezek 34",
+    "EP LESSON 2": "Acts 15:22-35"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 16,
+    "MP PSALM": "111, 112",
+    "MP LESSON 1": "Josh 23",
+    "MP LESSON 2": "Gal 1",
+    "EP PSALM": "113, 114",
+    "EP LESSON 1": "Ezek 35",
+    "EP LESSON 2": "Acts 15:36—16:5"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 17,
+    "MP PSALM": 115,
+    "MP LESSON 1": "Josh 24 † 1-31",
+    "MP LESSON 2": "Gal 2",
+    "EP PSALM": "116, 117",
+    "EP LESSON 1": "Ezek 36 † 16-37",
+    "EP LESSON 2": "Acts 16:6-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 18,
+    "MP PSALM": "119:1-24",
+    "MP LESSON 1": "Judg 1 † 1-21",
+    "MP LESSON 2": "Gal 3",
+    "EP PSALM": "119:25-48",
+    "EP LESSON 1": "Ezek 37",
+    "EP LESSON 2": "Acts 17:1-15"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 19,
+    "MP PSALM": "119:49-72",
+    "MP LESSON 1": "Judg 2 † 6-23",
+    "MP LESSON 2": "Gal 4",
+    "EP PSALM": "119:73-88",
+    "EP LESSON 1": "Ezek 40 † 1-5,17-19,35-49",
+    "EP LESSON 2": "Acts 17:16-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 20,
+    "MP PSALM": "119:89-104",
+    "MP LESSON 1": "Judg 3 † 7-30",
+    "MP LESSON 2": "Gal 5",
+    "EP PSALM": "119:105-128",
+    "EP LESSON 1": "Ezek 43",
+    "EP LESSON 2": "Acts 18:1-23"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 21,
+    "MP PSALM": "119:129-152",
+    "MP LESSON 1": "Judg 4",
+    "MP LESSON 2": "Gal 6",
+    "EP PSALM": "119:153-176",
+    "EP LESSON 1": "Ezek 47",
+    "EP LESSON 2": "Acts 18:24—19:7"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 22,
+    "MP PSALM": 118,
+    "MP LESSON 1": "Judg 5 † 1-5,19-31",
+    "MP LESSON 2": "1 Thess 1",
+    "EP PSALM": "120, 121",
+    "EP LESSON 1": "Dan 1",
+    "EP LESSON 2": "Acts 19:8-20"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 23,
+    "MP PSALM": "122, 123",
+    "MP LESSON 1": "Judg 6 † 1,6,11-24,33-40",
+    "MP LESSON 2": "1 Thess 2:1-16",
+    "EP PSALM": "124, 125, 126",
+    "EP LESSON 1": "Dan 2 † 1-14,25-28,31-45",
+    "EP LESSON 2": "Acts 19:21-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 24,
+    "MP PSALM": "127, 128",
+    "MP LESSON 1": "1 Thess 2:17—3 end",
+    "MP LESSON 2": "Matt 14:1-13",
+    "EP PSALM": "129, 130, 131",
+    "EP LESSON 1": "Dan 3",
+    "EP LESSON 2": "Acts 20:1-16"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 25,
+    "MP PSALM": "132, 133",
+    "MP LESSON 1": "Judg 7 † 1-8,16-25",
+    "MP LESSON 2": "1 Thess 4:1-12",
+    "EP PSALM": "134, 135",
+    "EP LESSON 1": "Dan 4 † 1-9,19-35",
+    "EP LESSON 2": "Acts 20:17-end"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 26,
+    "MP PSALM": 136,
+    "MP LESSON 1": "Judg 8 † 4-23,28",
+    "MP LESSON 2": "1 Thess 4:13—5:11",
+    "EP PSALM": "137, 138",
+    "EP LESSON 1": "Dan 5",
+    "EP LESSON 2": "Acts 21:1-16"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 27,
+    "MP PSALM": 139,
+    "MP LESSON 1": "Judg 9 † 1-6,22-25,43-56",
+    "MP LESSON 2": "1 Thess 5:12-end",
+    "EP PSALM": "141, 142",
+    "EP LESSON 1": "Dan 6",
+    "EP LESSON 2": "Acts 21:17-36"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 28,
+    "MP PSALM": 140,
+    "MP LESSON 1": "Judg 10 † 6-18",
+    "MP LESSON 2": "2 Thess 1",
+    "EP PSALM": 143,
+    "EP LESSON 1": "Dan 7",
+    "EP LESSON 2": "Acts 21:37—22:22"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 29,
+    "MP PSALM": 144,
+    "MP LESSON 1": "2 Thess 2",
+    "MP LESSON 2": "2 Pet 3:14-end",
+    "EP PSALM": 145,
+    "EP LESSON 1": "Dan 8",
+    "EP LESSON 2": "Acts 22:23—23:11"
+  },
+  {
+    "MONTH": 6,
+    "DAY": 30,
+    "MP PSALM": 146,
+    "MP LESSON 1": "Judg 11 † 1-11,29-40",
+    "MP LESSON 2": "2 Thess 3",
+    "EP PSALM": 147,
+    "EP LESSON 1": "Dan 9",
+    "EP LESSON 2": "Acts 23:12-end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 1,
+    "MP PSALM": 148,
+    "MP LESSON 1": "Judg 12",
+    "MP LESSON 2": "1 Cor 1:1-25",
+    "EP PSALM": "149, 150",
+    "EP LESSON 1": "Dan 10",
+    "EP LESSON 2": "Acts 24:1-23"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 2,
+    "MP PSALM": "1, 2",
+    "MP LESSON 1": "Judg 13",
+    "MP LESSON 2": "1 Cor 1:26—2 end",
+    "EP PSALM": "3, 4",
+    "EP LESSON 1": "Dan 11 † 1-19",
+    "EP LESSON 2": "Acts 24:24—25:12"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 3,
+    "MP PSALM": "5, 6",
+    "MP LESSON 1": "Judg 14",
+    "MP LESSON 2": "1 Cor 3",
+    "EP PSALM": 7,
+    "EP LESSON 1": "Dan 12",
+    "EP LESSON 2": "Acts 25:13-end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 4,
+    "MP PSALM": 9,
+    "MP LESSON 1": "Judg 15",
+    "MP LESSON 2": "1 Cor 4:1-17",
+    "EP PSALM": 10,
+    "EP LESSON 1": "Susanna",
+    "EP LESSON 2": "Acts 26"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 5,
+    "MP PSALM": "8, 11",
+    "MP LESSON 1": "Judg 16",
+    "MP LESSON 2": "1 Cor 4:18—5 end",
+    "EP PSALM": "15, 16",
+    "EP LESSON 1": "Esth 1",
+    "EP LESSON 2": "Acts 27"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 6,
+    "MP PSALM": "12, 13, 14",
+    "MP LESSON 1": "Ruth 1",
+    "MP LESSON 2": "1 Cor 6",
+    "EP PSALM": 17,
+    "EP LESSON 1": "Esth 2",
+    "EP LESSON 2": "Acts 28:1-15"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 7,
+    "MP PSALM": "18:1-20",
+    "MP LESSON 1": "Ruth 2",
+    "MP LESSON 2": "1 Cor 7",
+    "EP PSALM": "18:21-50",
+    "EP LESSON 1": "Esth 3",
+    "EP LESSON 2": "Acts 28:16-end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 8,
+    "MP PSALM": 19,
+    "MP LESSON 1": "Ruth 3",
+    "MP LESSON 2": "1 Cor 8",
+    "EP PSALM": "20, 21",
+    "EP LESSON 1": "Esth 4",
+    "EP LESSON 2": "Philemon"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 9,
+    "MP PSALM": 22,
+    "MP LESSON 1": "Ruth 4",
+    "MP LESSON 2": "1 Cor 9",
+    "EP PSALM": "23, 24",
+    "EP LESSON 1": "Esth 5",
+    "EP LESSON 2": "1 Tim 1:1-17"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 10,
+    "MP PSALM": 25,
+    "MP LESSON 1": "1 Sam 1 † 1-20",
+    "MP LESSON 2": "1 Cor 10",
+    "EP PSALM": 27,
+    "EP LESSON 1": "Esth 6",
+    "EP LESSON 2": "1 Tim 1:18—2 end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 11,
+    "MP PSALM": "26, 28",
+    "MP LESSON 1": "1 Sam 2 † 1-21",
+    "MP LESSON 2": "1 Cor 11",
+    "EP PSALM": 31,
+    "EP LESSON 1": "Esth 7",
+    "EP LESSON 2": "1 Tim 3"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 12,
+    "MP PSALM": "29, 30",
+    "MP LESSON 1": "1 Sam 3",
+    "MP LESSON 2": "1 Cor 12",
+    "EP PSALM": 33,
+    "EP LESSON 1": "Esth 8",
+    "EP LESSON 2": "1 Tim 4"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 13,
+    "MP PSALM": 34,
+    "MP LESSON 1": "1 Sam 4",
+    "MP LESSON 2": "1 Cor 13",
+    "EP PSALM": 35,
+    "EP LESSON 1": "Esth 9 & 10",
+    "EP LESSON 2": "1 Tim 5"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 14,
+    "MP PSALM": "32, 36",
+    "MP LESSON 1": "1 Sam 5",
+    "MP LESSON 2": "1 Cor 14:1-19",
+    "EP PSALM": 38,
+    "EP LESSON 1": "Ezra 1",
+    "EP LESSON 2": "1 Tim 6"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 15,
+    "MP PSALM": "37:1-18",
+    "MP LESSON 1": "1 Sam 6 † 1-15",
+    "MP LESSON 2": "1 Cor 14:20-end",
+    "EP PSALM": "37:19-42",
+    "EP LESSON 1": "Ezra 3",
+    "EP LESSON 2": "Titus 1"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 16,
+    "MP PSALM": 40,
+    "MP LESSON 1": "1 Sam 7",
+    "MP LESSON 2": "1 Cor 15:1-34",
+    "EP PSALM": "39, 41",
+    "EP LESSON 1": "Ezra 4",
+    "EP LESSON 2": "Titus 2"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 17,
+    "MP PSALM": "42, 43",
+    "MP LESSON 1": "1 Sam 8",
+    "MP LESSON 2": "1 Cor 15:35-end",
+    "EP PSALM": 44,
+    "EP LESSON 1": "Ezra 5",
+    "EP LESSON 2": "Titus 3"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 18,
+    "MP PSALM": 45,
+    "MP LESSON 1": "1 Sam 9",
+    "MP LESSON 2": "1 Cor 16",
+    "EP PSALM": 46,
+    "EP LESSON 1": "Ezra 6",
+    "EP LESSON 2": "2 Tim 1"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 19,
+    "MP PSALM": "47, 48",
+    "MP LESSON 1": "1 Sam 10",
+    "MP LESSON 2": "2 Cor 1:1—2:11",
+    "EP PSALM": 49,
+    "EP LESSON 1": "Ezra 7",
+    "EP LESSON 2": "2 Tim 2"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 20,
+    "MP PSALM": 50,
+    "MP LESSON 1": "1 Sam 11",
+    "MP LESSON 2": "2 Cor 2:12—3 end",
+    "EP PSALM": 51,
+    "EP LESSON 1": "Ezra 8 † 21-36",
+    "EP LESSON 2": "2 Tim 3"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 21,
+    "MP PSALM": "52, 53, 54",
+    "MP LESSON 1": "1 Sam 12",
+    "MP LESSON 2": "2 Cor 4",
+    "EP PSALM": 55,
+    "EP LESSON 1": "Ezra 9",
+    "EP LESSON 2": "2 Tim 4"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 22,
+    "MP PSALM": "56, 57",
+    "MP LESSON 1": "2 Cor 5",
+    "MP LESSON 2": "Luke 7:36—8:3",
+    "EP PSALM": "58, 60",
+    "EP LESSON 1": "Ezra 10 † 1-16",
+    "EP LESSON 2": "John 1:1-28"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 23,
+    "MP PSALM": 59,
+    "MP LESSON 1": "1 Sam 13",
+    "MP LESSON 2": "2 Cor 6",
+    "EP PSALM": "63, 64",
+    "EP LESSON 1": "Neh 1",
+    "EP LESSON 2": "John 1:29-end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 24,
+    "MP PSALM": "61, 62",
+    "MP LESSON 1": "1 Sam 14 † 1-15,20,24-30",
+    "MP LESSON 2": "2 Cor 7",
+    "EP PSALM": "65, 67",
+    "EP LESSON 1": "Neh 2",
+    "EP LESSON 2": "John 2"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 25,
+    "MP PSALM": "68:1-18",
+    "MP LESSON 1": "2 Cor 8",
+    "MP LESSON 2": "Mark 1:14-20",
+    "EP PSALM": "68:19-36",
+    "EP LESSON 1": "Neh 3 † 1-15",
+    "EP LESSON 2": "John 3:1-21"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 26,
+    "MP PSALM": "69:1-18",
+    "MP LESSON 1": "1 Sam 15",
+    "MP LESSON 2": "2 Cor 9",
+    "EP PSALM": "69:19-38",
+    "EP LESSON 1": "Neh 4",
+    "EP LESSON 2": "John 3:22-end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 27,
+    "MP PSALM": 66,
+    "MP LESSON 1": "1 Sam 16",
+    "MP LESSON 2": "2 Cor 10",
+    "EP PSALM": "70, 72",
+    "EP LESSON 1": "Neh 5",
+    "EP LESSON 2": "John 4:1-26"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 28,
+    "MP PSALM": 71,
+    "MP LESSON 1": "1 Sam 17 † 1-11,26-27,31-51",
+    "MP LESSON 2": "2 Cor 11",
+    "EP PSALM": 73,
+    "EP LESSON 1": "Neh 6",
+    "EP LESSON 2": "John 4:27-end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 29,
+    "MP PSALM": 74,
+    "MP LESSON 1": "1 Sam 18",
+    "MP LESSON 2": "2 Cor 12:1-13",
+    "EP PSALM": 77,
+    "EP LESSON 1": "Neh 8",
+    "EP LESSON 2": "John 5:1-24"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 30,
+    "MP PSALM": "75, 76",
+    "MP LESSON 1": "1 Sam 19",
+    "MP LESSON 2": "2 Cor 12:14—13 end",
+    "EP PSALM": "79, 82",
+    "EP LESSON 1": "Neh 9 † 1-15,26-38",
+    "EP LESSON 2": "John 5:25-end"
+  },
+  {
+    "MONTH": 7,
+    "DAY": 31,
+    "MP PSALM": "78:1-18",
+    "MP LESSON 1": "1 Sam 20 † 1-7,24-42",
+    "MP LESSON 2": "Rom 1",
+    "EP PSALM": "78:19-40",
+    "EP LESSON 1": "Neh 10 † 28-39",
+    "EP LESSON 2": "John 6:1-21"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 1,
+    "MP PSALM": "78:41-73",
+    "MP LESSON 1": "1 Sam 21",
+    "MP LESSON 2": "Rom 2",
+    "EP PSALM": 80,
+    "EP LESSON 1": "Neh 12 † 27-47",
+    "EP LESSON 2": "John 6:22-40"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 2,
+    "MP PSALM": 81,
+    "MP LESSON 1": "1 Sam 22",
+    "MP LESSON 2": "Rom 3",
+    "EP PSALM": 83,
+    "EP LESSON 1": "Neh 13 † 1-22,30-31",
+    "EP LESSON 2": "John 6:41-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 3,
+    "MP PSALM": 84,
+    "MP LESSON 1": "1 Sam 23",
+    "MP LESSON 2": "Rom 4",
+    "EP PSALM": 85,
+    "EP LESSON 1": "Hos 1",
+    "EP LESSON 2": "John 7:1-24"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 4,
+    "MP PSALM": "86, 87",
+    "MP LESSON 1": "1 Sam 24",
+    "MP LESSON 2": "Rom 5",
+    "EP PSALM": 88,
+    "EP LESSON 1": "Hos 2",
+    "EP LESSON 2": "John 7:25-52"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 5,
+    "MP PSALM": "89:1-18",
+    "MP LESSON 1": "1 Sam 25 † 1-19,23-25,32-42",
+    "MP LESSON 2": "Rom 6",
+    "EP PSALM": "89:19-52",
+    "EP LESSON 1": "Hos 3",
+    "EP LESSON 2": "John 7:53—8:30"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 6,
+    "MP PSALM": 27,
+    "MP LESSON 1": "Rom 7",
+    "MP LESSON 2": "Mark 9:2-10",
+    "EP PSALM": 80,
+    "EP LESSON 1": "Hos 4",
+    "EP LESSON 2": "John 8:31-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 7,
+    "MP PSALM": 90,
+    "MP LESSON 1": "1 Sam 26",
+    "MP LESSON 2": "Rom 8:1-17",
+    "EP PSALM": 91,
+    "EP LESSON 1": "Hos 5",
+    "EP LESSON 2": "John 9"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 8,
+    "MP PSALM": "92, 93",
+    "MP LESSON 1": "1 Sam 27",
+    "MP LESSON 2": "Rom 8:18-end",
+    "EP PSALM": 94,
+    "EP LESSON 1": "Hos 6",
+    "EP LESSON 2": "John 10:1-21"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 9,
+    "MP PSALM": "95, 96",
+    "MP LESSON 1": "1 Sam 28",
+    "MP LESSON 2": "Rom 9",
+    "EP PSALM": "97, 98",
+    "EP LESSON 1": "Hos 7",
+    "EP LESSON 2": "John 10:22-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 10,
+    "MP PSALM": "99, 100, 101",
+    "MP LESSON 1": "1 Sam 29",
+    "MP LESSON 2": "Rom 10",
+    "EP PSALM": 102,
+    "EP LESSON 1": "Hos 8",
+    "EP LESSON 2": "John 11:1-44"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 11,
+    "MP PSALM": 103,
+    "MP LESSON 1": "1 Sam 30 † 1-25",
+    "MP LESSON 2": "Rom 11",
+    "EP PSALM": 104,
+    "EP LESSON 1": "Hos 9",
+    "EP LESSON 2": "John 11:45-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 12,
+    "MP PSALM": "105:1-22",
+    "MP LESSON 1": "1 Sam 31",
+    "MP LESSON 2": "Rom 12",
+    "EP PSALM": "105:23-45",
+    "EP LESSON 1": "Hos 10",
+    "EP LESSON 2": "John 12:1-19"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 13,
+    "MP PSALM": "106:1-18",
+    "MP LESSON 1": "2 Sam 1",
+    "MP LESSON 2": "Rom 13",
+    "EP PSALM": "106:19-48",
+    "EP LESSON 1": "Hos 11",
+    "EP LESSON 2": "John 12:20-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 14,
+    "MP PSALM": "107:1-22",
+    "MP LESSON 1": "2 Sam 2 † 1-17,26-31",
+    "MP LESSON 2": "Rom 14",
+    "EP PSALM": "107:23-43",
+    "EP LESSON 1": "Hos 12",
+    "EP LESSON 2": "John 13"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 15,
+    "MP PSALM": "108, 110",
+    "MP LESSON 1": "2 Sam 3 † 6-11,17-39",
+    "MP LESSON 2": "Luke 1:26-38",
+    "EP PSALM": 109,
+    "EP LESSON 1": "Hos 13",
+    "EP LESSON 2": "John 14:1-14"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 16,
+    "MP PSALM": "111, 112",
+    "MP LESSON 1": "2 Sam 4",
+    "MP LESSON 2": "Rom 15",
+    "EP PSALM": "113, 114",
+    "EP LESSON 1": "Hos 14",
+    "EP LESSON 2": "John 14:15-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 17,
+    "MP PSALM": 115,
+    "MP LESSON 1": "2 Sam 5",
+    "MP LESSON 2": "Rom 16",
+    "EP PSALM": "116, 117",
+    "EP LESSON 1": "Joel 1",
+    "EP LESSON 2": "John 15:1-17"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 18,
+    "MP PSALM": "119:1-24",
+    "MP LESSON 1": "2 Sam 6",
+    "MP LESSON 2": "Phil 1:1-11",
+    "EP PSALM": "119:25-48",
+    "EP LESSON 1": "Joel 2 † 1-17,28-32",
+    "EP LESSON 2": "John 15:18-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 19,
+    "MP PSALM": "119:49-72",
+    "MP LESSON 1": "2 Sam 7",
+    "MP LESSON 2": "Phil 1:12-end",
+    "EP PSALM": "119:73-88",
+    "EP LESSON 1": "Joel 3",
+    "EP LESSON 2": "John 16:1-15"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 20,
+    "MP PSALM": "119:89-104",
+    "MP LESSON 1": "2 Sam 8",
+    "MP LESSON 2": "Phil 2:1-11",
+    "EP PSALM": "119:105-128",
+    "EP LESSON 1": "Amos 1",
+    "EP LESSON 2": "John 16:16-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 21,
+    "MP PSALM": "119:129-152",
+    "MP LESSON 1": "2 Sam 9",
+    "MP LESSON 2": "Phil 2:12-end",
+    "EP PSALM": "119:153-176",
+    "EP LESSON 1": "Amos 2",
+    "EP LESSON 2": "John 17"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 22,
+    "MP PSALM": 118,
+    "MP LESSON 1": "2 Sam 10",
+    "MP LESSON 2": "Phil 3",
+    "EP PSALM": "120, 121",
+    "EP LESSON 1": "Amos 3",
+    "EP LESSON 2": "John 18:1-27"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 23,
+    "MP PSALM": "122, 123",
+    "MP LESSON 1": "2 Sam 11",
+    "MP LESSON 2": "Phil 4",
+    "EP PSALM": "124, 125, 126",
+    "EP LESSON 1": "Amos 4",
+    "EP LESSON 2": "John 18:28-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 24,
+    "MP PSALM": "127, 128",
+    "MP LESSON 1": "Col 1:1-20",
+    "MP LESSON 2": "Luke 6:12-16",
+    "EP PSALM": "129, 130, 131",
+    "EP LESSON 1": "Amos 5",
+    "EP LESSON 2": "John 19:1-37"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 25,
+    "MP PSALM": "132, 133",
+    "MP LESSON 1": "2 Sam 12 † 1-25",
+    "MP LESSON 2": "Col 1:21—2:7",
+    "EP PSALM": "134, 135",
+    "EP LESSON 1": "Amos 6",
+    "EP LESSON 2": "John 19:38-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 26,
+    "MP PSALM": 136,
+    "MP LESSON 1": "2 Sam 13 † 1-29,38-39",
+    "MP LESSON 2": "Col 2:8-19",
+    "EP PSALM": "137, 138",
+    "EP LESSON 1": "Amos 7",
+    "EP LESSON 2": "John 20"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 27,
+    "MP PSALM": 139,
+    "MP LESSON 1": "2 Sam 14 † 1-21,28",
+    "MP LESSON 2": "Col 2:20—3:11",
+    "EP PSALM": "141, 142",
+    "EP LESSON 1": "Amos 8",
+    "EP LESSON 2": "John 21"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 28,
+    "MP PSALM": 140,
+    "MP LESSON 1": "2 Sam 15 † 1-18,23-25,32-34",
+    "MP LESSON 2": "Col 3:12-end",
+    "EP PSALM": 143,
+    "EP LESSON 1": "Amos 9",
+    "EP LESSON 2": "Matt 1:1-17"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 29,
+    "MP PSALM": 144,
+    "MP LESSON 1": "2 Sam 16",
+    "MP LESSON 2": "Col 4",
+    "EP PSALM": 145,
+    "EP LESSON 1": "Obadiah",
+    "EP LESSON 2": "Matt 1:18-end"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 30,
+    "MP PSALM": 146,
+    "MP LESSON 1": "2 Sam 17 † 1-23",
+    "MP LESSON 2": "Philemon",
+    "EP PSALM": 147,
+    "EP LESSON 1": "Jonah 1",
+    "EP LESSON 2": "Matt 2"
+  },
+  {
+    "MONTH": 8,
+    "DAY": 31,
+    "MP PSALM": 148,
+    "MP LESSON 1": "2 Sam 18 † 1-15,19-33",
+    "MP LESSON 2": "Eph 1:1-14",
+    "EP PSALM": "149, 150",
+    "EP LESSON 1": "Jonah 2",
+    "EP LESSON 2": "Matt 3"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 1,
+    "MP PSALM": "1, 2",
+    "MP LESSON 1": "2 Sam 19 † 1-30",
+    "MP LESSON 2": "Eph 1:15-end",
+    "EP PSALM": "3, 4",
+    "EP LESSON 1": "Jonah 3",
+    "EP LESSON 2": "Matt 4"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 2,
+    "MP PSALM": "5, 6",
+    "MP LESSON 1": "2 Sam 20",
+    "MP LESSON 2": "Eph 2:1-10",
+    "EP PSALM": 7,
+    "EP LESSON 1": "Jonah 4",
+    "EP LESSON 2": "Matt 5:1-20"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 3,
+    "MP PSALM": 9,
+    "MP LESSON 1": "2 Sam 21",
+    "MP LESSON 2": "Eph 2:11-end",
+    "EP PSALM": 10,
+    "EP LESSON 1": "Mic 1",
+    "EP LESSON 2": "Matt 5:21-48"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 4,
+    "MP PSALM": "8, 11",
+    "MP LESSON 1": "2 Sam 22 † 1-7,14-20,32-51",
+    "MP LESSON 2": "Eph 3",
+    "EP PSALM": "15, 16",
+    "EP LESSON 1": "Mic 2",
+    "EP LESSON 2": "Matt 6:1-18"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 5,
+    "MP PSALM": "12, 13, 14",
+    "MP LESSON 1": "2 Sam 23 † 1-23",
+    "MP LESSON 2": "Eph 4:1-16",
+    "EP PSALM": 17,
+    "EP LESSON 1": "Mic 3",
+    "EP LESSON 2": "Matt 6:19-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 6,
+    "MP PSALM": "18:1-20",
+    "MP LESSON 1": "2 Sam 24",
+    "MP LESSON 2": "Eph 4:17-end",
+    "EP PSALM": "18:21-50",
+    "EP LESSON 1": "Mic 4",
+    "EP LESSON 2": "Matt 7"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 7,
+    "MP PSALM": 19,
+    "MP LESSON 1": "1 Chron 22",
+    "MP LESSON 2": "Eph 5:1-17",
+    "EP PSALM": "20, 21",
+    "EP LESSON 1": "Mic 5",
+    "EP LESSON 2": "Matt 8:1-17"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 8,
+    "MP PSALM": 22,
+    "MP LESSON 1": "1 Kings 1 † 1-18,29-40",
+    "MP LESSON 2": "Eph 5:18-end",
+    "EP PSALM": "23, 24",
+    "EP LESSON 1": "Mic 6",
+    "EP LESSON 2": "Matt 8:18-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 9,
+    "MP PSALM": 25,
+    "MP LESSON 1": "1 Chron 28",
+    "MP LESSON 2": "Eph 6",
+    "EP PSALM": 27,
+    "EP LESSON 1": "Mic 7",
+    "EP LESSON 2": "Matt 9:1-17"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 10,
+    "MP PSALM": "26, 28",
+    "MP LESSON 1": "1 Kings 2 † 1-25",
+    "MP LESSON 2": "Heb 1",
+    "EP PSALM": 31,
+    "EP LESSON 1": "Nahum 1",
+    "EP LESSON 2": "Matt 9:18-34"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 11,
+    "MP PSALM": "29, 30",
+    "MP LESSON 1": "1 Kings 3",
+    "MP LESSON 2": "Heb 2",
+    "EP PSALM": 33,
+    "EP LESSON 1": "Nahum 2",
+    "EP LESSON 2": "Matt 9:35—10:23"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 12,
+    "MP PSALM": 34,
+    "MP LESSON 1": "1 Kings 4 † 1-6,20-34",
+    "MP LESSON 2": "Heb 3",
+    "EP PSALM": 35,
+    "EP LESSON 1": "Nahum 3",
+    "EP LESSON 2": "Matt 10:24-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 13,
+    "MP PSALM": "32, 36",
+    "MP LESSON 1": "1 Kings 5",
+    "MP LESSON 2": "Heb 4:1-13",
+    "EP PSALM": 38,
+    "EP LESSON 1": "Hab 1",
+    "EP LESSON 2": "Matt 11"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 14,
+    "MP PSALM": "37:1-18",
+    "MP LESSON 1": "Heb 4:14—5:10",
+    "MP LESSON 2": "John 12:23-33",
+    "EP PSALM": "37:19-42",
+    "EP LESSON 1": "Hab 2",
+    "EP LESSON 2": "Matt 12:1-21"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 15,
+    "MP PSALM": 40,
+    "MP LESSON 1": "1 Kings 6 † 1-7,11-30,37-38",
+    "MP LESSON 2": "Heb 5:11—6 end",
+    "EP PSALM": "39, 41",
+    "EP LESSON 1": "Hab 3",
+    "EP LESSON 2": "Matt 12:22-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 16,
+    "MP PSALM": "42, 43",
+    "MP LESSON 1": "1 Kings 7 † 1-14,40-44,47-51",
+    "MP LESSON 2": "Heb 7",
+    "EP PSALM": 44,
+    "EP LESSON 1": "Zeph 1",
+    "EP LESSON 2": "Matt 13:1-23"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 17,
+    "MP PSALM": 45,
+    "MP LESSON 1": "1 Kings 8 † 1-11,22-30,54-63",
+    "MP LESSON 2": "Heb 8",
+    "EP PSALM": 46,
+    "EP LESSON 1": "Zeph 2",
+    "EP LESSON 2": "Matt 13:24-43"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 18,
+    "MP PSALM": "47, 48",
+    "MP LESSON 1": "1 Kings 9 † 1-9,15-28",
+    "MP LESSON 2": "Heb 9:1-14",
+    "EP PSALM": 49,
+    "EP LESSON 1": "Zeph 3",
+    "EP LESSON 2": "Matt 13:44-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 19,
+    "MP PSALM": 50,
+    "MP LESSON 1": "1 Kings 10 †1-13,23-29",
+    "MP LESSON 2": "Heb 9:15-end",
+    "EP PSALM": 51,
+    "EP LESSON 1": "Hag 1",
+    "EP LESSON 2": "Matt 14"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 20,
+    "MP PSALM": "52, 53, 54",
+    "MP LESSON 1": "1 Kings 11 † 1-14,23-33,41-43",
+    "MP LESSON 2": "Heb 10:1-18",
+    "EP PSALM": 55,
+    "EP LESSON 1": "Hag 2",
+    "EP LESSON 2": "Matt 15:1-28"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 21,
+    "MP PSALM": "56, 57",
+    "MP LESSON 1": "Heb 10:19-end",
+    "MP LESSON 2": "Matt 9:9-13",
+    "EP PSALM": "58, 60",
+    "EP LESSON 1": "Zech 1",
+    "EP LESSON 2": "Matt 15:29—16:12"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 22,
+    "MP PSALM": 59,
+    "MP LESSON 1": "1 Kings 12 † 1-20,25-30",
+    "MP LESSON 2": "Heb 11",
+    "EP PSALM": "63, 64",
+    "EP LESSON 1": "Zech 2",
+    "EP LESSON 2": "Matt 16:13-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 23,
+    "MP PSALM": "61, 62",
+    "MP LESSON 1": "1 Kings 13 † 1-25,33-34",
+    "MP LESSON 2": "Heb 12:1-17",
+    "EP PSALM": "65, 67",
+    "EP LESSON 1": "Zech 3",
+    "EP LESSON 2": "Matt 17:1-23"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 24,
+    "MP PSALM": "68:1-18",
+    "MP LESSON 1": "1 Kings 14",
+    "MP LESSON 2": "Heb 12:18-end",
+    "EP PSALM": "68:19-36",
+    "EP LESSON 1": "Zech 4",
+    "EP LESSON 2": "Matt 17:24—18:14"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 25,
+    "MP PSALM": "69:1-18",
+    "MP LESSON 1": "2 Chron 12",
+    "MP LESSON 2": "Heb 13",
+    "EP PSALM": "69:19-38",
+    "EP LESSON 1": "Zech 5",
+    "EP LESSON 2": "Matt 18:15-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 26,
+    "MP PSALM": 66,
+    "MP LESSON 1": "2 Chron 13",
+    "MP LESSON 2": "Jas 1",
+    "EP PSALM": "70, 72",
+    "EP LESSON 1": "Zech 6",
+    "EP LESSON 2": "Matt 19:1-15"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 27,
+    "MP PSALM": 71,
+    "MP LESSON 1": "2 Chron 14",
+    "MP LESSON 2": "Jas 2:1-13",
+    "EP PSALM": 73,
+    "EP LESSON 1": "Zech 7",
+    "EP LESSON 2": "Matt 19:16—20:16"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 28,
+    "MP PSALM": 74,
+    "MP LESSON 1": "2 Chron 15",
+    "MP LESSON 2": "Jas 2:14-end",
+    "EP PSALM": 77,
+    "EP LESSON 1": "Zech 8",
+    "EP LESSON 2": "Matt 20:17-end"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 29,
+    "MP PSALM": "75, 76",
+    "MP LESSON 1": "Rev 12:7-12",
+    "MP LESSON 2": "Jas 3",
+    "EP PSALM": "79, 82",
+    "EP LESSON 1": "Zech 9",
+    "EP LESSON 2": "Matt 21:1-22"
+  },
+  {
+    "MONTH": 9,
+    "DAY": 30,
+    "MP PSALM": "78:1-18",
+    "MP LESSON 1": "2 Chron 16",
+    "MP LESSON 2": "Jas 4",
+    "EP PSALM": "78:19-40",
+    "EP LESSON 1": "Zech 10",
+    "EP LESSON 2": "Matt 21:23-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 1,
+    "MP PSALM": "78:41-73",
+    "MP LESSON 1": "1 Kings 15 † 1-30",
+    "MP LESSON 2": "Jas 5",
+    "EP PSALM": 80,
+    "EP LESSON 1": "Zech 11",
+    "EP LESSON 2": "Matt 22:1-33"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 2,
+    "MP PSALM": 81,
+    "MP LESSON 1": "1 Kings 16 † 1-4,8-19,23-34",
+    "MP LESSON 2": "1 Pet 1:1-21",
+    "EP PSALM": 83,
+    "EP LESSON 1": "Zech 12",
+    "EP LESSON 2": "Matt 22:34—23:12"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 3,
+    "MP PSALM": 84,
+    "MP LESSON 1": "1 Kings 17",
+    "MP LESSON 2": "1 Pet 1:22—2:10",
+    "EP PSALM": 85,
+    "EP LESSON 1": "Zech 13",
+    "EP LESSON 2": "Matt 23:13-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 4,
+    "MP PSALM": "86, 87",
+    "MP LESSON 1": "1 Kings 18 † 1-8,17-46",
+    "MP LESSON 2": "1 Pet 2:11—3:7",
+    "EP PSALM": 88,
+    "EP LESSON 1": "Zech 14",
+    "EP LESSON 2": "Matt 24:1-28"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 5,
+    "MP PSALM": "89:1-18",
+    "MP LESSON 1": "1 Kings 19",
+    "MP LESSON 2": "1 Pet 3:8—4:6",
+    "EP PSALM": "89:19-52",
+    "EP LESSON 1": "Mal 1",
+    "EP LESSON 2": "Matt 24:29-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 6,
+    "MP PSALM": 90,
+    "MP LESSON 1": "1 Kings 20 † 1,13,21-43",
+    "MP LESSON 2": "1 Pet 4:7-end",
+    "EP PSALM": 91,
+    "EP LESSON 1": "Mal 2",
+    "EP LESSON 2": "Matt 25:1-30"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 7,
+    "MP PSALM": "92, 93",
+    "MP LESSON 1": "1 Kings 21",
+    "MP LESSON 2": "1 Pet 5",
+    "EP PSALM": 94,
+    "EP LESSON 1": "Mal 3",
+    "EP LESSON 2": "Matt 25:31-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 8,
+    "MP PSALM": "95, 96",
+    "MP LESSON 1": "1 Kings 22 † 1-23,29-38",
+    "MP LESSON 2": "2 Pet 1",
+    "EP PSALM": "97, 98",
+    "EP LESSON 1": "Mal 4",
+    "EP LESSON 2": "Matt 26:1-30"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 9,
+    "MP PSALM": "99, 100, 101",
+    "MP LESSON 1": "2 Chron 20",
+    "MP LESSON 2": "2 Pet 2",
+    "EP PSALM": 102,
+    "EP LESSON 1": "1 Macc 1 † 1-15,20-25,41-64",
+    "EP LESSON 2": "Matt 26:31-56"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 10,
+    "MP PSALM": 103,
+    "MP LESSON 1": "2 Kings 1",
+    "MP LESSON 2": "2 Pet 3",
+    "EP PSALM": 104,
+    "EP LESSON 1": "1 Macc 2 † 1-28",
+    "EP LESSON 2": "Matt 26:57-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 11,
+    "MP PSALM": "105:1-22",
+    "MP LESSON 1": "2 Kings 2",
+    "MP LESSON 2": "Jude",
+    "EP PSALM": "105:23-45",
+    "EP LESSON 1": "2 Macc 6",
+    "EP LESSON 2": "Matt 27:1-26"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 12,
+    "MP PSALM": "106:1-18",
+    "MP LESSON 1": "2 Kings 3",
+    "MP LESSON 2": "1 John 1:1—2:6",
+    "EP PSALM": "106:19-48",
+    "EP LESSON 1": "2 Macc 7",
+    "EP LESSON 2": "Matt 27:27-56"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 13,
+    "MP PSALM": "107:1-22",
+    "MP LESSON 1": "2 Kings 4 † 8-37",
+    "MP LESSON 2": "1 John 2:7-end",
+    "EP PSALM": "107:23-43",
+    "EP LESSON 1": "2 Macc 8 † 1-29",
+    "EP LESSON 2": "Matt 27:57—28 end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 14,
+    "MP PSALM": "108, 110",
+    "MP LESSON 1": "2 Kings 5",
+    "MP LESSON 2": "1 John 3:1-10",
+    "EP PSALM": 109,
+    "EP LESSON 1": "2 Macc 10 † 1-8,24-38",
+    "EP LESSON 2": "Mark 1:1-13"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 15,
+    "MP PSALM": "111, 112",
+    "MP LESSON 1": "2 Kings 6 † 1-24",
+    "MP LESSON 2": "1 John 3:11—4:6",
+    "EP PSALM": "113, 114",
+    "EP LESSON 1": "1 Macc 7 † 1-6,23-50",
+    "EP LESSON 2": "Mark 1:14-31"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 16,
+    "MP PSALM": 115,
+    "MP LESSON 1": "2 Kings 7",
+    "MP LESSON 2": "1 John 4:7-end",
+    "EP PSALM": "116, 117",
+    "EP LESSON 1": "1 Macc 9 † 1-31",
+    "EP LESSON 2": "Mark 1:32-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 17,
+    "MP PSALM": "119:1-24",
+    "MP LESSON 1": "2 Kings 8 † 1-19,25-27",
+    "MP LESSON 2": "1 John 5",
+    "EP PSALM": "119:25-48",
+    "EP LESSON 1": "1 Macc 13 † 1-30,41-42",
+    "EP LESSON 2": "Mark 2:1-22"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 18,
+    "MP PSALM": "119:49-72",
+    "MP LESSON 1": "2 John",
+    "MP LESSON 2": "Luke 1:1-4",
+    "EP PSALM": "119:73-88",
+    "EP LESSON 1": "1 Macc 14 † 4-18,35-43",
+    "EP LESSON 2": "Mark 2:23—3:12"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 19,
+    "MP PSALM": "119:89-104",
+    "MP LESSON 1": "2 Kings 9 † 1-26,30-37",
+    "MP LESSON 2": "3 John",
+    "EP PSALM": "119:105-128",
+    "EP LESSON 1": "Isa 1",
+    "EP LESSON 2": "Mark 3:13-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 20,
+    "MP PSALM": "119:129-152",
+    "MP LESSON 1": "2 Kings 10 † 1-11,18-31",
+    "MP LESSON 2": "Acts 1:1-14",
+    "EP PSALM": "119:153-176",
+    "EP LESSON 1": "Isa 2",
+    "EP LESSON 2": "Mark 4:1-34"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 21,
+    "MP PSALM": 118,
+    "MP LESSON 1": "2 Kings 11 † 1-16,23-27",
+    "MP LESSON 2": "Acts 1:15-end",
+    "EP PSALM": "120, 121",
+    "EP LESSON 1": "Isa 3",
+    "EP LESSON 2": "Mark 4:35—5:20"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 22,
+    "MP PSALM": "122, 123",
+    "MP LESSON 1": "2 Kings 12",
+    "MP LESSON 2": "Acts 2:1-21",
+    "EP PSALM": "124, 125, 126",
+    "EP LESSON 1": "Isa 4",
+    "EP LESSON 2": "Mark 5:21-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 23,
+    "MP PSALM": "127, 128",
+    "MP LESSON 1": "Acts 2:22-end",
+    "MP LESSON 2": "James 1",
+    "EP PSALM": "129, 130, 131",
+    "EP LESSON 1": "Isa 5",
+    "EP LESSON 2": "Mark 6:1-29"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 24,
+    "MP PSALM": "132, 133",
+    "MP LESSON 1": "2 Kings 13",
+    "MP LESSON 2": "Acts 3:1—4:4",
+    "EP PSALM": "134, 135",
+    "EP LESSON 1": "Isa 6",
+    "EP LESSON 2": "Mark 6:30-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 25,
+    "MP PSALM": 136,
+    "MP LESSON 1": "2 Kings 14",
+    "MP LESSON 2": "Acts 4:5-31",
+    "EP PSALM": "137, 138",
+    "EP LESSON 1": "Isa 7",
+    "EP LESSON 2": "Mark 7:1-23"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 26,
+    "MP PSALM": 139,
+    "MP LESSON 1": "2 Chron 26",
+    "MP LESSON 2": "Acts 4:32—5:11",
+    "EP PSALM": "141, 142",
+    "EP LESSON 1": "Isa 8",
+    "EP LESSON 2": "Mark 7:24—8:10"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 27,
+    "MP PSALM": 140,
+    "MP LESSON 1": "2 Kings 15 † 1-29",
+    "MP LESSON 2": "Acts 5:12-end",
+    "EP PSALM": 143,
+    "EP LESSON 1": "Isa 9",
+    "EP LESSON 2": "Mark 8:11-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 28,
+    "MP PSALM": 144,
+    "MP LESSON 1": "Acts 6:1—7:16",
+    "MP LESSON 2": "John 14:15-31",
+    "EP PSALM": 145,
+    "EP LESSON 1": "Isa 10",
+    "EP LESSON 2": "Mark 9:1-29"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 29,
+    "MP PSALM": 146,
+    "MP LESSON 1": "2 Kings 16",
+    "MP LESSON 2": "Acts 7:17-34",
+    "EP PSALM": 147,
+    "EP LESSON 1": "Isa 11",
+    "EP LESSON 2": "Mark 9:30-end"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 30,
+    "MP PSALM": 148,
+    "MP LESSON 1": "2 Kings 17 † 1-28,41",
+    "MP LESSON 2": "Acts 7:35—8:3",
+    "EP PSALM": "149, 150",
+    "EP LESSON 1": "Isa 12",
+    "EP LESSON 2": "Mark 10:1-31"
+  },
+  {
+    "MONTH": 10,
+    "DAY": 31,
+    "MP PSALM": 2,
+    "MP LESSON 1": "2 Chron 28",
+    "MP LESSON 2": "Acts 8:4-25",
+    "EP PSALM": "3, 4",
+    "EP LESSON 1": "Isa 13",
+    "EP LESSON 2": "Mark 10:32-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 1,
+    "MP PSALM": "1, 15",
+    "MP LESSON 1": "Heb 11:32—12:2",
+    "MP LESSON 2": "Acts 8:26-end",
+    "EP PSALM": 34,
+    "EP LESSON 1": "Isa 14",
+    "EP LESSON 2": "Rev 19:1-16"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 2,
+    "MP PSALM": "5, 6",
+    "MP LESSON 1": "2 Chron 29 † 1-11,20-30,35-36",
+    "MP LESSON 2": "Acts 9:1-31",
+    "EP PSALM": 7,
+    "EP LESSON 1": "Isa 15",
+    "EP LESSON 2": "Mark 11:1-26"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 3,
+    "MP PSALM": 9,
+    "MP LESSON 1": "2 Chron 30 † 1-22,26-27",
+    "MP LESSON 2": "Acts 9:32-end",
+    "EP PSALM": 10,
+    "EP LESSON 1": "Isa 16",
+    "EP LESSON 2": "Mark 11:27—12:12"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 4,
+    "MP PSALM": "8, 11",
+    "MP LESSON 1": "2 Kings 18 † 1-13,17-30,35-37",
+    "MP LESSON 2": "Acts 10:1-23",
+    "EP PSALM": "15, 16",
+    "EP LESSON 1": "Isa 17",
+    "EP LESSON 2": "Mark 12:13-34"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 5,
+    "MP PSALM": "12, 13, 14",
+    "MP LESSON 1": "2 Kings 19 † 1-20,29-31,35-37",
+    "MP LESSON 2": "Acts 10:24-end",
+    "EP PSALM": 17,
+    "EP LESSON 1": "Isa 18",
+    "EP LESSON 2": "Mark 12:35—13:13"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 6,
+    "MP PSALM": "18:1-20",
+    "MP LESSON 1": "2 Kings 20",
+    "MP LESSON 2": "Acts 11:1-18",
+    "EP PSALM": "18:21-50",
+    "EP LESSON 1": "Isa 19",
+    "EP LESSON 2": "Mark 13:14-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 7,
+    "MP PSALM": 19,
+    "MP LESSON 1": "2 Chron 33",
+    "MP LESSON 2": "Acts 11:19-end",
+    "EP PSALM": "20, 21",
+    "EP LESSON 1": "Isa 20",
+    "EP LESSON 2": "Mark 14:1-25"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 8,
+    "MP PSALM": 22,
+    "MP LESSON 1": "2 Kings 21",
+    "MP LESSON 2": "Acts 12:1-24",
+    "EP PSALM": "23, 24",
+    "EP LESSON 1": "Isa 21",
+    "EP LESSON 2": "Mark 14:26-52"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 9,
+    "MP PSALM": 25,
+    "MP LESSON 1": "2 Kings 22",
+    "MP LESSON 2": "Acts 12:25—13:12",
+    "EP PSALM": 27,
+    "EP LESSON 1": "Isa 22",
+    "EP LESSON 2": "Mark 14:53-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 10,
+    "MP PSALM": "26, 28",
+    "MP LESSON 1": "2 Kings 23 † 1-20,26-30",
+    "MP LESSON 2": "Acts 13:13-43",
+    "EP PSALM": 31,
+    "EP LESSON 1": "Isa 23",
+    "EP LESSON 2": "Mark 15"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 11,
+    "MP PSALM": "29, 30",
+    "MP LESSON 1": "2 Kings 24",
+    "MP LESSON 2": "Acts 13:44—14:7",
+    "EP PSALM": 33,
+    "EP LESSON 1": "Isa 24",
+    "EP LESSON 2": "Mark 16"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 12,
+    "MP PSALM": 34,
+    "MP LESSON 1": "2 Kings 25 † 1-22,25-30",
+    "MP LESSON 2": "Acts 14:8-end",
+    "EP PSALM": 35,
+    "EP LESSON 1": "Isa 25",
+    "EP LESSON 2": "Luke 1:1-23"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 13,
+    "MP PSALM": "32, 36",
+    "MP LESSON 1": "Judith 4",
+    "MP LESSON 2": "Acts 15:1-21",
+    "EP PSALM": 38,
+    "EP LESSON 1": "Isa 26",
+    "EP LESSON 2": "Luke 1:24-56"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 14,
+    "MP PSALM": "37:1-18",
+    "MP LESSON 1": "Judith 8",
+    "MP LESSON 2": "Acts 15:22-35",
+    "EP PSALM": "37:19-42",
+    "EP LESSON 1": "Isa 27",
+    "EP LESSON 2": "Luke 1:57-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 15,
+    "MP PSALM": 40,
+    "MP LESSON 1": "Judith 9",
+    "MP LESSON 2": "Acts 15:36—16:5",
+    "EP PSALM": "39, 41",
+    "EP LESSON 1": "Isa 28",
+    "EP LESSON 2": "Luke 2:1-21"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 16,
+    "MP PSALM": "42, 43",
+    "MP LESSON 1": "Judith 10",
+    "MP LESSON 2": "Acts 16:6-end",
+    "EP PSALM": 44,
+    "EP LESSON 1": "Isa 29",
+    "EP LESSON 2": "Luke 2:22-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 17,
+    "MP PSALM": 45,
+    "MP LESSON 1": "Judith 11",
+    "MP LESSON 2": "Acts 17:1-15",
+    "EP PSALM": 46,
+    "EP LESSON 1": "Isa 30",
+    "EP LESSON 2": "Luke 3:1-22"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 18,
+    "MP PSALM": "47, 48",
+    "MP LESSON 1": "Judith 12",
+    "MP LESSON 2": "Acts 17:16-end",
+    "EP PSALM": 49,
+    "EP LESSON 1": "Isa 31",
+    "EP LESSON 2": "Luke 3:23-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 19,
+    "MP PSALM": 50,
+    "MP LESSON 1": "Judith 13",
+    "MP LESSON 2": "Acts 18:1-23",
+    "EP PSALM": 51,
+    "EP LESSON 1": "Isa 32",
+    "EP LESSON 2": "Luke 4:1-30"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 20,
+    "MP PSALM": "52, 53, 54",
+    "MP LESSON 1": "Judith 14",
+    "MP LESSON 2": "Acts 18:24—19:7",
+    "EP PSALM": 55,
+    "EP LESSON 1": "Isa 33",
+    "EP LESSON 2": "Luke 4:31-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 21,
+    "MP PSALM": "56, 57",
+    "MP LESSON 1": "Judith 15",
+    "MP LESSON 2": "Acts 19:8-20",
+    "EP PSALM": "58, 60",
+    "EP LESSON 1": "Isa 34",
+    "EP LESSON 2": "Luke 5:1-16"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 22,
+    "MP PSALM": 59,
+    "MP LESSON 1": "Judith 16",
+    "MP LESSON 2": "Acts 19:21-end",
+    "EP PSALM": "63, 64",
+    "EP LESSON 1": "Isa 35",
+    "EP LESSON 2": "Luke 5:17-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 23,
+    "MP PSALM": "61, 62",
+    "MP LESSON 1": "Ecclesiasticus 1",
+    "MP LESSON 2": "Acts 20:1-16",
+    "EP PSALM": "65, 67",
+    "EP LESSON 1": "Isa 36",
+    "EP LESSON 2": "Luke 6:1-19"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 24,
+    "MP PSALM": "68:1-18",
+    "MP LESSON 1": "Ecclesiasticus 2",
+    "MP LESSON 2": "Acts 20:17-end",
+    "EP PSALM": "68:19-36",
+    "EP LESSON 1": "Isa 37",
+    "EP LESSON 2": "Luke 6:20-38"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 25,
+    "MP PSALM": "69:1-18",
+    "MP LESSON 1": "Ecclesiasticus 4 † 1-19",
+    "MP LESSON 2": "Acts 21:1-16",
+    "EP PSALM": "69:19-38",
+    "EP LESSON 1": "Isa 38",
+    "EP LESSON 2": "Luke 6:39—7:10"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 26,
+    "MP PSALM": 66,
+    "MP LESSON 1": "Ecclesiasticus 6 † 5-31",
+    "MP LESSON 2": "Acts 21:17-36",
+    "EP PSALM": "70, 72",
+    "EP LESSON 1": "Isa 39",
+    "EP LESSON 2": "Luke 7:11-35"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 27,
+    "MP PSALM": 71,
+    "MP LESSON 1": "Ecclesiasticus 7 † 1-21,27-36",
+    "MP LESSON 2": "Acts 21:37—22:22",
+    "EP PSALM": 73,
+    "EP LESSON 1": "Isa 40",
+    "EP LESSON 2": "Luke 7:36-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 28,
+    "MP PSALM": 74,
+    "MP LESSON 1": "Ecclesiasticus 9",
+    "MP LESSON 2": "Acts 22:23—23:11",
+    "EP PSALM": 77,
+    "EP LESSON 1": "Isa 41",
+    "EP LESSON 2": "Luke 8:1-21"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 29,
+    "MP PSALM": "75, 76",
+    "MP LESSON 1": "Ecclesiasticus 10 † 1-24",
+    "MP LESSON 2": "Acts 23:12-end",
+    "EP PSALM": "79, 82",
+    "EP LESSON 1": "Isa 42",
+    "EP LESSON 2": "Luke 8:22-end"
+  },
+  {
+    "MONTH": 11,
+    "DAY": 30,
+    "MP PSALM": "78:1-18",
+    "MP LESSON 1": "Ecclesiasticus 11 † 1-9,18-28",
+    "MP LESSON 2": "John 1:35-42",
+    "EP PSALM": "78:19-40",
+    "EP LESSON 1": "Isa 43",
+    "EP LESSON 2": "Luke 9:1-17"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 1,
+    "MP PSALM": "78:41-73",
+    "MP LESSON 1": "Ecclesiasticus 14",
+    "MP LESSON 2": "Acts 24:1-23",
+    "EP PSALM": 80,
+    "EP LESSON 1": "Isa 44",
+    "EP LESSON 2": "Luke 9:18-50"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 2,
+    "MP PSALM": 81,
+    "MP LESSON 1": "Ecclesiasticus 17",
+    "MP LESSON 2": "Acts 24:24—25:12",
+    "EP PSALM": 83,
+    "EP LESSON 1": "Isa 45",
+    "EP LESSON 2": "Luke 9:51-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 3,
+    "MP PSALM": 84,
+    "MP LESSON 1": "Ecclesiasticus 18 † 1-26,30-33",
+    "MP LESSON 2": "Acts 25:13-end",
+    "EP PSALM": 85,
+    "EP LESSON 1": "Isa 46",
+    "EP LESSON 2": "Luke 10:1-24"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 4,
+    "MP PSALM": "86, 87",
+    "MP LESSON 1": "Ecclesiasticus 21",
+    "MP LESSON 2": "Acts 26",
+    "EP PSALM": 88,
+    "EP LESSON 1": "Isa 47",
+    "EP LESSON 2": "Luke 10:25-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 5,
+    "MP PSALM": "89:1-18",
+    "MP LESSON 1": "Ecclesiasticus 34",
+    "MP LESSON 2": "Acts 27",
+    "EP PSALM": "89:19-52",
+    "EP LESSON 1": "Isa 48",
+    "EP LESSON 2": "Luke 11:1-28"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 6,
+    "MP PSALM": 90,
+    "MP LESSON 1": "Ecclesiasticus 38 † 1-15,24-34",
+    "MP LESSON 2": "Acts 28:1-15",
+    "EP PSALM": 91,
+    "EP LESSON 1": "Isa 49",
+    "EP LESSON 2": "Luke 11:29-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 7,
+    "MP PSALM": "92, 93",
+    "MP LESSON 1": "Ecclesiasticus 39 † 1-11,16-35",
+    "MP LESSON 2": "Acts 28:16-end",
+    "EP PSALM": 94,
+    "EP LESSON 1": "Isa 50",
+    "EP LESSON 2": "Luke 12:1-34"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 8,
+    "MP PSALM": "95, 96",
+    "MP LESSON 1": "Ecclesiasticus 44",
+    "MP LESSON 2": "Rev 1",
+    "EP PSALM": "97, 98",
+    "EP LESSON 1": "Isa 51",
+    "EP LESSON 2": "Luke 12:35-53"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 9,
+    "MP PSALM": "99, 100, 101",
+    "MP LESSON 1": "Ecclesiasticus 45",
+    "MP LESSON 2": "Rev 2:1-17",
+    "EP PSALM": 102,
+    "EP LESSON 1": "Isa 52",
+    "EP LESSON 2": "Luke 12:54—13:9"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 10,
+    "MP PSALM": 103,
+    "MP LESSON 1": "Ecclesiasticus 46",
+    "MP LESSON 2": "Rev 2:18—3:6",
+    "EP PSALM": 104,
+    "EP LESSON 1": "Isa 53",
+    "EP LESSON 2": "Luke 13:10-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 11,
+    "MP PSALM": "105:1-22",
+    "MP LESSON 1": "Ecclesiasticus 47",
+    "MP LESSON 2": "Rev 3:7-end",
+    "EP PSALM": "105:23-45",
+    "EP LESSON 1": "Isa 54",
+    "EP LESSON 2": "Luke 14:1-24"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 12,
+    "MP PSALM": "106:1-18",
+    "MP LESSON 1": "Ecclesiasticus 48",
+    "MP LESSON 2": "Rev 4",
+    "EP PSALM": "106:19-48",
+    "EP LESSON 1": "Isa 55",
+    "EP LESSON 2": "Luke 14:25—15:10"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 13,
+    "MP PSALM": "107:1-22",
+    "MP LESSON 1": "Ecclesiasticus 49",
+    "MP LESSON 2": "Rev 5",
+    "EP PSALM": "107:23-43",
+    "EP LESSON 1": "Isa 56",
+    "EP LESSON 2": "Luke 15:11-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 14,
+    "MP PSALM": "108, 110",
+    "MP LESSON 1": "Ecclesiasticus 50",
+    "MP LESSON 2": "Rev 6",
+    "EP PSALM": 109,
+    "EP LESSON 1": "Isa 57",
+    "EP LESSON 2": "Luke 16"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 15,
+    "MP PSALM": "111, 112",
+    "MP LESSON 1": "Ecclesiasticus 51",
+    "MP LESSON 2": "Rev 7",
+    "EP PSALM": "113, 114",
+    "EP LESSON 1": "Isa 58",
+    "EP LESSON 2": "Luke 17:1-19"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 16,
+    "MP PSALM": 115,
+    "MP LESSON 1": "Wisdom 1",
+    "MP LESSON 2": "Rev 8",
+    "EP PSALM": "116, 117",
+    "EP LESSON 1": "Isa 59",
+    "EP LESSON 2": "Luke 17:20-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 17,
+    "MP PSALM": "119:1-24",
+    "MP LESSON 1": "Wisdom 2",
+    "MP LESSON 2": "Rev 9",
+    "EP PSALM": "119:25-48",
+    "EP LESSON 1": "Isa 60",
+    "EP LESSON 2": "Luke 18:1-30"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 18,
+    "MP PSALM": "119:49-72",
+    "MP LESSON 1": "Wisdom 3",
+    "MP LESSON 2": "Rev 10",
+    "EP PSALM": "119:73-88",
+    "EP LESSON 1": "Isa 61",
+    "EP LESSON 2": "Luke 18:31—19:10"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 19,
+    "MP PSALM": "119:89-104",
+    "MP LESSON 1": "Wisdom 4",
+    "MP LESSON 2": "Rev 11",
+    "EP PSALM": "119:105-128",
+    "EP LESSON 1": "Isa 62",
+    "EP LESSON 2": "Luke 19:11-28"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 20,
+    "MP PSALM": "119:129-152",
+    "MP LESSON 1": "Wisdom 5",
+    "MP LESSON 2": "Rev 12",
+    "EP PSALM": "119:153-176",
+    "EP LESSON 1": "Isa 63",
+    "EP LESSON 2": "Luke 19:29-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 21,
+    "MP PSALM": 118,
+    "MP LESSON 1": "Rev 13",
+    "MP LESSON 2": "John 14:1-7",
+    "EP PSALM": "120, 121",
+    "EP LESSON 1": "Isa 64",
+    "EP LESSON 2": "Luke 20:1-26"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 22,
+    "MP PSALM": "122, 123",
+    "MP LESSON 1": "Wisdom 6",
+    "MP LESSON 2": "Rev 14",
+    "EP PSALM": "124, 125, 126",
+    "EP LESSON 1": "Isa 65",
+    "EP LESSON 2": "Luke 20:27—21:4"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 23,
+    "MP PSALM": "127, 128",
+    "MP LESSON 1": "Wisdom 7",
+    "MP LESSON 2": "Rev 15",
+    "EP PSALM": "129, 130, 131",
+    "EP LESSON 1": "Isa 66",
+    "EP LESSON 2": "Luke 21:5-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 24,
+    "MP PSALM": "132, 133",
+    "MP LESSON 1": "Wisdom 8",
+    "MP LESSON 2": "Rev 16",
+    "EP PSALM": "134, 135",
+    "EP LESSON 1": "Song of Songs 1",
+    "EP LESSON 2": "Luke 22:1-38"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 25,
+    "MP PSALM": "19 or 45",
+    "MP LESSON 1": "Isa 9:1-8",
+    "MP LESSON 2": "Rev 17",
+    "EP PSALM": "85, 110",
+    "EP LESSON 1": "Song of Songs 2",
+    "EP LESSON 2": "Luke 2:1-14"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 26,
+    "MP PSALM": 136,
+    "MP LESSON 1": "Acts 6:8—7:6, 7:44-60",
+    "MP LESSON 2": "Rev 18",
+    "EP PSALM": "137, 138",
+    "EP LESSON 1": "Song of Songs 3",
+    "EP LESSON 2": "Luke 22:39-53"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 27,
+    "MP PSALM": 139,
+    "MP LESSON 1": "Rev 19",
+    "MP LESSON 2": "John 21:9-25",
+    "EP PSALM": "141, 142",
+    "EP LESSON 1": "Song of Songs 4",
+    "EP LESSON 2": "Luke 22:54-end"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 28,
+    "MP PSALM": 140,
+    "MP LESSON 1": "Jer 31:1-17",
+    "MP LESSON 2": "Rev 20",
+    "EP PSALM": 143,
+    "EP LESSON 1": "Song of Songs 5",
+    "EP LESSON 2": "Luke 23:1-25"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 29,
+    "MP PSALM": 144,
+    "MP LESSON 1": "Wisdom 9",
+    "MP LESSON 2": "Rev 21:1-14",
+    "EP PSALM": 145,
+    "EP LESSON 1": "Song of Songs 6",
+    "EP LESSON 2": "Luke:23:26-49"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 30,
+    "MP PSALM": 146,
+    "MP LESSON 1": "Wisdom 10",
+    "MP LESSON 2": "Rev 21:15—22:5",
+    "EP PSALM": 147,
+    "EP LESSON 1": "Song of Songs 7",
+    "EP LESSON 2": "Luke 23:50—24:12"
+  },
+  {
+    "MONTH": 12,
+    "DAY": 31,
+    "MP PSALM": 148,
+    "MP LESSON 1": "Wisdom 11",
+    "MP LESSON 2": "Rev 22:6-end",
+    "EP PSALM": "149, 150",
+    "EP LESSON 1": "Song of Songs 8",
+    "EP LESSON 2": "Luke 24:13-end"
+  }
+]

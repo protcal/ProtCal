@@ -91,7 +91,7 @@ def get_holiday(year, holiday, tradition, flags):
 
 def get_season(year, season, tradition, flags):
     """
-    Depending on the year, determines the liturgical seasons for that year
+    Depending on the year, determines when a given season is for that particular year
     Returns a list of tuples unlike any other getter due to cross-year holy days
     Depending on if it is cross-year, it will return one element in the list or two.
     """
@@ -129,3 +129,4 @@ def get_saint(year, saint, tradition, flags):
     rules = get_rules("saints", tradition, None) #saints should not have flags yet
     saint_data = rules.get(saint)
     return date(year, saint_data["month"], saint_data["day"])
+

@@ -14,7 +14,6 @@ def get_rules(type, tradition = 'lutheran', flags=None, culture = 'western'):
     """
     file_name = f"{type}_{flags}.json" if flags else f"{type}.json"
     file_path = os.path.join(culture, tradition, file_name)
-    
     try:
         with open(file_path, 'r') as f:
             rules = json.load(f)
