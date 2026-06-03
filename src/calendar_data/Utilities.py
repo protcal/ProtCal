@@ -2,7 +2,6 @@ import json
 import os
 from datetime import date, timedelta
 
-
 class CalendarRules:
     """Manages loading and caching of liturgical rules from JSON files."""
     

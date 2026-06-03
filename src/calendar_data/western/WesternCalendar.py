@@ -1,15 +1,7 @@
-"""Western calendar tradition functions."""
+"""Western calendar tradition functions"""
 
 from datetime import date, timedelta
-
-try:
-    from ..utilities import DateCalculator, CalendarRules
-except ImportError:
-    import sys
-    import os
-    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from utilities import DateCalculator, CalendarRules
-
+from ..Utilities import DateCalculator, CalendarRules
 
 class WesternCalendar:
     """Handles date calculations for the Western calendar tradition."""
@@ -39,6 +31,7 @@ class WesternCalendar:
         m = (a + 11 * h + 22 * l) // 451
         month = (h + l - 7 * m + 114) // 31
         day = ((h + l - 7 * m + 114) % 31) + 1
+
         return date(year, month, day)
     
     def get_advent_start(self, year):
@@ -51,7 +44,7 @@ class WesternCalendar:
         advent_start = fourth_sunday_before_christmas - timedelta(weeks=3)
         return advent_start
     
-    def get_thanksgiving(self, year, canada=False):
+    def get_thanksgiving(self, year, canada = False):
         """
         Calculate Thanksgiving date
         """

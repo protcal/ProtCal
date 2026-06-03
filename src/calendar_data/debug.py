@@ -3,17 +3,8 @@
 import os
 import sys
 
-# Support both module import and direct execution
-try:
-    from .utilities import CalendarRules
-    from .western.western_functions import WesternCalendar
-    from .csvgenerator import CalendarGenerator
-except ImportError:
-    # Fallback for direct script execution
-    from utilities import CalendarRules
-    from western.western_functions import WesternCalendar
-    from csvgenerator import CalendarGenerator
-
+from .utilities import CalendarRules
+from .western.western_functions import western_functiond
 
 class CalendarDisplay:
     """Handles display and debugging of calendar information."""
@@ -26,7 +17,7 @@ class CalendarDisplay:
             calendar (WesternCalendar, optional): Calendar instance.
             rules_manager (CalendarRules, optional): Rules manager instance.
         """
-        self.calendar = calendar or WesternCalendar()
+        self.calendar = calendar or western_functiond()
         self.rules_manager = rules_manager or CalendarRules('western')
     
     def display_holidays(self, year, tradition, flags):
@@ -98,7 +89,7 @@ class CalendarInteractive:
             culture (str): The culture (e.g., "western", "eastern")
         """
         self.culture = culture
-        self.calendar = WesternCalendar()
+        self.calendar = western_functiond()
         self.rules_manager = CalendarRules(culture)
         self.display = CalendarDisplay(self.calendar, self.rules_manager)
         self.generator = CalendarGenerator(self.calendar, self.rules_manager)
