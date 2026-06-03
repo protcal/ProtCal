@@ -9,25 +9,16 @@ class CalendarRules:
     def __init__(self, culture='western'):
         """
         Initialize the CalendarRules manager.
-        
-        Parameters:
-            culture (str): The culture directory (e.g., "western", "eastern")
         """
+
         self.culture = culture
         self._cache = {}
     
     def get_rules(self, rule_type, tradition='lutheran', flags=None):
         """
         Gets the liturgical rules from a JSON file.
-        
-        Parameters:
-            rule_type (str): The type of rules to fetch (dates, seasons, saints, lectionary)
-            tradition (str): The tradition directory to look in (e.g., "lutheran", "anglican")
-            flags (str, optional): An additional flag for file selection (e.g., "oneyear")
-        
-        Returns:
-            dict: The requested liturgical rules.
         """
+
         cache_key = (rule_type, tradition, flags)
         if cache_key in self._cache:
             return self._cache[cache_key]
@@ -58,14 +49,8 @@ class DateCalculator:
     def calculate_offset(base_date, offset_days):
         """
         Calculate a date offset.
-        
-        Parameters:
-            base_date (date): The base date
-            offset_days (int): Number of days to offset
-        
-        Returns:
-            date: The offset date
         """
+
         return base_date + timedelta(days=offset_days)
     
     @staticmethod
@@ -74,13 +59,8 @@ class DateCalculator:
         Find the closest Sunday to the given holiday.
         
         If the holiday is already a Sunday, returns the same date.
-        
-        Parameters:
-            holiday (date): The reference date
-        
-        Returns:
-            date: The closest Sunday
         """
+
         days_to_previous_sunday = -holiday.weekday() % 7
         days_to_next_sunday = (6 - holiday.weekday()) % 7
         
@@ -88,20 +68,3 @@ class DateCalculator:
             return DateCalculator.calculate_offset(holiday, days_to_previous_sunday)
         else:
             return DateCalculator.calculate_offset(holiday, days_to_next_sunday)
-
-
-# Legacy function exports for backwards compatibility
-def get_rules(type, tradition='lutheran', flags=None, culture='western'):
-    """Legacy function - use CalendarRules class instead."""
-    manager = CalendarRules(culture)
-    return manager.get_rules(type, tradition, flags)
-
-
-def calculate_offset(base_date, offset_days):
-    """Legacy function - use DateCalculator.calculate_offset() instead."""
-    return DateCalculator.calculate_offset(base_date, offset_days)
-
-
-def get_closest_sunday(holiday):
-    """Legacy function - use DateCalculator.get_closest_sunday() instead."""
-    return DateCalculator.get_closest_sunday(holiday)
