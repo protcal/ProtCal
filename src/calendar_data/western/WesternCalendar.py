@@ -1,7 +1,7 @@
 """Western calendar tradition functions"""
 
 from datetime import date, timedelta
-from Utilities import DateCalculator, CalendarRules
+from Utilities import DateCalculator, CalendarRules, CalendarContext
 
 class WesternCalendar:
     """Handles date calculations for the Western calendar tradition."""
@@ -58,12 +58,12 @@ class WesternCalendar:
         first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
         return first_thursday + timedelta(weeks=3)
     
-    def get_holiday(self, year, holiday_key, tradition, flags=None):
+    def get_holiday(self, context, holiday_key):
         """
         Get the date of a specific holiday based on rules
         """
 
-        rules = self.rules_manager.get_rules('dates', tradition, flags)
+        rules = self.rules_manager.get_rules('dates', context.tradition, context.flags)
         
         if holiday_key not in rules:
             raise ValueError(f"Holiday '{holiday_key}' not found in rules")
@@ -73,16 +73,16 @@ class WesternCalendar:
         # Handle complex holidays (Easter, Advent)
         if holiday_rule.get('complex'):
             if holiday_key == 'easter':
-                return self.get_easter(year)
+                return self.get_easter(context.year)
             elif holiday_key == 'advent_start':
-                return self.get_advent_start(year)
+                return self.get_advent_start(context.year)
             else:
                 raise ValueError(f"Unknown complex holiday type: '{holiday_key}'")
         
         # Handle fixed date holidays (Christmas)
         if 'fixed_date' in holiday_rule:
             fixed = holiday_rule['fixed_date']
-            return date(year, fixed['month'], fixed['day'])
+            return date(context.year, fixed['month'], fixed['day'])
         
         # Handle offset-based holidays (depend on another holiday, like Pentecost from Easter)
         if 'offset_days' in holiday_rule:
@@ -90,18 +90,18 @@ class WesternCalendar:
             if not depends_on:
                 raise ValueError(f"Holiday '{holiday_key}' has offset_days but no depends_on")
             
-            base_date = self.get_holiday(year, depends_on, tradition, flags)
+            base_date = self.get_holiday(context, depends_on)
             offset = holiday_rule['offset_days']
             return DateCalculator.calculate_offset(base_date, offset)
         
         raise ValueError(f"Holiday '{holiday_key}' has no recognized rule structure")
     
-    def get_season(self, year, season_key, tradition, flags=None):
+    def get_season(self, context, season_key):
         """
         Get the date range(s) for a liturgical season
         """
 
-        rules = self.rules_manager.get_rules('seasons', tradition, flags)
+        rules = self.rules_manager.get_rules('seasons', context.tradition, context.flags)
         
         if season_key not in rules:
             raise ValueError(f"Season '{season_key}' not found in rules")
@@ -113,17 +113,17 @@ class WesternCalendar:
         if not start_holiday_key or not end_holiday_key:
             raise ValueError(f"Season '{season_key}' missing start or end holiday keys")
         
-        start_date = self.get_holiday(year, start_holiday_key, tradition, flags)
-        end_date = self.get_holiday(year, end_holiday_key, tradition, flags)
+        start_date = self.get_holiday(context, start_holiday_key)
+        end_date = self.get_holiday(context, end_holiday_key)
         
         return [(start_date, end_date)]
     
-    def get_saint(self, year, saint_key, tradition, flags=None):
+    def get_saint(self, context, saint_key):
         """
         Get the date of a specific saint's day.
         """
 
-        rules = self.rules_manager.get_rules('saints', tradition, flags)
+        rules = self.rules_manager.get_rules('saints', context.tradition, context.flags)
         
         if saint_key not in rules:
             raise ValueError(f"Saint '{saint_key}' not found in rules")

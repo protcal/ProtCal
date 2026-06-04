@@ -4,7 +4,7 @@ import os
 import sys
 sys.path.insert(0, '..') #necessary since this is always run as a script for debugging
 
-from calendar_data.Utilities import CalendarRules
+from calendar_data.Utilities import CalendarRules, CalendarContext
 from calendar_data.western.WesternCalendar import WesternCalendar
 
 class CalendarDisplay:
@@ -13,22 +13,20 @@ class CalendarDisplay:
     def __init__(self, calendar=None, rules_manager=None):
         """
         Initialize the CalendarDisplay.
-        
-        Parameters:
-            calendar (WesternCalendar, optional): Calendar instance.
-            rules_manager (CalendarRules, optional): Rules manager instance.
         """
+        
         self.calendar = calendar or WesternCalendar()
         self.rules_manager = rules_manager or CalendarRules('western')
     
-    def display_holidays(self, year, tradition, flags):
-        """Display all holidays for a given year and tradition."""
-        print(f"{tradition} liturgical holidays for A.D. {year}:")
-        rules = self.rules_manager.get_rules('dates', tradition, flags)
+    def display_holidays(self, context):
+        """Display all holidays for a given context."""
+        print(f"{context.tradition} liturgical holidays for A.D. {context.year}:")
+        rules = self.rules_manager.get_rules('dates', context.tradition, context.flags)
         
+        #TODO Replace with get_holidays()
         for holiday_key, holiday_data in rules.items():
             try:
-                holiday_date = self.calendar.get_holiday(year, holiday_key, tradition, flags)
+                holiday_date = self.calendar.get_holiday(context, holiday_key)
                 holiday_name = holiday_data.get("name", holiday_key.replace('_', ' ').title())
                 alt_name = holiday_data.get("alt_name")
                 if alt_name:
@@ -37,16 +35,16 @@ class CalendarDisplay:
             except ValueError as e:
                 print(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
     
-    def display_seasons(self, year, tradition, flags):
-        """Display all seasons for a given year and tradition."""
-        print(f"{tradition} liturgical seasons for A.D. {year}:")
-        rules = self.rules_manager.get_rules('seasons', tradition, flags)
+    def display_seasons(self, context):
+        """Display all seasons for a given context."""
+        print(f"{context.tradition} liturgical seasons for A.D. {context.year}:")
+        rules = self.rules_manager.get_rules('seasons', context.tradition, context.flags)
         
         all_seasons = []
         
         for season_key, season_data in rules.items():
             try:
-                season_ranges = self.calendar.get_season(year, season_key, tradition, flags)
+                season_ranges = self.calendar.get_season(context, season_key)
                 for start_date, end_date in season_ranges:
                     season_name = season_data.get("name", season_key.replace('_', ' ').title())
                     alt_name = season_data.get("alt_name")
@@ -62,14 +60,14 @@ class CalendarDisplay:
         for start_date, end_date, season_name in all_seasons:
             print(f"{season_name}: {start_date.strftime('%A, %B %d, %Y')} - {end_date.strftime('%A, %B %d, %Y')}")
     
-    def display_saints(self, year, tradition, flags):
-        """Display all saints for a given year and tradition."""
-        print(f"{tradition} saints for A.D. {year}:")
-        rules = self.rules_manager.get_rules('saints', tradition, flags)
+    def display_saints(self, context):
+        """Display all saints for a given context."""
+        print(f"{context.tradition} saints for A.D. {context.year}:")
+        rules = self.rules_manager.get_rules('saints', context.tradition, context.flags)
         
         for saint_key, saint_data in rules.items():
             try:
-                saint_date = self.calendar.get_saint(year, saint_key, tradition, flags)
+                saint_date = self.calendar.get_saint(context, saint_key)
                 saint_name = saint_data.get("name", saint_key.replace('_', ' ').title())
                 alt_name = saint_data.get("alt_name")
                 if alt_name:
@@ -155,11 +153,15 @@ class CalendarInteractive:
         # Generate and display calendar
         print("\nGenerating the liturgical calendar...\n")
         try:
-            self.display.display_holidays(year, tradition, dates_file)
+            context_dates = CalendarContext(year, tradition, dates_file)
+            context_seasons = CalendarContext(year, tradition, seasons_file)
+            context_saints = CalendarContext(year, tradition, saints_file)
+            
+            self.display.display_holidays(context_dates)
             print()
-            self.display.display_seasons(year, tradition, seasons_file)
+            self.display.display_seasons(context_seasons)
             print()
-            self.display.display_saints(year, tradition, saints_file)
+            self.display.display_saints(context_saints)
         except ValueError as e:
             print(f"Error: {e}")
 

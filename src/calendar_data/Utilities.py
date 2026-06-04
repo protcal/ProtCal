@@ -2,6 +2,27 @@ import json
 import os
 from datetime import date, timedelta
 
+
+class CalendarContext:
+    """Data transfer object for calendar query parameters."""
+    
+    def __init__(self, year, tradition='lutheran', flags=None):
+        """
+        Initialize the CalendarContext.
+        
+        Parameters:
+            year (int): The year for calendar calculations
+            tradition (str): The tradition (e.g., 'lutheran', 'roman')
+            flags (str, optional): Flags to specify which rules file to use
+        """
+        self.year = year
+        self.tradition = tradition
+        self.flags = flags
+    
+    def __repr__(self):
+        return f"CalendarContext(year={self.year}, tradition='{self.tradition}', flags={self.flags})"
+
+
 class CalendarRules:
     """Manages loading and caching of liturgical rules from JSON files."""
     
