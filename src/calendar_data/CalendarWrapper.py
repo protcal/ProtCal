@@ -39,6 +39,6 @@ class CalendarWrapper:
                     holiday_name += f" ({alt_name})"
                 all_holidays.append((holiday_name, holiday_date))
             except ValueError as e:
-                print(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
+                raise ValueError(f"{holiday_key.replace('_', ' ').title()}: Error - {e}")
 
         return all_holidays
