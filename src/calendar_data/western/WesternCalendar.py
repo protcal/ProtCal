@@ -1,7 +1,7 @@
 """Western calendar tradition functions"""
 
 from datetime import date, timedelta
-from ..Utilities import DateCalculator, CalendarRules
+from Utilities import DateCalculator, CalendarRules
 
 class WesternCalendar:
     """Handles date calculations for the Western calendar tradition."""

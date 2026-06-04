@@ -24,3 +24,7 @@ class CalendarWrapper:
     def get_saint(self, year, saint_key, tradition, flags=None):
         """Get the date of a specific saint's day."""
         return self.calendar.get_saint(year, saint_key, tradition, flags)
+    
+    def get_holidays(self, year, holiday_key, tradition='western', flags=None):
+        pass
+    #TODO: Create these to alleviate nonsense in debug.py

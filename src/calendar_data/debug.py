@@ -2,9 +2,10 @@
 
 import os
 import sys
+sys.path.insert(0, '..') #necessary since this is always run as a script for debugging
 
-from .utilities import CalendarRules
-from .western.western_functions import western_functiond
+from calendar_data.Utilities import CalendarRules
+from calendar_data.western.WesternCalendar import WesternCalendar
 
 class CalendarDisplay:
     """Handles display and debugging of calendar information."""
@@ -17,7 +18,7 @@ class CalendarDisplay:
             calendar (WesternCalendar, optional): Calendar instance.
             rules_manager (CalendarRules, optional): Rules manager instance.
         """
-        self.calendar = calendar or western_functiond()
+        self.calendar = calendar or WesternCalendar()
         self.rules_manager = rules_manager or CalendarRules('western')
     
     def display_holidays(self, year, tradition, flags):
@@ -89,10 +90,9 @@ class CalendarInteractive:
             culture (str): The culture (e.g., "western", "eastern")
         """
         self.culture = culture
-        self.calendar = western_functiond()
+        self.calendar = WesternCalendar()
         self.rules_manager = CalendarRules(culture)
         self.display = CalendarDisplay(self.calendar, self.rules_manager)
-        self.generator = CalendarGenerator(self.calendar, self.rules_manager)
     
     def prompt_for_year(self):
         """Prompt user for a year and return it."""
@@ -151,9 +151,7 @@ class CalendarInteractive:
         seasons_file = self.prompt_for_flags("seasons", tradition)
         saints_file = self.prompt_for_flags("saints", tradition)
         lectionary = self.prompt_for_flags("lectionary", tradition)
-        
-        csv_output = input("\nWould you like to output a CSV file? (yes/no): ").strip().lower() == "yes"
-        
+                
         # Generate and display calendar
         print("\nGenerating the liturgical calendar...\n")
         try:
@@ -162,39 +160,8 @@ class CalendarInteractive:
             self.display.display_seasons(year, tradition, seasons_file)
             print()
             self.display.display_saints(year, tradition, saints_file)
-            
-            if csv_output:
-                output_file = f"liturgical_calendar_{year}.csv"
-                self.generator.generate_calendar_csv(year, tradition, dates_file, output_file)
-                print(f"\nLiturgical calendar for {year} has been written to {output_file}.")
         except ValueError as e:
             print(f"Error: {e}")
-
-
-# Legacy function exports for backwards compatibility
-def display_holidays(year, tradition, flags):
-    """Legacy function - use CalendarDisplay.display_holidays() instead."""
-    display = CalendarDisplay()
-    display.display_holidays(year, tradition, flags)
-
-
-def display_seasons(year, tradition, flags):
-    """Legacy function - use CalendarDisplay.display_seasons() instead."""
-    display = CalendarDisplay()
-    display.display_seasons(year, tradition, flags)
-
-
-def display_saints(year, tradition, flags):
-    """Legacy function - use CalendarDisplay.display_saints() instead."""
-    display = CalendarDisplay()
-    display.display_saints(year, tradition, flags)
-
-
-def prompt_for_flags(rule_type, tradition, culture="western"):
-    """Legacy function - use CalendarInteractive.prompt_for_flags() instead."""
-    interactive = CalendarInteractive(culture)
-    return interactive.prompt_for_flags(rule_type, tradition)
-
 
 if __name__ == "__main__":
     interactive = CalendarInteractive('western')
