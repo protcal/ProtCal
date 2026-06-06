@@ -4,7 +4,7 @@ import os
 import sys
 sys.path.insert(0, '..') #necessary since this is always run as a script for debugging
 
-from calendar_data.Utilities import CalendarRules, CalendarContext
+from calendar_data.Utilities import CalendarRules, CalendarContext, RuleType
 from calendar_data.CalendarWrapper import CalendarWrapper
 
 class CalendarDisplay:
@@ -21,7 +21,7 @@ class CalendarDisplay:
     def display_holidays(self, context):
         """Display all holidays for a given context."""
         print(f"{context.tradition} liturgical holidays for A.D. {context.year}:")
-        rules = self.rules_manager.get_rules('dates', context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.DATES, context.tradition, context.flags)
 
         holiday_list = self.calendar.get_all_holidays(context, rules)
         for holiday_name, holiday_date in holiday_list:
@@ -30,7 +30,7 @@ class CalendarDisplay:
     def display_seasons(self, context):
         """Display all seasons for a given context."""
         print(f"{context.tradition} liturgical seasons for A.D. {context.year}:")
-        rules = self.rules_manager.get_rules('seasons', context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.SEASONS, context.tradition, context.flags)
         
         all_seasons = self.calendar.get_all_seasons(context, rules)
 
@@ -43,7 +43,7 @@ class CalendarDisplay:
     def display_saints(self, context):
         """Display all saints for a given context."""
         print(f"{context.tradition} saints for A.D. {context.year}:")
-        rules = self.rules_manager.get_rules('saints', context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.SAINTS, context.tradition, context.flags)
         
         all_saints = self.calendar.get_all_saints(context, rules)
 

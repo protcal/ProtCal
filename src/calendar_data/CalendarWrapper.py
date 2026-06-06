@@ -5,7 +5,7 @@ from .western.WesternCalendar import WesternCalendar
 class CalendarWrapper:
     """Wrapper for calendar functions across traditions."""
     
-    def __init__(self, calendar=None, rules_manager=None):
+    def __init__(self, calendar=None, CalendarRules=None):
         """
         Initialize the CalendarWrapper.
         """
@@ -13,7 +13,7 @@ class CalendarWrapper:
         # TODO: Constructor must determine which calendar to construct based on calendar magic string
         # TODO: Should not construct calendar on magic strings
         self.calendar = WesternCalendar()
-        self.rules_manager = rules_manager or CalendarRules('western')
+        self.CalendarRules = CalendarRules or CalendarRules('western') #TODO: Pass this into class functions
     
     def get_holiday(self, context, holiday_key):
         """Get the date of a specific holiday."""
@@ -29,8 +29,8 @@ class CalendarWrapper:
         """Get the date of a specific saint's day."""
         return self.calendar.get_saint(context, saint_key)
    
-    def get_all_holidays(self, context, rules):
-        """Gets all the holidays in a list"""
+    def get_all_holidays(self, context, rules): #TODO: Why does holiday need rules?
+        """Gets all the holidays in a list""" 
 
         all_holidays = []
         for holiday_key, holiday_data in rules.items():

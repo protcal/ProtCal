@@ -1,8 +1,40 @@
 import json
-import os
+from dataclasses import dataclass
 from datetime import date, timedelta
+from enum import Enum
+from pathlib import Path
+from typing import Optional
 
-#TODO: Remove all this magic string stuff except for JSON directory which is actually pretty cool
+
+class RuleType(str, Enum):
+    """Explicit catalog of configured rule files.
+    These are the values found in each culture and tradition."""
+
+    DATES = 'dates'
+    SEASONS = 'seasons'
+    SAINTS = 'saints'
+    LECTIONARY = 'lectionary'
+
+
+@dataclass(frozen=True)
+class RuleFileSpec:
+    """Describe a concrete rules file to load for a tradition and variant.
+    These are the """
+
+    rule_type: RuleType
+    tradition: str
+    culture: str # TODO: Removed default western
+    flags: Optional[str] = None
+
+    @property
+    def file_name(self) -> str:
+        return f"{self.rule_type.value}_{self.flags}.json" if self.flags else f"{self.rule_type.value}.json"
+
+    @property
+    def file_path(self) -> Path:
+        return Path(__file__).resolve().parent / self.culture / self.tradition / self.file_name
+
+
 class CalendarContext:
     """Data transfer object for calendar query parameters."""
     
@@ -36,30 +68,44 @@ class CalendarRules:
     
     def get_rules(self, rule_type, tradition='lutheran', flags=None):
         """
-        Gets the liturgical rules from a JSON file.
-        Magic strings are used for rule_type because this function parses
-        the JSONs based on the:
-        "rule_type"_"flags".json
-        So the naming of the JSON tells us what exactly to parse.
+        Load liturgical rules from a JSON file using an explicit rule-type descriptor.
         """
 
-        cache_key = (rule_type, tradition, flags)
+        normalized_rule_type = self.normalize_rule_type(rule_type)
+        spec = RuleFileSpec(rule_type=normalized_rule_type, tradition=tradition, culture=self.culture, flags=flags)
+        #TODO: Move above into constructor and instantiate all CalendarRule classes with this already done, so less crap to write
+
+        cache_key = (spec.rule_type, tradition, flags)
         if cache_key in self._cache:
             return self._cache[cache_key]
-        
-        file_name = f"{rule_type}_{flags}.json" if flags else f"{rule_type}.json"
-        file_path = os.path.join(self.culture, tradition, file_name)
-        
+
         try:
-            with open(file_path, 'r') as f:
+            with spec.file_path.open('r', encoding='utf-8') as f:
                 rules = json.load(f)
-            result = rules.get(rule_type, {})
+            result = rules.get(normalized_rule_type.value, {})
             self._cache[cache_key] = result
             return result
         except FileNotFoundError:
-            raise ValueError(f"Rules file not found: {file_path}")
+            raise ValueError(f"Rules file not found: {spec.file_path}")
         except json.JSONDecodeError:
-            raise ValueError(f"Invalid JSON in rules file: {file_path}")
+            raise ValueError(f"Invalid JSON in rules file: {spec.file_path}")
+        except Exception as e:
+            raise ValueError(f"Error loading rules file {spec.file_path}: {e}")
+
+    def normalize_rule_type(self, rule_type):
+        """Convert plain strings to explicit RuleType values."""
+
+        if isinstance(rule_type, RuleType):
+            return rule_type
+
+        try:
+            return RuleType(rule_type)
+        except ValueError as exc:
+            valid = ', '.join(item.value for item in RuleType)
+            raise ValueError(f"Unknown rule type '{rule_type}'. Expected one of: {valid}") from exc
+        except Exception as e:
+                raise ValueError(f"Error normalizing rule type {rule_type}: {e}")
+        
     
     def clear_cache(self):
         """Clear the rules cache."""

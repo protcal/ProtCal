@@ -1,7 +1,8 @@
 """Western calendar tradition functions"""
 
 from datetime import date, timedelta
-from Utilities import DateCalculator, CalendarRules, CalendarContext
+
+from ..Utilities import CalendarContext, CalendarRules, DateCalculator, RuleType
 
 class WesternCalendar:
     """Handles date calculations for the Western calendar tradition."""
@@ -63,7 +64,7 @@ class WesternCalendar:
         Get the date of a specific holiday based on rules
         """
 
-        rules = self.rules_manager.get_rules('dates', context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.DATES, context.tradition, context.flags)
         
         if holiday_key not in rules:
             raise ValueError(f"Holiday '{holiday_key}' not found in rules")
@@ -76,8 +77,8 @@ class WesternCalendar:
                 return self.get_easter(context.year)
             elif holiday_key == 'advent_start':
                 return self.get_advent_start(context.year)
-            elif holiday_key == 'thanksgiving' or 'thanksgiving_ca':
-                return self.get_thanksgiving(context.year, canada = True if holiday_key == 'thanksgiving_ca' else None)
+            elif holiday_key in ('thanksgiving', 'thanksgiving_ca'):
+                return self.get_thanksgiving(context.year, canada=(holiday_key == 'thanksgiving_ca'))
             else:
                 raise ValueError(f"Unknown complex holiday type: '{holiday_key}'")
         
@@ -103,7 +104,7 @@ class WesternCalendar:
         Get the date range(s) for a liturgical season
         """
 
-        rules = self.rules_manager.get_rules('seasons', context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.SEASONS, context.tradition, context.flags)
         
         if season_key not in rules:
             raise ValueError(f"Season '{season_key}' not found in rules")
@@ -125,7 +126,7 @@ class WesternCalendar:
         Get the date of a specific saint's day.
         """
 
-        rules = self.rules_manager.get_rules('saints', context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.SAINTS, context.tradition, context.flags)
         
         if saint_key not in rules:
             raise ValueError(f"Saint '{saint_key}' not found in rules")
