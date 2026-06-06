@@ -1,2 +1,14 @@
 *.csv
-__pycache__/
+__pycache__*
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+*.bak
+*.tmp
+*.swp
+.DS_Store
+.idea/
+.vscode/
