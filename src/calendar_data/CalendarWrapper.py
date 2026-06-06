@@ -1,5 +1,4 @@
 '''API wrapper for traditions functions'''
-from .Utilities import CalendarRules, CalendarContext
 from .western.WesternCalendar import WesternCalendar
 
 class CalendarWrapper:

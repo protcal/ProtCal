@@ -64,7 +64,7 @@ class WesternCalendar:
         Get the date of a specific holiday based on rules
         """
 
-        rules = self.rules_manager.get_rules(RuleType.DATES, context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.DATES, context)
         
         if holiday_key not in rules:
             raise ValueError(f"Holiday '{holiday_key}' not found in rules")
@@ -104,7 +104,7 @@ class WesternCalendar:
         Get the date range(s) for a liturgical season
         """
 
-        rules = self.rules_manager.get_rules(RuleType.SEASONS, context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.SEASONS, context)
         
         if season_key not in rules:
             raise ValueError(f"Season '{season_key}' not found in rules")
@@ -126,7 +126,7 @@ class WesternCalendar:
         Get the date of a specific saint's day.
         """
 
-        rules = self.rules_manager.get_rules(RuleType.SAINTS, context.tradition, context.flags)
+        rules = self.rules_manager.get_rules(RuleType.SAINTS, context)
         
         if saint_key not in rules:
             raise ValueError(f"Saint '{saint_key}' not found in rules")
