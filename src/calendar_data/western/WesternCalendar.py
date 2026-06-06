@@ -2,16 +2,15 @@
 
 from datetime import date, timedelta
 
-from ..Utilities import CalendarContext, CalendarRules, DateCalculator, RuleType
+from ..Utilities import DateCalculator, RuleType
 
 class WesternCalendar:
     """Handles date calculations for the Western calendar tradition."""
     
-    def __init__(self, rules_manager = None):
+    def __init__(self):
         """
-        Initialize the WesternCalendar
+        Initialize the WesternCalendar.
         """
-        self.rules_manager = rules_manager or CalendarRules('western')
     
     def get_easter(self, year):
         """
@@ -45,7 +44,7 @@ class WesternCalendar:
         advent_start = fourth_sunday_before_christmas - timedelta(weeks=3)
         return advent_start
     
-    def get_thanksgiving(self, year, canada = False):
+    def get_thanksgiving(self, year, canada = False): #TODO: Canada should be a flag, new special flag property that ADDS or replaces
         """
         Calculate Thanksgiving date
         """
@@ -64,7 +63,7 @@ class WesternCalendar:
         Get the date of a specific holiday based on rules
         """
 
-        rules = self.rules_manager.get_rules(RuleType.DATES, context)
+        rules = context.load_rules(RuleType.DATES)
         
         if holiday_key not in rules:
             raise ValueError(f"Holiday '{holiday_key}' not found in rules")
@@ -104,7 +103,7 @@ class WesternCalendar:
         Get the date range(s) for a liturgical season
         """
 
-        rules = self.rules_manager.get_rules(RuleType.SEASONS, context)
+        rules = context.load_rules(RuleType.SEASONS)
         
         if season_key not in rules:
             raise ValueError(f"Season '{season_key}' not found in rules")
@@ -126,17 +125,14 @@ class WesternCalendar:
         Get the date of a specific saint's day.
         """
 
-        rules = self.rules_manager.get_rules(RuleType.SAINTS, context)
+        rules = context.load_rules(RuleType.SAINTS)
         
         if saint_key not in rules:
             raise ValueError(f"Saint '{saint_key}' not found in rules")
         
         saint_rule = rules[saint_key]
-        
-        if saint_rule.get('type') == 'fixed':
-            month = saint_rule.get('month')
-            day = saint_rule.get('day')
-            return date(context.year, month, day)
-        
-        else:
-            raise ValueError(f"Unknown saint rule type for '{saint_key}'")
+
+        if 'month' in saint_rule and 'day' in saint_rule:
+            return date(context.year, saint_rule['month'], saint_rule['day'])
+
+        raise ValueError(f"Unknown saint rule type for '{saint_key}'")

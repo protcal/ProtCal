@@ -1,18 +1,19 @@
 '''API wrapper for traditions functions'''
+
+from .Utilities import RuleType
 from .western.WesternCalendar import WesternCalendar
 
 class CalendarWrapper:
     """Wrapper for calendar functions across traditions."""
     
-    def __init__(self, calendar=None, CalendarRules=None):
+    def __init__(self, calendar=None):
         """
         Initialize the CalendarWrapper.
         """
 
         # TODO: Constructor must determine which calendar to construct based on calendar magic string
         # TODO: Should not construct calendar on magic strings
-        self.calendar = WesternCalendar()
-        self.CalendarRules = CalendarRules or CalendarRules('western') #TODO: Pass this into class functions
+        self.calendar = calendar or WesternCalendar()
     
     def get_holiday(self, context, holiday_key):
         """Get the date of a specific holiday."""
@@ -28,9 +29,10 @@ class CalendarWrapper:
         """Get the date of a specific saint's day."""
         return self.calendar.get_saint(context, saint_key)
    
-    def get_all_holidays(self, context, rules): #TODO: Why does holiday need rules?
-        """Gets all the holidays in a list""" 
+    def get_all_holidays(self, context):
+        """Gets all the holidays in a list."""
 
+        rules = context.load_rules(RuleType.DATES)
         all_holidays = []
         for holiday_key, holiday_data in rules.items():
             try:
@@ -45,8 +47,9 @@ class CalendarWrapper:
 
         return all_holidays
     
-    def get_all_seasons(self, context, rules):
+    def get_all_seasons(self, context):
 
+        rules = context.load_rules(RuleType.SEASONS)
         all_seasons = []
         for season_key, season_data in rules.items():
             try:
@@ -61,8 +64,9 @@ class CalendarWrapper:
                 print(f"{season_key.replace('_', ' ').title()}: Error - {e}")
         return all_seasons
 
-    def get_all_saints(self, context, rules):
+    def get_all_saints(self, context):
 
+        rules = context.load_rules(RuleType.SAINTS)
         all_saints = []
         for saint_key, saint_data in rules.items():
             try:

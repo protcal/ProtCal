@@ -6,10 +6,8 @@ from typing import Optional
 
 
 class RuleType(str, Enum):
-    """Explicit catalog of configured rule files.
-    These are the values found in each culture and tradition."""
-    CULTURE = 'culture'
-    TRADITION = 'tradition'
+    """Explicit catalog of configured rule files."""
+
     DATES = 'dates'
     SEASONS = 'seasons'
     SAINTS = 'saints'
@@ -22,8 +20,8 @@ class RuleType(str, Enum):
 
 class CalendarContext:
     """Data transfer object for calendar query parameters."""
-    
-    def __init__(self, year, tradition='lutheran', flags=None):
+
+    def __init__(self, year, culture, tradition='lutheran', flags=None):
         """
         Initialize the CalendarContext.
         
@@ -32,43 +30,31 @@ class CalendarContext:
             tradition (str): The tradition (e.g., 'lutheran', 'roman')
             flags (str, optional): Flags to specify which rules file to use
         """
+        self.culture = culture
         self.year = year
         self.tradition = tradition
         self.flags = flags
     
     def __repr__(self):
-        return f"CalendarContext(year={self.year}, tradition='{self.tradition}', flags={self.flags})"
+        return f"CalendarContext(year={self.year}, culture='{self.culture}', tradition='{self.tradition}', flags={self.flags})"
 
+    def load_rules(self, rule_type):
+        """Load liturgical rules directly from the current context."""
 
-class CalendarRules:
-    """Manages loading and caching of liturgical rules from JSON files."""
-    
-    def __init__(self, culture='western'):
-        self.culture = culture
-        self._cache = {}
-    
-    def get_rules(self, rule_type, context):
         normalized_rule_type = self.normalize_rule_type(rule_type)
+        path = normalized_rule_type.file_path(self.culture, self.tradition, self.flags)
 
-        cache_key = (normalized_rule_type, context.tradition, context.flags)
-        if cache_key in self._cache:
-            return self._cache[cache_key]
-
-        path = normalized_rule_type.file_path(self.culture, context.tradition, context.flags)
         try:
             with path.open('r', encoding='utf-8') as f:
                 rules = json.load(f)
-            result = rules.get(normalized_rule_type.value, {})
-            self._cache[cache_key] = result
-            return result
-        except FileNotFoundError:
-            raise ValueError(f"Rules file not found: {path}")
-        except json.JSONDecodeError:
-            raise ValueError(f"Invalid JSON in rules file: {path}")
-        except Exception as e:
-            raise ValueError(f"Error loading rules file {path}: {e}")
+            return rules.get(normalized_rule_type.value, {})
+        except FileNotFoundError as exc:
+            raise ValueError(f"Rules file not found: {path}") from exc
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"Invalid JSON in rules file: {path}") from exc
 
-    def normalize_rule_type(self, rule_type):
+    @staticmethod
+    def normalize_rule_type(rule_type):
         """Convert plain strings to explicit RuleType values."""
 
         if isinstance(rule_type, RuleType):
@@ -79,12 +65,6 @@ class CalendarRules:
         except ValueError as exc:
             valid = ', '.join(item.value for item in RuleType)
             raise ValueError(f"Unknown rule type '{rule_type}'. Expected one of: {valid}") from exc
-        except Exception as e:
-            raise ValueError(f"Error normalizing rule type {rule_type}: {e}")
-
-    def clear_cache(self):
-        """Clear the rules cache."""
-        self._cache.clear()
 
 
 class DateCalculator:
