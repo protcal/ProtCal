@@ -76,6 +76,8 @@ class WesternCalendar:
                 return self.get_easter(context.year)
             elif holiday_key == 'advent_start':
                 return self.get_advent_start(context.year)
+            elif holiday_key == 'thanksgiving' or 'thanksgiving_ca':
+                return self.get_thanksgiving(context.year, canada = True if holiday_key == 'thanksgiving_ca' else None)
             else:
                 raise ValueError(f"Unknown complex holiday type: '{holiday_key}'")
         
@@ -133,7 +135,7 @@ class WesternCalendar:
         if saint_rule.get('type') == 'fixed':
             month = saint_rule.get('month')
             day = saint_rule.get('day')
-            return date(year, month, day)
+            return date(context.year, month, day)
         
         else:
             raise ValueError(f"Unknown saint rule type for '{saint_key}'")

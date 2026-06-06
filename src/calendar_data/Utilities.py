@@ -2,7 +2,7 @@ import json
 import os
 from datetime import date, timedelta
 
-
+#TODO: Remove all this magic string stuff except for JSON directory which is actually pretty cool
 class CalendarContext:
     """Data transfer object for calendar query parameters."""
     
@@ -37,6 +37,10 @@ class CalendarRules:
     def get_rules(self, rule_type, tradition='lutheran', flags=None):
         """
         Gets the liturgical rules from a JSON file.
+        Magic strings are used for rule_type because this function parses
+        the JSONs based on the:
+        "rule_type"_"flags".json
+        So the naming of the JSON tells us what exactly to parse.
         """
 
         cache_key = (rule_type, tradition, flags)
