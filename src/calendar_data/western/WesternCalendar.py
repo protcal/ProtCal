@@ -58,6 +58,8 @@ class WesternCalendar:
         first_thursday = first_day + timedelta(days=(3 - first_day.weekday() + 7) % 7)
         return first_thursday + timedelta(weeks=3)
     
+
+    #TODO: Move to a separate module (DateCalculator?), no need to be here
     def get_holiday(self, context, holiday_key):
         """
         Get the date of a specific holiday based on rules
